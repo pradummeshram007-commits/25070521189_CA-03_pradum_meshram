@@ -1,130 +1,68 @@
-const express = require("express");
-const {MongoClient,ObjectId} = require("mongodb");
-const bodyparser = require("body-parser");
-const bCrypt = require("bcrypt");
-const jwtToken = require("jsonwebtoken");
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+const fs = require('fs');
+const connectDB = require('./config/db');
 
+// Import routes
+const authRoutes = require('./routes/authRoutes');
+const lostFoundRoutes = require('./routes/lostFoundRoutes');
+const sportsRoutes = require('./routes/sportsRoutes');
+const marketRoutes = require('./routes/marketRoutes');
+const emergencyRoutes = require('./routes/emergencyRoutes');
+const feedbackRoutes = require('./routes/feedbackRoutes');
 
 const app = express();
-app.use(bodyparser.json());
-const uri = "mongodb://localhost:27017"
-const client = new MongoClient(uri);
-const port = 5000;
+const PORT = process.env.PORT || 5000;
 
+// Connect to MongoDB
+connectDB();
 
-async function connectToMongoDb(){
-
-    try {
-        
-        await client.connect();
-        console.log("Connection successfully done with mongodb");
-
-        app.listen(port,()=>{
-
-            console.log("Server started at port : " + port);
-        })
-
-        
-    } catch (error) {
-
-        console.log("Connection failed to mongodb : " + error);
-    }
-
+// Ensure uploads directory exists
+const uploadDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
 }
 
-connectToMongoDb();
+// Global middlewares
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 
-const myDb = client.db("sitSecB");
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.get("/getall",async(req,res)=>{
+// Serve uploaded images statically
+app.use('/uploads', express.static(uploadDir));
 
-    let data = await myDb.collection("student").find().toArray();
+// API Routes
+app.use('/api/auth', authRoutes);
+app.use('/api/lost-found', lostFoundRoutes);
+app.use('/api/sports', sportsRoutes);
+app.use('/api/market', marketRoutes);
+app.use('/api/emergency', emergencyRoutes);
+app.use('/api/feedback', feedbackRoutes);
 
-    res.send( data );
-
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'online',
+    portal: 'SIT Nagpur Campus Hub API',
+    timestamp: new Date().toISOString(),
+  });
 });
 
-app.get("/get/:id",async(req,res)=>{
-
-    const id = req.params.id;
-
-    const student = await myDb.collection("student").findOne({_id : new ObjectId(id)});
-
-    res.send( student );
+// Global error handler
+app.use((err, req, res, next) => {
+  console.error('[API Error]:', err.stack || err.message);
+  res.status(err.status || 500).json({
+    message: err.message || 'Internal Server Error',
+  });
 });
 
-app.post("/create",async(req,res)=>{
-
-    console.log( req.body);
-
-    const {name,age,status,password,email} = req.body;
-
-    const hashedPass = await bCrypt.hash(password,10);
-
-    const response = await myDb.collection("student").insertOne({name:name,age:age,status:status,password : hashedPass,email : email});
-
-    res.send(response);
-
-});
-
-app.post("/login",async(req,res)=>{
-
-    const {email,password} = req.body;
-
-    const student = await myDb.collection("student").findOne({email : email});
-
-    if( student != null ){
-
-        const isCorrect = await bCrypt.compare(password,student.password);
-
-        if( isCorrect ){
-
-            const payLoad = {
-                subject : student.name,
-                role : student.status
-            }
-
-            res.send({jwtToken : jwtToken.sign(payLoad,"MY_SECRET_TOKEN")});
-        }
-
-    }
-    else{
-
-        res.send({msg : "Invalid Email"});
-        res.statusCode(422);
-    }
-
-});
-
-app.put("/update/:id",async(req,res)=>{
-
-    const id = req.params.id;
-
-    const student = await myDb.collection("student").findOne({_id : new ObjectId(id)});
-
-    if( student != null ){
-
-        const {status} = req.body;
-
-        const response = await myDb.collection("student").updateOne({_id: new ObjectId(id)},{$set:{status:status}});
-
-        res.send(response);
-    }
-    else{
-
-        res.send({msg : "Student Id Invalid"});
-        res.statusCode(404);
-
-    }
-
-});
-
-app.delete("/delete/:id",async(req,res)=>{
-
-    const id = req.params.id;
-
-    const response = await myDb.collection("student").deleteOne({_id:new ObjectId(id)});
-
-    res.send(response);
-
+app.listen(PORT, () => {
+  console.log(`[SIT Nagpur Campus Hub Server] running on http://localhost:${PORT}`);
 });
