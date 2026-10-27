@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;family=Domine:wght@600;700&amp;family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#40000e", "on-tertiary-fixed": "#281900", "on-tertiary-container": "#ae7a00", "surface-container": "#f1eee5", "on-error-container": "#93000a", "inverse-surface": "#31302b", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#5f4100", "surface-container-highest": "#e6e2d9", "primary-fixed-dim": "#c9c6c1", "on-tertiary": "#ffffff", "surface": "#fdf9f0", "surface-variant": "#e6e2d9", "on-secondary": "#ffffff", "tertiary-container": "#281900", "tertiary-fixed": "#ffdeac", "tertiary-fixed-dim": "#fbbb45", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#822433", "surface-container-low": "#f7f3ea", "inverse-primary": "#c9c6c1", "secondary-fixed": "#ffdadb", "surface-dim": "#dddad1", "surface-tint": "#5f5e5a", "background": "#fdf9f0", "on-primary-fixed-variant": "#474743", "outline-variant": "#c8c7be", "on-error": "#ffffff", "surface-bright": "#fdf9f0", "secondary": "#a13b49", "on-primary-container": "#85847f", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb2b7", "on-background": "#1c1c16", "surface-container-high": "#ece8df", "on-surface-variant": "#474741", "on-surface": "#1c1c16", "primary-container": "#1c1c19", "on-secondary-container": "#761a2a", "primary-fixed": "#e5e2dd", "on-primary-fixed": "#1c1c19", "inverse-on-surface": "#f4f0e7", "outline": "#787770", "tertiary": "#000000", "primary": "#000000", "secondary-container": "#fe838f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-2xl": "3rem", "space-lg": "1.5rem", "gutter-sm": "0.75rem", "margin-sm": "1rem", "gutter": "1.25rem", "gutter-lg": "2rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-lg": "3rem", "space-2xs": "0.125rem" }, "fontFamily": { "label-md": [ "Hanken Grotesk" ], "display": [ "Domine" ], "display-mobile": [ "Domine" ], "headline-lg": [ "Domine" ], "label-sm": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "headline-lg-mobile": [ "Domine" ], "body-md": [ "Hanken Grotesk" ], "headline-md": [ "Domine" ], "caption": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "headline-sm": [ "Domine" ], "lead": [ "Hanken Grotesk" ], "eyebrow": [ "Hanken Grotesk" ] }, "fontSize": { "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "500" } ], "display": [ "48px", { "lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-mobile": [ "34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "25px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "lead": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.05em", "fontWeight": "400" } ], "eyebrow": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[248px] bg-[#F5F1E8] border-r border-[#DDD6C7] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="p-space-lg border-b border-[#DDD6C7]"><div class="flex items-center gap-space-sm mb-space-2xs"><div class="w-6 h-6 rounded bg-[#7B1E2E] flex items-center justify-center shrink-0"><div class="w-1.5 h-1.5 rounded-full bg-[#F2B33D]"></div></div><span class="text-[20px] leading-[24px] text-on-surface tracking-tight font-extrabold" style="font-family: 'Bricolage Grotesque', sans-serif;">Campus Hub</span></div><div class="font-mono text-[10px] uppercase text-on-surface-variant font-semibold tracking-widest pl-[32px]">SIT NAGPUR</div></div><nav class="flex flex-col py-space-sm" data-active-classes="bg-[#FFFDF9] text-[#7B1E2E] font-semibold border-l-[3px] border-[#7B1E2E]"><div class="px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Registry</div><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="dashboard" href="#"><span>Dashboard</span></a><div class="mt-space-sm px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Academic Hubs</div><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="lost-and-found" href="#"><span>01 Lost &amp; Found</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="sports-hub" href="#"><span>02 Sports Hub</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="booking-board" href="#"><span>03 Booking Board</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="market-hub" href="#"><span>04 Market Hub</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="emergency-hub" href="#"><span>05 Emergency Hub</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="feedback-hub" href="#"><span>06 Feedback Hub</span></a></nav></div><div class="p-space-md border-t border-[#DDD6C7] bg-[#EDE7DA]/50"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-[#7B1E2E] text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">AD</div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Aarav Deshmukh</span><span class="font-caption text-caption text-on-surface-variant truncate">CSE · 3rd yr</span></div></div><a class="text-on-surface-variant hover:text-[#7B1E2E] transition-colors p-space-2xs" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-[#FFFDF9] border-b border-[#DDD6C7] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">school</span><span class="text-on-surface font-semibold">Campus Registry</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">SIT Nagpur Directory</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="h-9 pl-9 pr-12 w-64 md:w-80 bg-[#F5F1E8] border border-[#DDD6C7] rounded text-on-surface font-body-sm text-body-sm placeholder:text-[#8C867A] focus:outline-none focus:border-on-surface" placeholder="Search registry, equipment, notices..." type="text"/><span class="absolute right-2 font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-mono border border-[#DDD6C7]">⌘K</span></div><a class="h-9 px-space-md rounded-full bg-[#D7261E] hover:bg-[#ba1a1a] text-on-primary flex items-center gap-space-xs font-label-sm text-label-sm font-semibold transition-colors shrink-0" data-path="emergency-hub" href="#"><span class="material-symbols-outlined text-[16px]">crisis_alert</span><span>Emergency</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-[#F5F1E8] min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[1280px] w-full mx-auto px-space-md md:px-space-xl py-space-lg flex flex-col gap-space-lg">
+<!-- BREADCRUMBS & NAVIGATION -->
+<nav class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b border-[#DDD6C7]">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-on-surface transition-colors flex items-center gap-1 font-semibold text-[#B4532A]" href="#">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+<span>Market Hub</span>
+</a>
+<span class="text-[#DDD6C7] select-none">/</span>
+<a class="hover:text-on-surface transition-colors" href="#">Electronics &amp; Calculators</a>
+<span class="text-[#DDD6C7] select-none">/</span>
+<span class="text-on-surface font-semibold truncate max-w-[200px] md:max-w-none">Casio fx-991EX ClassWiz</span>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-sm text-label-sm font-semibold text-on-surface hover:text-[#B4532A] transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Back to Market</span>
+</a>
+</nav>
+<!-- 12-COLUMN DETAIL GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-start">
+<!-- LEFT COLUMN: MEDIA & DETAILED SPECIFICATIONS (7 COLS) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Large Main Product Showcase Card -->
+<div class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col relative overflow-hidden">
+<!-- Badges overlay -->
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-[4px] bg-[#F7E6DC] text-[#B4532A] font-eyebrow text-[11px] tracking-wider uppercase font-bold border border-[#F2CBB8]">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+              LIKE NEW
+            </span>
+</div>
+<div class="absolute top-4 right-4 z-10">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[4px] bg-[#FFFDF9]/95 text-on-surface font-mono text-[11px] uppercase tracking-wider font-semibold border border-[#DDD6C7] shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-[#7B1E2E]">verified_user</span>
+<span>SIT Verified Student</span>
+</span>
+</div>
+<!-- Product Image with 4:3 Aspect Ratio -->
+<div class="w-full aspect-[4/3] rounded-[8px] overflow-hidden bg-[#EDE7DA] relative">
+<img alt="Casio fx-991EX ClassWiz Calculator" class="w-full h-full object-cover transition-opacity duration-300" data-alt="Sharp studio flat-lay photo of an authentic Casio fx-991EX ClassWiz scientific calculator lying on a wooden study desk alongside handwritten engineering mathematics formulas, graph paper, and a fountain pen. Crisp natural lighting, highly detailed tactile plastic keys, pristine reflective LCD screen." id="main-product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNKK8NVPmMTkLkmKlgOk0dMJBq6nJlf3Kp19yDXlTbIw3ZyX9vwPEa2SJVlF4VoYbHFcVbSdqdQFkc8Z21KYzadcw4gy3SGUZ6Ebgih4TjZDVTpmU7ghLybH51GmyrSloERV4UXiarpiRsxW-n6KF6GlZs1F2xHz6utu0BqvDnZbaYIHag5iqa3FpK_5ESXBYAq7RtvY_I7zhcLRXf3vT2qpVBa-XUH8-pF_2BWVl46CQEybFGoH7uOg"/>
+</div>
+<!-- Interactive Thumbnails Row -->
+<div class="flex items-center gap-space-sm mt-space-md pt-space-sm border-t border-[#DDD6C7]">
+<button class="thumbnail-btn w-[100px] h-[80px] rounded-[6px] overflow-hidden bg-[#EDE7DA] border-2 border-[#B4532A] relative focus:outline-none transition-all" data-img-index="0" title="Front view with LCD on" type="button">
+<img alt="Front view" class="w-full h-full object-cover" data-alt="Front straight-on macro angle of a Casio fx-991EX ClassWiz showing natural LCD screen powered on with matrix calculation matrix and high contrast clean keys on campus paper note desk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZl60cGJZrow5YHsrzeuTGJQ7X3D3aK960PFbjQcPkBGk7VWacwFI75qDbltq7bDVmbVvk-YB7HK9fHtJJx8vJj4FtA_bZtq9h9YP0yfm7JCC8RmlmYQqboiPl8lCy9OCq8Dv3tFWaqymWGyMD9ENVl3O6lAmBjGr3afTBydjuoAJI_sI-adJIYD2F_txuLZ-h4tCH3bOfckhmyp7ChCU548Qt-Ft_vtHpZnaRfFRUcuuzoSO-dwTgdw"/>
+<span class="absolute bottom-1 right-1 bg-primary/80 text-on-primary font-mono text-[9px] px-1 rounded">1/3</span>
+</button>
+<button class="thumbnail-btn w-[100px] h-[80px] rounded-[6px] overflow-hidden bg-[#EDE7DA] border border-[#DDD6C7] hover:border-[#B4532A] relative focus:outline-none transition-all opacity-80 hover:opacity-100" data-img-index="1" title="Protective slide case &amp; solar panel" type="button">
+<img alt="Slide case &amp; solar panel" class="w-full h-full object-cover" data-alt="Side profile view of Casio ClassWiz calculator alongside its black textured protective slide-on hard case cover showing solar cell strip reflecting gentle library ceiling light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqPY5WMIZV-xCG1MlGNV6K5AGisM7N27EocHiVQjCiFj4okVwpwr_5W_DMqmWt-pQS_wfWCv5wndFGNKZO2i4srqb6_WxGQvtdZofE3zPwjSOdhjvrWFHzN890mVEOW-TwakUTDAIrz5MdKCWDqdcfnh0MGF1dqIa-7_nCGkSc1D50i9B-Lz0LMhtrgWL6QUPTxuDcrEHxdP73RjJciy2dCZ-E45mOZp7Ax_zyXeRYpoPfNigazNtnww"/>
+<span class="absolute bottom-1 right-1 bg-primary/80 text-on-primary font-mono text-[9px] px-1 rounded">2/3</span>
+</button>
+<button class="thumbnail-btn w-[100px] h-[80px] rounded-[6px] overflow-hidden bg-[#EDE7DA] border border-[#DDD6C7] hover:border-[#B4532A] relative focus:outline-none transition-all opacity-80 hover:opacity-100" data-img-index="2" title="Back serial number &amp; SIT sticker" type="button">
+<img alt="Back serial number" class="w-full h-full object-cover" data-alt="Reverse matte black panel of Casio scientific calculator displaying engraved serial number barcode and a tiny SIT Nagpur collegiate student registry hologram sticker." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1tPX1PNIXRlDyEZKtMpAfxU9dgP4FMOAO_uCy-N8GuzrS9RBT8XZv7EFmIBkMKbz-Jcejh7rS2GaJTGb7Db2Su4cemqlkhB0h-lUV51xXfzeUETU79HQlKBDx_H8RePdDUmOcXe50PFsAEjddM5BP9gRakVKW7Ee0NbyaEea-6VmOeHgNQ6Q0m9HEHp7YxXl2yrUon1v4PhBftsjl-WDAtalqCz9y9peGkMloEmxnfjcfwnZ4m1Y7zg"/>
+<span class="absolute bottom-1 right-1 bg-primary/80 text-on-primary font-mono text-[9px] px-1 rounded">3/3</span>
+</button>
+<div class="hidden sm:flex flex-col ml-auto pl-space-sm text-right font-caption text-caption text-on-surface-variant">
+<span class="font-mono text-[11px] font-semibold text-on-surface">3 High-Res Photos</span>
+<span>Taken in Central Library</span>
+</div>
+</div>
+</div>
+<!-- Detailed Item Specs Box -->
+<div class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-[#DDD6C7] pb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface" style="font-family: 'Bricolage Grotesque', sans-serif;">
+              Technical Specifications
+            </h2>
+<span class="font-mono text-[11px] uppercase tracking-wider text-on-surface-variant bg-[#EDE7DA] px-2 py-0.5 rounded">
+              REGISTRY #EQ-991EX
+            </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-space-lg gap-y-space-sm text-body-sm font-body-sm">
+<div class="flex flex-col py-1 border-b border-[#EDE7DA]">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Manufacturer</span>
+<span class="font-semibold text-on-surface">Casio Computer Co., Ltd.</span>
+</div>
+<div class="flex flex-col py-1 border-b border-[#EDE7DA]">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Hardware Model</span>
+<span class="font-semibold font-mono text-on-surface">fx-991EX ClassWiz (Natural-V.P.A.M.)</span>
+</div>
+<div class="flex flex-col py-1 border-b border-[#EDE7DA]">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Purchase History</span>
+<span class="font-semibold text-on-surface">January 2025 · Used 1 Semester</span>
+</div>
+<div class="flex flex-col py-1 border-b border-[#EDE7DA]">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Power Cell Architecture</span>
+<span class="font-semibold text-on-surface">Two-Way Power (Solar + LR44 cell)</span>
+</div>
+<div class="flex flex-col py-1 sm:col-span-2">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Included In Pack</span>
+<span class="font-semibold text-on-surface">Original quick guide manual, snap-on protective hard case, Amazon India invoice copy (print)</span>
+</div>
+</div>
+<div class="p-space-sm bg-[#F5F1E8] rounded-[6px] border border-[#DDD6C7] flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-[#B4532A] shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold">SIT Exam Cell Approved:</strong> Permitted for End-Sem examinations across First Year, Mech, Civil, and Electrical streams.
+            </span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: ITEM IDENTITY, PRICING, SELLER & ACTIONS (5 COLS) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Main Card Container -->
+<div class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-6 lg:p-[28px] flex flex-col gap-space-md">
+<!-- Category and Condition Pills -->
+<div class="flex items-center gap-2 flex-wrap">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-[4px] bg-[#F7E6DC] text-[#B4532A] font-eyebrow text-eyebrow uppercase font-bold tracking-wider border border-[#F2CBB8]">
+              LIKE NEW
+            </span>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-[4px] bg-[#EDE7DA] text-[#57534A] font-eyebrow text-eyebrow uppercase font-semibold tracking-wider border border-[#DDD6C7]">
+              Electronics &amp; Tools
+            </span>
+<span class="ml-auto font-mono text-[11px] text-on-surface-variant">
+              ID #CAS-402
+            </span>
+</div>
+<!-- Product Title -->
+<h1 class="font-headline-lg text-[28px] leading-[34px] font-bold text-on-surface tracking-tight" style="font-family: 'Bricolage Grotesque', sans-serif;">
+            Casio fx-991EX ClassWiz Scientific Calculator
+          </h1>
+<!-- Price & Discount Display -->
+<div class="flex items-baseline gap-space-sm pb-space-xs border-b border-[#DDD6C7]">
+<div class="font-mono text-[40px] leading-[44px] font-medium text-on-surface tracking-tight">
+              ₹700
+            </div>
+<div class="flex items-center gap-1.5 font-mono text-[14px] text-on-surface-variant">
+<span class="line-through text-[#8C867A]">₹1,495</span>
+<span class="text-[#B4532A] font-semibold bg-[#F7E6DC] px-1.5 py-0.5 rounded text-[12px]">53% OFF</span>
+</div>
+</div>
+<!-- Post Stamp Metadata -->
+<div class="font-mono text-[11px] uppercase tracking-wider text-[#8C867A] flex flex-wrap items-center gap-x-2 gap-y-1">
+<span>POSTED 26 OCT 2026</span>
+<span>·</span>
+<span>2 DAYS AGO</span>
+<span>·</span>
+<span class="text-on-surface font-semibold">PRN #21070123045</span>
+</div>
+<!-- Description paragraph -->
+<p class="font-body-md text-body-md text-[#57534A] leading-relaxed">
+            Barely used for 2nd semester Engineering Maths and Applied Mechanics. Screen is completely scratch-free with no dead pixels. Has all 552 functions including matrix operations, equation solver, and QR code spreadsheet generator. Selling because my branch doesn't need advanced matrix calculations anymore.
+          </p>
+<!-- Handover & Logistics Block -->
+<div class="bg-[#F5F1E8] border border-[#DDD6C7] rounded-[8px] p-space-sm flex flex-col gap-2">
+<div class="flex items-start gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-[#B4532A] shrink-0 mt-0.5">location_on</span>
+<div>
+<span class="font-semibold text-on-surface">Pickup Spot:</span>
+<span class="text-[#57534A]">Library 2nd Floor or Boys Hostel 2 Gate</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-[#B4532A] shrink-0 mt-0.5">schedule</span>
+<div>
+<span class="font-semibold text-on-surface">Handover Time:</span>
+<span class="text-[#57534A]">Available after 16:30 on weekdays</span>
+</div>
+</div>
+</div>
+<div class="w-full h-[1px] bg-[#DDD6C7]"></div>
+<!-- Seller Identification Card -->
+<div class="flex items-center justify-between gap-space-sm p-space-sm bg-[#EDE7DA]/50 rounded-[8px] border border-[#DDD6C7]">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-[44px] h-[44px] rounded-full bg-primary text-on-primary flex items-center justify-center font-mono font-bold text-[14px] shrink-0 shadow-sm">
+                AD
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">
+                  Aarav Deshmukh
+                </span>
+<span class="font-caption text-caption text-[#57534A] font-mono truncate">
+                  CSE · 3rd yr · PRN 21070123045
+                </span>
+<div class="flex items-center gap-1 mt-0.5 text-[#B4532A] font-caption text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[13px]">stars</span>
+<span>5 items sold · 100% positive</span>
+</div>
+</div>
+</div>
+<a class="px-2.5 py-1 text-[11px] font-mono uppercase font-semibold text-on-surface hover:text-[#B4532A] bg-[#FFFDF9] border border-[#DDD6C7] rounded hover:border-[#B4532A] transition-colors shrink-0" href="#">
+              Profile
+            </a>
+</div>
+<!-- Primary Buyer Actions -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<a class="w-full h-11 px-space-md rounded-[6px] bg-[#1A1A17] hover:bg-[#57534A] text-[#F5F1E8] font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-colors" href="https://wa.me/919823456710?text=Hi%20Aarav,%20I'm%20interested%20in%20your%20Casio%20fx-991EX%20listed%20on%20Campus%20Hub" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-[#25D366]">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+<a class="w-full h-11 px-space-md rounded-[6px] bg-[#FFFDF9] hover:bg-[#EDE7DA] border border-[#DDD6C7] text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-colors" href="tel:+919823456710">
+<span class="material-symbols-outlined text-[18px] text-[#57534A]">call</span>
+<span>Call seller (+91 98234 56710)</span>
+</a>
+</div>
+<!-- Owner Controls Panel Toggle / View -->
+<div class="mt-space-xs p-space-sm bg-[#F5F1E8] border border-[#DDD6C7] rounded-[8px] flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow uppercase font-bold text-[#8C867A] tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+                Listing Management (You are the owner)
+              </span>
+<span class="w-2 h-2 rounded-full bg-[#B4532A]"></span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-1">
+<button class="col-span-2 h-9 px-space-sm rounded-[4px] bg-[#B4532A] hover:bg-[#96421E] text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" id="btn-mark-sold" type="button">
+<span class="material-symbols-outlined text-[16px]">check_box</span>
+<span>Mark as sold</span>
+</button>
+<button class="h-9 px-space-sm rounded-[4px] bg-[#FFFDF9] hover:bg-[#EDE7DA] border border-[#DDD6C7] text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit listing</span>
+</button>
+<button class="h-9 px-space-sm rounded-[4px] bg-[#FFFDF9] hover:bg-[#ffdad6] border border-[#ffdad6] text-[#ba1a1a] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" id="btn-delete-listing" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Delete listing</span>
+</button>
+</div>
+</div>
+<!-- Safety Notice Box -->
+<div class="bg-[#EDE7DA] rounded-[8px] p-[14px] text-[13px] leading-[18px] text-[#57534A] border border-[#DDD6C7] flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-[#7B1E2E] shrink-0 mt-0.5">shield</span>
+<div>
+<strong class="font-semibold text-on-surface block mb-0.5">Campus Safety Notice:</strong>
+              Meet somewhere public on campus, like the Canteen or Library Plaza. Check the item thoroughly before making payment. Handover with cash or UPI on spot.
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- RELATED PRODUCTS SECTION (12 COLS FULL WIDTH) -->
+<section class="mt-space-lg pt-space-lg border-t border-[#DDD6C7] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 bg-[#B4532A] rounded-full"></span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight" style="font-family: 'Bricolage Grotesque', sans-serif;">
+            More in Electronics &amp; Tools
+          </h2>
+</div>
+<a class="font-label-sm text-label-sm font-semibold text-[#B4532A] hover:underline flex items-center gap-1" href="#">
+<span>Explore Category</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<!-- 4 Related Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Related Item 1 -->
+<a class="group bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#B4532A] rounded-[10px] p-space-md flex flex-col justify-between transition-all" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] relative">
+<img alt="Casio fx-82MS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Casio fx-82MS black portable student calculator resting flat on lined engineering notebook sheet with mechanical pencil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH5v3RNdvNSnSdsE7Goy26jyF9hqfN1PBNiflsayH-Ao8waciv4nBcOLsrS1mhSIlbU2OXxxUstJi0s_cstHwqWPirByVEuFprvRD6MpUshIZ7xsk0imHNzWLdlYo0WNMpwpi5BENBWPZPvLEwO7yjlMHw0Eay9mUBOzQBVBJum-SvqjHefXcGw11b7thNC4ocQ1WCjCQiKwBdbAFY3AlajZi_Pd4N94yiNL3I-MDfcmjJlDxI4vgTXg"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded-[3px] bg-[#EDE7DA] text-[#57534A] font-mono text-[10px] uppercase font-bold border border-[#DDD6C7]">
+                Used
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[18px] font-bold text-on-surface">₹300</span>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-[#B4532A] transition-colors line-clamp-1 mt-0.5">
+                Casio fx-82MS Scientific
+              </h3>
+<p class="font-caption text-caption text-[#8C867A] font-mono mt-1">
+                Mech · 2nd Year · Hostels 1
+              </p>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-[#DDD6C7] flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>Posted yesterday</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform text-[#B4532A]">chevron_right</span>
+</div>
+</a>
+<!-- Related Item 2 -->
+<a class="group bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#B4532A] rounded-[10px] p-space-md flex flex-col justify-between transition-all" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] relative">
+<img alt="Omega Mini Drafter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Omega engineering mini drafter clamped neatly to a wooden drawing drafting board with scale attachments and drawing compass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSfPjsW3FOh9SnGT0p5ti4JHa13w2-zaCLljqcru0kXHfjfIcEFLS3Xcng4Bawqer5RI2RDuEN_ZICrlrSCbzIJXWnu_ep3Ume6Vkr-a06upZlGjiSTXl_y6Q-g-Ly121Hwpq4LB0dIawwdd33n4yY2dema-0n1_5lG2tRIYt_6KGtyrpSoUHJQIQucdMIyaQvAXZHoNC5yOoRymg0IFCKw1i05G5FperMs0vxaCzwmDzuqJCb_QKPKA"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded-[3px] bg-[#F7E6DC] text-[#B4532A] font-mono text-[10px] uppercase font-bold border border-[#F2CBB8]">
+                Like New
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[18px] font-bold text-on-surface">₹350</span>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-[#B4532A] transition-colors line-clamp-1 mt-0.5">
+                Omega Mini Drafter with Bag
+              </h3>
+<p class="font-caption text-caption text-[#8C867A] font-mono mt-1">
+                E&amp;TC · 2nd Year · B-Block
+              </p>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-[#DDD6C7] flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>Posted 3d ago</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform text-[#B4532A]">chevron_right</span>
+</div>
+</a>
+<!-- Related Item 3 -->
+<a class="group bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#B4532A] rounded-[10px] p-space-md flex flex-col justify-between transition-all" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] relative">
+<img alt="TI-84 Plus CE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Texas Instruments TI-84 Plus CE graphing calculator with color high resolution screen displaying a polar coordinate curve on college library table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVj_9ool6kY4WdHb15i2SSN7dMoNV7Ny2naVyTBK3CU3yU6tMxYWxWZr6qVMlR0RtRyxfj48Og9votUdS7EKb-ytowIUEGt1z9E2b7cHUNoj-S5jlANnPnMCZLiH6xde_66-qdY9kQLA40d31MUcabNQ1PyzqiT9U5VAzIqDkqQAENKqNmDQJWunzojao_zpcbN_CrC650Dt8Jt7F2nVW7wpuvBmgNni14QUYcKOrPOCPke7yjokq7mg"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded-[3px] bg-[#EDE7DA] text-[#57534A] font-mono text-[10px] uppercase font-bold border border-[#DDD6C7]">
+                Used
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[18px] font-bold text-on-surface">₹3,200</span>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-[#B4532A] transition-colors line-clamp-1 mt-0.5">
+                TI-84 Plus CE Graphing Calc
+              </h3>
+<p class="font-caption text-caption text-[#8C867A] font-mono mt-1">
+                CSE · 4th Year · Library
+              </p>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-[#DDD6C7] flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>Posted 5d ago</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform text-[#B4532A]">chevron_right</span>
+</div>
+</a>
+<!-- Related Item 4 -->
+<a class="group bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#B4532A] rounded-[10px] p-space-md flex flex-col justify-between transition-all" href="#">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] relative">
+<img alt="Digital Multimeter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Yellow compact handheld digital multimeter with black and red test lead probes neatly coiled beside breadboard and electrical resistors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrHD76VWT5MANz4a2Jxzl8Arp5sCEb2-l_hKT5f7YmkYtS-iWNuCi7y-yT4bd7_tX5ZVpAqY7ylmk-2dkut9ZcdfYGuDcXFeRdlnK0o1ra8XI3iYLX52VTQuVvfoQ92ZeGs_RGMbL_3_S8diUowmCx8frSTZaGlVxz3IJEnLpMQ5OKNabKlP4EVS8k-rI78uFpLinLFW06-PZ8hQn5EiKK08tqgYlPHHzPKFAiuQwrYLwekcl8QzX6NA"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded-[3px] bg-[#F7E6DC] text-[#B4532A] font-mono text-[10px] uppercase font-bold border border-[#F2CBB8]">
+                Like New
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[18px] font-bold text-on-surface">₹280</span>
+<h3 class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-[#B4532A] transition-colors line-clamp-1 mt-0.5">
+                Digital Multimeter + Probes
+              </h3>
+<p class="font-caption text-caption text-[#8C867A] font-mono mt-1">
+                ECE · 3rd Year · Lab 4
+              </p>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm border-t border-[#DDD6C7] flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>Posted 6d ago</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform text-[#B4532A]">chevron_right</span>
+</div>
+</a>
+</div>
+</section>
+</div>
+</div>
+<script>
+  (function initProductGallery() {
+    const mainImg = document.getElementById('main-product-img');
+    const thumbButtons = document.querySelectorAll('.thumbnail-btn');
+
+    thumbButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        thumbButtons.forEach(b => {
+          b.classList.remove('border-2', 'border-[#B4532A]', 'opacity-100');
+          b.classList.add('border', 'border-[#DDD6C7]', 'opacity-80');
+        });
+        btn.classList.remove('border-[#DDD6C7]', 'opacity-80');
+        btn.classList.add('border-2', 'border-[#B4532A]', 'opacity-100');
+
+        const childImg = btn.querySelector('img');
+        if (childImg && mainImg) {
+          mainImg.style.opacity = '0.4';
+          setTimeout(() => {
+            mainImg.src = childImg.src;
+            if (childImg.getAttribute('data-alt')) {
+              mainImg.setAttribute('data-alt', childImg.getAttribute('data-alt'));
+            }
+            mainImg.style.opacity = '1';
+          }, 150);
+        }
+      });
+    });
+
+    const soldBtn = document.getElementById('btn-mark-sold');
+    if (soldBtn) {
+      soldBtn.addEventListener('click', () => {
+        if (soldBtn.dataset.sold === 'true') {
+          soldBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_box</span><span>Mark as sold</span>';
+          soldBtn.classList.remove('bg-[#57534A]');
+          soldBtn.classList.add('bg-[#B4532A]');
+          soldBtn.dataset.sold = 'false';
+        } else {
+          soldBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span><span>Listed as Sold</span>';
+          soldBtn.classList.remove('bg-[#B4532A]');
+          soldBtn.classList.add('bg-[#57534A]');
+          soldBtn.dataset.sold = 'true';
+        }
+      });
+    }
+
+    const deleteBtn = document.getElementById('btn-delete-listing');
+    if (deleteBtn) {
+      deleteBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to remove this Casio fx-991EX listing from Campus Registry?')) {
+          alert('Listing removed from campus marketplace.');
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>

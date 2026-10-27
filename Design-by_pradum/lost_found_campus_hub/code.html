@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Domine:wght@600;700&amp;family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#40000e", "on-tertiary-fixed": "#281900", "on-tertiary-container": "#ae7a00", "surface-container": "#f1eee5", "on-error-container": "#93000a", "inverse-surface": "#31302b", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#5f4100", "surface-container-highest": "#e6e2d9", "primary-fixed-dim": "#c9c6c1", "on-tertiary": "#ffffff", "surface": "#fdf9f0", "surface-variant": "#e6e2d9", "on-secondary": "#ffffff", "tertiary-container": "#281900", "tertiary-fixed": "#ffdeac", "tertiary-fixed-dim": "#fbbb45", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#822433", "surface-container-low": "#f7f3ea", "inverse-primary": "#c9c6c1", "secondary-fixed": "#ffdadb", "surface-dim": "#dddad1", "surface-tint": "#5f5e5a", "background": "#fdf9f0", "on-primary-fixed-variant": "#474743", "outline-variant": "#c8c7be", "on-error": "#ffffff", "surface-bright": "#fdf9f0", "secondary": "#a13b49", "on-primary-container": "#85847f", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb2b7", "on-background": "#1c1c16", "surface-container-high": "#ece8df", "on-surface-variant": "#474741", "on-surface": "#1c1c16", "primary-container": "#1c1c19", "on-secondary-container": "#761a2a", "primary-fixed": "#e5e2dd", "on-primary-fixed": "#1c1c19", "inverse-on-surface": "#f4f0e7", "outline": "#787770", "tertiary": "#000000", "primary": "#000000", "secondary-container": "#fe838f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-2xl": "3rem", "space-lg": "1.5rem", "gutter-sm": "0.75rem", "margin-sm": "1rem", "gutter": "1.25rem", "gutter-lg": "2rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-lg": "3rem", "space-2xs": "0.125rem" }, "fontFamily": { "label-md": [ "Hanken Grotesk" ], "display": [ "Domine" ], "display-mobile": [ "Domine" ], "headline-lg": [ "Domine" ], "label-sm": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "headline-lg-mobile": [ "Domine" ], "body-md": [ "Hanken Grotesk" ], "headline-md": [ "Domine" ], "caption": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "headline-sm": [ "Domine" ], "lead": [ "Hanken Grotesk" ], "eyebrow": [ "Hanken Grotesk" ] }, "fontSize": { "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "500" } ], "display": [ "48px", { "lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-mobile": [ "34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "25px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "lead": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.05em", "fontWeight": "400" } ], "eyebrow": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[248px] bg-[#F5F1E8] border-r border-[#DDD6C7] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="p-space-lg border-b border-[#DDD6C7]"><div class="flex items-center gap-space-sm mb-space-2xs"><div class="w-6 h-6 rounded bg-[#7B1E2E] flex items-center justify-center shrink-0"><div class="w-1.5 h-1.5 rounded-full bg-[#F2B33D]"></div></div><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Campus Hub</span></div><div class="font-eyebrow text-eyebrow uppercase text-on-surface-variant font-semibold tracking-widest pl-[32px]">SIT NAGPUR</div></div><nav class="flex flex-col py-space-sm" data-active-classes="bg-[#FFFDF9] text-[#7B1E2E] font-semibold border-l-[3px] border-[#7B1E2E]"><div class="px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Navigation</div><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="dashboard" href="#"><span>Dashboard</span></a><div class="mt-space-sm px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Academic Hubs</div><a class="flex items-center gap-space-sm px-space-md py-space-sm bg-[#FFFDF9] text-[#7B1E2E] font-semibold border-l-[3px] border-[#7B1E2E] font-label-md text-label-md" data-path="lost-and-found" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#7B1E2E] shrink-0"></span><span class="font-caption text-caption opacity-80">01</span><span>Lost &amp; Found</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="sports-hub" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#2E6B4E] shrink-0"></span><span class="font-caption text-caption opacity-60">02</span><span>Sports Hub</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="booking-board" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#2C5A8C] shrink-0"></span><span class="font-caption text-caption opacity-60">03</span><span>Booking Board</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="market-hub" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#B4532A] shrink-0"></span><span class="font-caption text-caption opacity-60">04</span><span>Market Hub</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="emergency-hub" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#D7261E] shrink-0"></span><span class="font-caption text-caption opacity-60">05</span><span>Emergency Hub</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="feedback-hub" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#1E6E6A] shrink-0"></span><span class="font-caption text-caption opacity-60">06</span><span>Feedback Hub</span></a></nav></div><div class="p-space-md border-t border-[#DDD6C7] bg-[#EDE7DA]/50"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-[#7B1E2E] text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">AD</div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Aarav Deshmukh</span><span class="font-caption text-caption text-on-surface-variant truncate">CSE · 3rd yr</span></div></div><a class="text-on-surface-variant hover:text-[#7B1E2E] transition-colors p-space-2xs" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-[#FFFDF9] border-b border-[#DDD6C7] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">school</span><span class="text-on-surface font-semibold">Campus Registry</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">SIT Nagpur Directory</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="h-9 pl-9 pr-12 w-64 md:w-80 bg-[#F5F1E8] border border-[#DDD6C7] rounded text-on-surface font-body-sm text-body-sm placeholder:text-[#8C867A] focus:outline-none focus:border-on-surface" placeholder="Search registry, equipment, notices..." type="text"/><span class="absolute right-2 font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-mono border border-[#DDD6C7]">⌘K</span></div><a class="h-9 px-space-md rounded-full bg-[#D7261E] hover:bg-[#ba1a1a] text-on-primary flex items-center gap-space-xs font-label-sm text-label-sm font-semibold transition-colors shrink-0" data-path="emergency-hub" href="#"><span class="material-symbols-outlined text-[16px]">crisis_alert</span><span>Emergency</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-[#F5F1E8] min-h-screen"><div class="flex flex-col w-full">
+<!-- Hub Header with 6px Amber Strip -->
+<section class="w-full bg-[#FFFDF9] border-b border-[#DDD6C7] relative">
+<div class="w-full h-[6px] bg-[#A0660E]"></div>
+<div class="px-space-md md:px-margin-lg py-space-xl flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-mono text-[12px] uppercase tracking-widest text-[#A0660E] font-semibold bg-[#FBF0D9] px-2 py-0.5 rounded-[4px] border border-[#A0660E]/20">HUB 01</span>
+<span class="text-outline-variant text-[14px]">/</span>
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-mono">CAMPUS REGISTRY ARCHIVE</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-2xs">Lost &amp; Found</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Lost something? Found something? Post it here for SIT Nagpur students &amp; staff.</p>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="hidden lg:flex flex-col text-right pr-space-md border-r border-[#DDD6C7]">
+<span class="font-caption text-caption text-on-surface-variant uppercase font-mono">Active Registry</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">23 Logged Items</span>
+</div>
+<button class="h-[44px] px-space-lg rounded-[8px] bg-[#1A1A17] hover:bg-[#57534A] text-[#F5F1E8] font-label-md text-label-md font-semibold flex items-center gap-space-xs transition-colors shrink-0 shadow-sm active:translate-y-px">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Report item</span>
+</button>
+</div>
+</div>
+<!-- Sub-bar Ledger Notice -->
+<div class="bg-[#EDE7DA] px-space-md md:px-margin-lg py-2 border-t border-[#DDD6C7] flex items-center justify-between font-mono text-[11px] text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#A0660E] animate-pulse"></span>CENTRAL DESK: Academic Block Ground Floor (Security Counter)</span>
+<span class="hidden md:inline text-outline-variant">|</span>
+<span class="hidden md:inline">COLLECTION TIMINGS: 09:30 AM – 05:30 PM IST</span>
+</div>
+<span class="font-semibold text-on-surface hidden sm:inline">REF: REG-2024-SEM2</span>
+</div>
+</section>
+<!-- Toolbar & Filtering Deck -->
+<section class="px-space-md md:px-margin-lg pt-space-xl pb-space-lg flex flex-col gap-space-md">
+<!-- Row 1: Segmented Control, Search Bar, Date Filter -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Segmented View Modes -->
+<div class="inline-flex p-1 bg-[#EDE7DA] rounded-[8px] border border-[#DDD6C7] self-start">
+<button class="h-[36px] px-space-md rounded-[6px] bg-[#FFFDF9] text-on-surface font-label-md text-label-md font-semibold border border-[#DDD6C7] shadow-sm flex items-center gap-space-xs">
+<span>Lost</span>
+<span class="font-mono text-[11px] bg-[#FBF0D9] text-[#A0660E] px-1.5 py-0.5 rounded-[4px] font-semibold">14</span>
+</button>
+<button class="h-[36px] px-space-md rounded-[6px] text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium flex items-center gap-space-xs transition-colors">
+<span>Found</span>
+<span class="font-mono text-[11px] bg-[#E6E2D9] text-on-surface-variant px-1.5 py-0.5 rounded-[4px]">9</span>
+</button>
+<button class="h-[36px] px-space-md rounded-[6px] text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors">
+          My posts
+        </button>
+</div>
+<!-- Search & Date Filter -->
+<div class="flex items-center gap-space-sm flex-1 lg:max-w-xl justify-end">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[20px] text-on-surface-variant pointer-events-none">search</span>
+<input class="w-full h-[44px] pl-10 pr-space-md bg-[#FFFDF9] border border-[#DDD6C7] rounded-[8px] font-body-md text-body-md text-on-surface placeholder:text-[#8C867A] focus:outline-none focus:border-[#1A1A17] transition-all" placeholder="Search items by name, PRN, brand, location…" type="text"/>
+</div>
+<div class="relative shrink-0">
+<select class="h-[44px] pl-3 pr-8 bg-[#FFFDF9] border border-[#DDD6C7] rounded-[8px] font-label-md text-label-md text-on-surface appearance-none focus:outline-none focus:border-[#1A1A17] cursor-pointer">
+<option>Past 7 days</option>
+<option>Past 24 hours</option>
+<option>Past 30 days</option>
+<option>All dates</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Row 2: Category Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar">
+<span class="font-caption text-caption uppercase text-on-surface-variant font-mono mr-space-xs shrink-0">Category:</span>
+<button class="h-[28px] px-3 rounded-full bg-[#FBF0D9] border border-[#A0660E] text-[#A0660E] font-caption text-caption uppercase tracking-wider font-semibold whitespace-nowrap shrink-0">
+        All (23)
+      </button>
+<button class="h-[28px] px-3 rounded-full bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface-variant hover:border-on-surface font-caption text-caption uppercase tracking-wider font-medium whitespace-nowrap shrink-0 transition-colors">
+        Electronics (8)
+      </button>
+<button class="h-[28px] px-3 rounded-full bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface-variant hover:border-on-surface font-caption text-caption uppercase tracking-wider font-medium whitespace-nowrap shrink-0 transition-colors">
+        ID Card (4)
+      </button>
+<button class="h-[28px] px-3 rounded-full bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface-variant hover:border-on-surface font-caption text-caption uppercase tracking-wider font-medium whitespace-nowrap shrink-0 transition-colors">
+        Books &amp; Notes (3)
+      </button>
+<button class="h-[28px] px-3 rounded-full bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface-variant hover:border-on-surface font-caption text-caption uppercase tracking-wider font-medium whitespace-nowrap shrink-0 transition-colors">
+        Bottle &amp; Flasks (2)
+      </button>
+<button class="h-[28px] px-3 rounded-full bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface-variant hover:border-on-surface font-caption text-caption uppercase tracking-wider font-medium whitespace-nowrap shrink-0 transition-colors">
+        Clothing (2)
+      </button>
+<button class="h-[28px] px-3 rounded-full bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface-variant hover:border-on-surface font-caption text-caption uppercase tracking-wider font-medium whitespace-nowrap shrink-0 transition-colors">
+        Keys &amp; Lanyards (2)
+      </button>
+<button class="h-[28px] px-3 rounded-full bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface-variant hover:border-on-surface font-caption text-caption uppercase tracking-wider font-medium whitespace-nowrap shrink-0 transition-colors">
+        Wallet &amp; Pouches (1)
+      </button>
+<button class="h-[28px] px-3 rounded-full bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface-variant hover:border-on-surface font-caption text-caption uppercase tracking-wider font-medium whitespace-nowrap shrink-0 transition-colors">
+        Other (1)
+      </button>
+</div>
+</section>
+<!-- 4-Column Luggage Tag Grid -->
+<main class="px-space-md md:px-margin-lg pb-space-3xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-space-lg">
+<!-- CARD 1: LOST - Casio Calculator -->
+<article class="relative bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col justify-between transition-all hover:border-[#1A1A17] group">
+<!-- Punched Hole Inset -->
+<div class="absolute top-3 right-3 w-4 h-4 rounded-full bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center pointer-events-none" title="Tag Eyelet">
+<div class="w-1.5 h-1.5 rounded-full bg-[#DDD6C7]/60"></div>
+</div>
+<div>
+<!-- Tag Header Pill -->
+<div class="flex items-center justify-between mb-space-sm pr-6">
+<span class="h-6 px-2 rounded-[3px] bg-[#A0660E] text-[#FFFDF9] font-caption text-[11px] font-bold tracking-wider uppercase inline-flex items-center">
+              LOST
+            </span>
+<span class="font-mono text-[11px] text-on-surface-variant">#LT-4091</span>
+</div>
+<!-- 4:3 Image/Visual Container -->
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] border border-[#DDD6C7]/60 relative mb-space-md flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up photograph of a matte black and dark blue Casio fx-991EX Classwiz scientific calculator lying on a wooden study desk in an Indian university library, natural warm daylight, textured collegiate atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtdsgCBsN-VI_G9F1ZwUyYohWD3emQIzj66me6kNtuqV12kdV5H3YzLkfTSihq5ej4fEBvyYugzdCygl8mKnuleNc7AGjSJwf2YQR526zBoT9p7gV_7l9VVH225t3b9OcvcmyAmav8UIgncBifXBzEJYTb8OtxAe2-Gp5OqGug3PF9MXEHM7FuKMYwDlmsLon9J7jkHCV_7q2_RB6qrYmgNVBwIlgejV7n5UVMirp6GpeHW275XBuwWg"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-[#1A1A17]/80 text-[#FFFDF9] font-mono text-[10px] uppercase backdrop-blur-none">Casio fx-991EX</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-[16px] leading-[22px] font-bold text-on-surface line-clamp-1 mb-space-xs">
+            Blue Casio fx-991EX
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+            Lost during Math-III tutorial. Has white permanent marker initial "AD" on the back battery cover.
+          </p>
+<!-- Metadata with Icons -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-[#DDD6C7] font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#A0660E] shrink-0">location_on</span>
+<span class="truncate">Library, 2nd floor (Table 14)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-mono text-[11px]">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">calendar_today</span>
+<span>27 OCT 2024</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">11:45 AM</span>
+</div>
+</div>
+</div>
+<!-- Poster & Action Button -->
+<div class="pt-space-xs border-t border-[#DDD6C7]/60 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-6 h-6 rounded-full bg-[#7B1E2E] text-[#FFFDF9] flex items-center justify-center font-mono text-[10px] font-bold shrink-0">
+              RP
+            </div>
+<span class="font-caption text-caption text-on-surface truncate font-semibold">Rohan P. <span class="font-normal text-on-surface-variant">· CSE 3rd yr</span></span>
+</div>
+<button class="w-full h-[38px] rounded-[6px] bg-transparent hover:bg-[#EDE7DA] border border-[#1A1A17] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>I found this</span>
+</button>
+</div>
+</article>
+<!-- CARD 2: FOUND with OPEN CONTACT POPOVER -->
+<article class="relative bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col justify-between z-30">
+<!-- Punched Hole Inset -->
+<div class="absolute top-3 right-3 w-4 h-4 rounded-full bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center pointer-events-none">
+<div class="w-1.5 h-1.5 rounded-full bg-[#DDD6C7]/60"></div>
+</div>
+<div>
+<!-- Tag Header Pill -->
+<div class="flex items-center justify-between mb-space-sm pr-6">
+<span class="h-6 px-2 rounded-[3px] bg-transparent border border-[#1A1A17] text-[#1A1A17] font-caption text-[11px] font-bold tracking-wider uppercase inline-flex items-center">
+              FOUND
+            </span>
+<span class="font-mono text-[11px] text-on-surface-variant">#FD-1033</span>
+</div>
+<!-- 4:3 Image/Visual Container -->
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] border border-[#DDD6C7]/60 relative mb-space-md flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Symbiosis Institute of Technology university plastic student identity card with burgundy lanyard resting neatly on an oak bench indoors at SIT Nagpur campus, crisp typography and archival lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlqcFvMxrxIY6qAOis_-bBdQp7m0mVK3ZB6o4PBJlGKNVVczvsxfLzPQb-jZZG87I4ILnOTKno0Q32ukaNY3f9US_P3a1e326IWdmEb3Y9clo4EI0GfbM9GojGY1X1-UWYWXrkozbf7uryn59zYHO1sElWXObxvIZH5Qwi-EyWbAlRhvQ7h4kBeAMI2c3vPozJKcT22DU4i8Dn9OI2SpGZOo745QX09Npi8DJFMBHfVTsoIt8PtbeQRQ"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-[#1A1A17]/80 text-[#FFFDF9] font-mono text-[10px] uppercase">ID CARD</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-[16px] leading-[22px] font-bold text-on-surface line-clamp-1 mb-space-xs">
+            College ID Card · PRN 2107...
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+            Found on bench near counter 2 during lunch interval. Name reads "Tanmay S." with AIML dept badge.
+          </p>
+<!-- Metadata with Icons -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-[#DDD6C7] font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#A0660E] shrink-0">location_on</span>
+<span class="truncate">Canteen Annex (Table 4)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-mono text-[11px]">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">calendar_today</span>
+<span>27 OCT 2024</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">01:15 PM</span>
+</div>
+</div>
+</div>
+<!-- Poster & Action Button (Triggers Popover) -->
+<div class="pt-space-xs border-t border-[#DDD6C7]/60 flex flex-col gap-space-sm relative">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-6 h-6 rounded-full bg-[#1E6E6A] text-[#FFFDF9] flex items-center justify-center font-mono text-[10px] font-bold shrink-0">
+              SK
+            </div>
+<span class="font-caption text-caption text-on-surface truncate font-semibold">Sneha K. <span class="font-normal text-on-surface-variant">· AIML 2nd yr</span></span>
+</div>
+<button class="w-full h-[38px] rounded-[6px] bg-[#1A1A17] text-[#FFFDF9] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>This is mine</span>
+</button>
+<!-- ACTIVE CONTACT POPOVER PINNED TO CARD -->
+<div class="absolute -bottom-2 sm:bottom-12 left-0 right-0 z-50 bg-[#FFFDF9] border border-[#DDD6C7] rounded-[10px] p-space-md flex flex-col gap-space-sm shadow-[0_20px_40px_rgba(26,26,23,0.18)]">
+<div class="flex items-start justify-between border-b border-[#DDD6C7] pb-space-xs">
+<div>
+<span class="font-eyebrow text-eyebrow uppercase text-[#A0660E] font-mono tracking-widest">Finder Contact</span>
+<h3 class="font-headline-sm text-[15px] font-bold text-on-surface leading-tight">Sneha Kulkarni</h3>
+</div>
+<span class="w-5 h-5 rounded-full bg-[#EDE7DA] text-on-surface-variant flex items-center justify-center cursor-pointer hover:bg-[#DDD6C7]">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</span>
+</div>
+<div class="flex items-center gap-1.5 bg-[#FBF0D9] text-[#A0660E] px-2 py-1 rounded-[4px] font-mono text-[11px] font-medium border border-[#A0660E]/20">
+<span class="material-symbols-outlined text-[14px]">school</span>
+<span>Verified Student · AIML 2nd yr</span>
+</div>
+<div class="flex flex-col gap-1 py-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase font-mono">Mobile Number</span>
+<span class="font-mono text-[14px] text-on-surface font-semibold tracking-wide bg-[#EDE7DA]/50 px-2 py-1 rounded border border-[#DDD6C7]">
+                +91 98234 56710
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-[36px] rounded-[6px] bg-[#1A1A17] hover:bg-[#57534A] text-[#FFFDF9] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" href="tel:+919823456710">
+<span class="material-symbols-outlined text-[15px]">call</span>
+<span>Call</span>
+</a>
+<a class="h-[36px] rounded-[6px] bg-[#FFFDF9] hover:bg-[#EDE7DA] border border-[#DDD6C7] text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/919823456710" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 3: SPECIAL STATE - RETURNED (Claimed item) -->
+<article class="relative bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col justify-between">
+<!-- Punched Hole Inset -->
+<div class="absolute top-3 right-3 w-4 h-4 rounded-full bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center pointer-events-none">
+<div class="w-1.5 h-1.5 rounded-full bg-[#DDD6C7]/60"></div>
+</div>
+<div>
+<!-- Tag Header Pill -->
+<div class="flex items-center justify-between mb-space-sm pr-6">
+<span class="h-6 px-2 rounded-[3px] bg-[#A0660E]/50 text-[#FFFDF9] font-caption text-[11px] font-bold tracking-wider uppercase inline-flex items-center">
+              LOST
+            </span>
+<span class="font-mono text-[11px] text-on-surface-variant line-through">#LT-3988</span>
+</div>
+<!-- 4:3 Image Area (Grayscale & 60% Opacity) + RETURNED Stamp -->
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] border border-[#DDD6C7]/60 relative mb-space-md flex items-center justify-center">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="Matte black wireless earbuds charging case sitting on a clean granite bench in a college courtyard, soft afternoon shadows, crisp editorial campus style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANkd7WXYdBqnkCI-7veYSfJdE7VGWf7JVC3OoI-PYTOGprs5JtZvGNGwLQ4ojVi_of4do78-zlG-L91k_6hqwk2lp6IWFyewZF7Tj5eMBf6ozhaMmP-xYuQVTk5E8lm_tNbe0BZIgKeTY3jiGIZxE4QfGn6WjY2zEOnCcdORo2odynNtWm7oO5NiBmy8GRx7B2mlFgGxgwrBZ2jkHOOxaInvPN_2tRUCUTsylXajM-xnAWfqGR_9UjPg"/>
+<!-- Prominent Rotated Green Stamp -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="transform -rotate-12 px-3 py-1 border-[2.5px] border-[#2E6B4E] rounded-[4px] bg-[#FFFDF9]/95 text-[#2E6B4E] font-mono text-[14px] font-bold tracking-[0.2em] shadow-sm uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>RETURNED</span>
+</div>
+</div>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-[16px] leading-[22px] font-bold text-on-surface/70 line-clamp-1 mb-space-xs">
+            boAt Airdopes Case (Black)
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 line-clamp-2 mb-space-sm">
+            Dropped near Badminton Court 2. Handed over at central reception security office.
+          </p>
+<!-- Metadata with Icons -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-[#DDD6C7] font-body-sm text-body-sm text-on-surface-variant/80 mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">location_on</span>
+<span class="truncate">Sports Complex Court 1</span>
+</div>
+<div class="flex items-center justify-between font-mono text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">calendar_today</span>
+<span>25 OCT 2024</span>
+</div>
+<span class="text-[#2E6B4E] font-semibold">Resolved</span>
+</div>
+</div>
+</div>
+<!-- Poster & Claimed Status Banner (No Action Button) -->
+<div class="pt-space-xs border-t border-[#DDD6C7]/60 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0 opacity-80">
+<div class="w-6 h-6 rounded-full bg-[#2C5A8C] text-[#FFFDF9] flex items-center justify-center font-mono text-[10px] font-bold shrink-0">
+              IR
+            </div>
+<span class="font-caption text-caption text-on-surface truncate font-semibold">Ishita R. <span class="font-normal text-on-surface-variant">· E&amp;TC 4th yr</span></span>
+</div>
+<div class="w-full h-[38px] rounded-[6px] bg-[#EDE7DA] border border-[#DDD6C7] text-on-surface-variant font-mono text-[11px] flex items-center justify-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[15px] text-[#2E6B4E]">check_circle</span>
+<span>Claimed &amp; Returned on 25 Oct</span>
+</div>
+</div>
+</article>
+<!-- CARD 4: FOUND - Milton Steel Flask -->
+<article class="relative bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col justify-between transition-all hover:border-[#1A1A17] group">
+<!-- Punched Hole Inset -->
+<div class="absolute top-3 right-3 w-4 h-4 rounded-full bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center pointer-events-none">
+<div class="w-1.5 h-1.5 rounded-full bg-[#DDD6C7]/60"></div>
+</div>
+<div>
+<!-- Tag Header Pill -->
+<div class="flex items-center justify-between mb-space-sm pr-6">
+<span class="h-6 px-2 rounded-[3px] bg-transparent border border-[#1A1A17] text-[#1A1A17] font-caption text-[11px] font-bold tracking-wider uppercase inline-flex items-center">
+              FOUND
+            </span>
+<span class="font-mono text-[11px] text-on-surface-variant">#FD-1031</span>
+</div>
+<!-- 4:3 Image/Visual Container -->
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] border border-[#DDD6C7]/60 relative mb-space-md flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Brushed stainless steel insulated water bottle with stickers on a wooden classroom desk in morning lecture hall, collegiate warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv65gR8WjsM7bfp39Nc-fnQHHmxTXoIqVImyKydNUGFZYmGatdoBb4r-rSNIHFEBFpzY4HutNJE6jaoZDAK-5Agih1Ewb3FCB10H9v2PT8xm6bVEDvZRUXUAs4leVLfjqXVwq5TXFSjmO2RHWGfBLFfV8c7B87l1iseL-l0_inuJADqAOXvnVgpzOKEHe4EmB_B96DFFfdUjP1E6zIx1JAt1RXHqjSXjrGVFhtCSJZmcfpZ3-VvDNLAw"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-[#1A1A17]/80 text-[#FFFDF9] font-mono text-[10px] uppercase">FLASK 750ML</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-[16px] leading-[22px] font-bold text-on-surface line-clamp-1 mb-space-xs">
+            Milton Steel Flask 750ml
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+            Silver stainless flask with coding sticker on side. Left behind on desk row 3 after Data Structures class.
+          </p>
+<!-- Metadata with Icons -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-[#DDD6C7] font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#A0660E] shrink-0">location_on</span>
+<span class="truncate">Academic Block Room 302</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-mono text-[11px]">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">calendar_today</span>
+<span>26 OCT 2024</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">04:30 PM</span>
+</div>
+</div>
+</div>
+<!-- Poster & Action Button -->
+<div class="pt-space-xs border-t border-[#DDD6C7]/60 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-6 h-6 rounded-full bg-[#B4532A] text-[#FFFDF9] flex items-center justify-center font-mono text-[10px] font-bold shrink-0">
+              VJ
+            </div>
+<span class="font-caption text-caption text-on-surface truncate font-semibold">Varun J. <span class="font-normal text-on-surface-variant">· Mech 2nd yr</span></span>
+</div>
+<button class="w-full h-[38px] rounded-[6px] bg-transparent hover:bg-[#EDE7DA] border border-[#1A1A17] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span>This is mine</span>
+</button>
+</div>
+</article>
+<!-- CARD 5: LOST - Lanyard Keys -->
+<article class="relative bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col justify-between transition-all hover:border-[#1A1A17] group">
+<!-- Punched Hole Inset -->
+<div class="absolute top-3 right-3 w-4 h-4 rounded-full bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center pointer-events-none">
+<div class="w-1.5 h-1.5 rounded-full bg-[#DDD6C7]/60"></div>
+</div>
+<div>
+<!-- Tag Header Pill -->
+<div class="flex items-center justify-between mb-space-sm pr-6">
+<span class="h-6 px-2 rounded-[3px] bg-[#A0660E] text-[#FFFDF9] font-caption text-[11px] font-bold tracking-wider uppercase inline-flex items-center">
+              LOST
+            </span>
+<span class="font-mono text-[11px] text-on-surface-variant">#LT-4089</span>
+</div>
+<!-- Sunken Icon Area -->
+<div class="w-full aspect-[4/3] rounded-[6px] bg-[#EDE7DA] border border-[#DDD6C7]/60 relative mb-space-md flex flex-col items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[42px] text-[#A0660E]">key</span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-on-surface">2 Brass Keys + SIT Lanyard</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-[16px] leading-[22px] font-bold text-on-surface line-clamp-1 mb-space-xs">
+            Two Keys on SIT Lanyard
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+            Hostel room key &amp; bicycle lock key attached to red Symbiosis lanyard. Dropped between mess &amp; gate.
+          </p>
+<!-- Metadata with Icons -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-[#DDD6C7] font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#A0660E] shrink-0">location_on</span>
+<span class="truncate">Hostel Path near Gate 2</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-mono text-[11px]">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">calendar_today</span>
+<span>26 OCT 2024</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">09:10 PM</span>
+</div>
+</div>
+</div>
+<!-- Poster & Action Button -->
+<div class="pt-space-xs border-t border-[#DDD6C7]/60 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-6 h-6 rounded-full bg-[#7B1E2E] text-[#FFFDF9] flex items-center justify-center font-mono text-[10px] font-bold shrink-0">
+              NM
+            </div>
+<span class="font-caption text-caption text-on-surface truncate font-semibold">Nikhil M. <span class="font-normal text-on-surface-variant">· Civil 1st yr</span></span>
+</div>
+<button class="w-full h-[38px] rounded-[6px] bg-transparent hover:bg-[#EDE7DA] border border-[#1A1A17] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>I found this</span>
+</button>
+</div>
+</article>
+<!-- CARD 6: FOUND - Engineering Textbook -->
+<article class="relative bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col justify-between transition-all hover:border-[#1A1A17] group">
+<!-- Punched Hole Inset -->
+<div class="absolute top-3 right-3 w-4 h-4 rounded-full bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center pointer-events-none">
+<div class="w-1.5 h-1.5 rounded-full bg-[#DDD6C7]/60"></div>
+</div>
+<div>
+<!-- Tag Header Pill -->
+<div class="flex items-center justify-between mb-space-sm pr-6">
+<span class="h-6 px-2 rounded-[3px] bg-transparent border border-[#1A1A17] text-[#1A1A17] font-caption text-[11px] font-bold tracking-wider uppercase inline-flex items-center">
+              FOUND
+            </span>
+<span class="font-mono text-[11px] text-on-surface-variant">#FD-1029</span>
+</div>
+<!-- Sunken Icon Area -->
+<div class="w-full aspect-[4/3] rounded-[6px] bg-[#EDE7DA] border border-[#DDD6C7]/60 relative mb-space-md flex flex-col items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[42px] text-[#2C5A8C]">menu_book</span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-on-surface">Hardcover Textbook</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-[16px] leading-[22px] font-bold text-on-surface line-clamp-1 mb-space-xs">
+            Engineering Mechanics (Bhavikatti)
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+            Found on reading carrel 12. Contains yellow sticky notes and pencil markings on kinematics chapters.
+          </p>
+<!-- Metadata with Icons -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-[#DDD6C7] font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#A0660E] shrink-0">location_on</span>
+<span class="truncate">Reading Hall (1st floor)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-mono text-[11px]">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">calendar_today</span>
+<span>25 OCT 2024</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">07:20 PM</span>
+</div>
+</div>
+</div>
+<!-- Poster & Action Button -->
+<div class="pt-space-xs border-t border-[#DDD6C7]/60 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-6 h-6 rounded-full bg-[#1E6E6A] text-[#FFFDF9] flex items-center justify-center font-mono text-[10px] font-bold shrink-0">
+              PR
+            </div>
+<span class="font-caption text-caption text-on-surface truncate font-semibold">Pooja R. <span class="font-normal text-on-surface-variant">· IT 2nd yr</span></span>
+</div>
+<button class="w-full h-[38px] rounded-[6px] bg-transparent hover:bg-[#EDE7DA] border border-[#1A1A17] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span>This is mine</span>
+</button>
+</div>
+</article>
+<!-- CARD 7: LOST - Backpack -->
+<article class="relative bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col justify-between transition-all hover:border-[#1A1A17] group">
+<!-- Punched Hole Inset -->
+<div class="absolute top-3 right-3 w-4 h-4 rounded-full bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center pointer-events-none">
+<div class="w-1.5 h-1.5 rounded-full bg-[#DDD6C7]/60"></div>
+</div>
+<div>
+<!-- Tag Header Pill -->
+<div class="flex items-center justify-between mb-space-sm pr-6">
+<span class="h-6 px-2 rounded-[3px] bg-[#A0660E] text-[#FFFDF9] font-caption text-[11px] font-bold tracking-wider uppercase inline-flex items-center">
+              LOST
+            </span>
+<span class="font-mono text-[11px] text-on-surface-variant">#LT-4082</span>
+</div>
+<!-- 4:3 Image/Visual Container -->
+<div class="w-full aspect-[4/3] rounded-[6px] overflow-hidden bg-[#EDE7DA] border border-[#DDD6C7]/60 relative mb-space-md flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Durable black technical backpack with subtle neon zipper pulls resting beside modern indoor college campus glass staircase, clean editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9vC6WqEe_aK49RjfQ_BE2D0vNL7OdMOMFBDwhy65SiqwDo4e5F5LuOgqxBf4G41ja7EM3FQYwOkGUngPtcKEALEJCtoMNaFVt_wreUzJSqvJ6ww-WC5HWZzO5u4tKhh-PPqIDk3AxyAcWErlktcVXGoCcwTq1zmOMj1qwrlikyhj5e3PIvYW0yZHFngbyNNgd0mJANrmlEzwxb8MYy2Pk4uLJGxal5_KY1eLiNwwI_OQVgLrRni9MVQ"/>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-[#1A1A17]/80 text-[#FFFDF9] font-mono text-[10px] uppercase">WILDCRAFT 32L</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-[16px] leading-[22px] font-bold text-on-surface line-clamp-1 mb-space-xs">
+            Wildcraft Black Backpack
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+            Contains physics lab notebook and spiral register. Misplaced during Friday sports hour.
+          </p>
+<!-- Metadata with Icons -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-[#DDD6C7] font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#A0660E] shrink-0">location_on</span>
+<span class="truncate">Sports Complex Bleachers</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-mono text-[11px]">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">calendar_today</span>
+<span>25 OCT 2024</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">05:45 PM</span>
+</div>
+</div>
+</div>
+<!-- Poster & Action Button -->
+<div class="pt-space-xs border-t border-[#DDD6C7]/60 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-6 h-6 rounded-full bg-[#7B1E2E] text-[#FFFDF9] flex items-center justify-center font-mono text-[10px] font-bold shrink-0">
+              AK
+            </div>
+<span class="font-caption text-caption text-on-surface truncate font-semibold">Ananya K. <span class="font-normal text-on-surface-variant">· CSE 2nd yr</span></span>
+</div>
+<button class="w-full h-[38px] rounded-[6px] bg-transparent hover:bg-[#EDE7DA] border border-[#1A1A17] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>I found this</span>
+</button>
+</div>
+</article>
+<!-- CARD 8: FOUND - Leather Wallet -->
+<article class="relative bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-space-md flex flex-col justify-between transition-all hover:border-[#1A1A17] group">
+<!-- Punched Hole Inset -->
+<div class="absolute top-3 right-3 w-4 h-4 rounded-full bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center pointer-events-none">
+<div class="w-1.5 h-1.5 rounded-full bg-[#DDD6C7]/60"></div>
+</div>
+<div>
+<!-- Tag Header Pill -->
+<div class="flex items-center justify-between mb-space-sm pr-6">
+<span class="h-6 px-2 rounded-[3px] bg-transparent border border-[#1A1A17] text-[#1A1A17] font-caption text-[11px] font-bold tracking-wider uppercase inline-flex items-center">
+              FOUND
+            </span>
+<span class="font-mono text-[11px] text-on-surface-variant">#FD-1024</span>
+</div>
+<!-- Sunken Icon Area -->
+<div class="w-full aspect-[4/3] rounded-[6px] bg-[#EDE7DA] border border-[#DDD6C7]/60 relative mb-space-md flex flex-col items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[42px] text-[#A0660E]">account_balance_wallet</span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-on-surface">Brown Bifold Leather</span>
+</div>
+<!-- Title -->
+<h2 class="font-headline-sm text-[16px] leading-[22px] font-bold text-on-surface line-clamp-1 mb-space-xs">
+            Brown Leather Wallet
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+            Found on auditorium chair row F. Handed directly to Prof. Sharma immediately after induction seminar.
+          </p>
+<!-- Metadata with Icons -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t border-[#DDD6C7] font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#A0660E] shrink-0">location_on</span>
+<span class="truncate">Main Auditorium (Row F)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-mono text-[11px]">
+<span class="material-symbols-outlined text-[16px] text-outline-variant shrink-0">calendar_today</span>
+<span>24 OCT 2024</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant">12:30 PM</span>
+</div>
+</div>
+</div>
+<!-- Poster & Action Button -->
+<div class="pt-space-xs border-t border-[#DDD6C7]/60 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-6 h-6 rounded-full bg-[#2E6B4E] text-[#FFFDF9] flex items-center justify-center font-mono text-[10px] font-bold shrink-0">
+              SM
+            </div>
+<span class="font-caption text-caption text-on-surface truncate font-semibold">Siddharth M. <span class="font-normal text-on-surface-variant">· AIML 3rd yr</span></span>
+</div>
+<button class="w-full h-[38px] rounded-[6px] bg-transparent hover:bg-[#EDE7DA] border border-[#1A1A17] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span>This is mine</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Bottom Pagination Ledger -->
+<div class="mt-space-2xl pt-space-lg border-t border-[#DDD6C7] flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-mono text-[12px]">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#A0660E]"></span>
+<span>Showing 1 – 8 of 23 catalogued items</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="h-8 px-3 rounded-[4px] bg-[#EDE7DA] border border-[#DDD6C7] text-on-surface font-semibold flex items-center gap-1 cursor-pointer">
+<span class="material-symbols-outlined text-[14px]">chevron_left</span>
+<span>Prev</span>
+</button>
+<span class="h-8 w-8 rounded-[4px] bg-[#1A1A17] text-[#FFFDF9] flex items-center justify-center font-bold">1</span>
+<button class="h-8 w-8 rounded-[4px] bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface hover:bg-[#EDE7DA] flex items-center justify-center">2</button>
+<button class="h-8 w-8 rounded-[4px] bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface hover:bg-[#EDE7DA] flex items-center justify-center">3</button>
+<button class="h-8 px-3 rounded-[4px] bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface hover:bg-[#EDE7DA] flex items-center gap-1 cursor-pointer">
+<span>Next</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+</div></main></div></body></html>

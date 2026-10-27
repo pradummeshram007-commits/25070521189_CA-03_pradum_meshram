@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@100..900&family=Hanken+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary":"#ffffff","on-surface":"#1c1c16","on-secondary-fixed":"#40000e","tertiary":"#000000","on-background":"#1c1c16","on-primary-container":"#85847f","on-secondary-fixed-variant":"#822433","inverse-surface":"#31302b","primary":"#000000","surface-bright":"#fdf9f0","error-container":"#ffdad6","on-secondary":"#ffffff","primary-container":"#1c1c19","surface-variant":"#e6e2d9","secondary-fixed":"#ffdadb","tertiary-container":"#281900","on-tertiary-fixed-variant":"#5f4100","error":"#ba1a1a","surface-dim":"#dddad1","inverse-primary":"#c9c6c1","background":"#fdf9f0","tertiary-fixed":"#ffdeac","surface-container":"#f1eee5","secondary-container":"#fe838f","primary-fixed":"#e5e2dd","outline-variant":"#c8c7be","surface-container-highest":"#e6e2d9","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#474743","on-error-container":"#93000a","on-tertiary-container":"#ae7a00","secondary-fixed-dim":"#ffb2b7","surface-container-low":"#f7f3ea","secondary":"#a13b49","on-surface-variant":"#474741","on-error":"#ffffff","on-secondary-container":"#761a2a","primary-fixed-dim":"#c9c6c1","surface":"#fdf9f0","on-tertiary-fixed":"#281900","tertiary-fixed-dim":"#fbbb45","surface-tint":"#5f5e5a","outline":"#787770","inverse-on-surface":"#f4f0e7","on-primary":"#ffffff","surface-container-high":"#ece8df","on-primary-fixed":"#1c1c19"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-lg":"2rem","space-xl":"2rem","margin-sm":"1rem","space-3xl":"4.5rem","space-xs":"0.25rem","margin":"1.5rem","space-sm":"0.5rem","margin-lg":"3rem","space-md":"1rem","gutter-sm":"0.75rem","gutter":"1.25rem","space-lg":"1.5rem","space-2xs":"0.125rem","space-2xl":"3rem"},fontFamily:{"headline-lg-mobile":["Domine"],"headline-lg":["Domine"],"caption":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"display":["Domine"],"headline-sm":["Domine"],"body-md":["Hanken Grotesk"],"headline-md":["Domine"],"body-lg":["Hanken Grotesk"],"label-sm":["Hanken Grotesk"],"display-mobile":["Domine"],"lead":["Hanken Grotesk"],"eyebrow":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"]},fontSize:{"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"700"}],"caption":["11px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"500"}],"display":["48px",{lineHeight:"54px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"25px",letterSpacing:"0em",fontWeight:"400"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"display-mobile":["34px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"700"}],"lead":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"eyebrow":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-tertiary-fixed selection:text-on-tertiary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 border-b border-outline-variant"><div class="h-[72px] max-w-7xl mx-auto px-margin md:px-margin-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="relative flex items-center justify-center"><div class="w-9 h-9 rounded-xl bg-secondary flex items-center justify-center overflow-hidden"><div class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></div></div></div><div class="flex flex-col"><span class="font-eyebrow text-eyebrow tracking-wider uppercase text-on-surface-variant font-semibold">SIT NAGPUR</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Campus Hub</span></div></div><div class="flex items-center gap-space-md"><a class="font-label-md text-label-md text-on-surface hover:text-on-surface-variant transition-colors px-space-sm py-space-xs" data-path="login" href="#">Log in</a><a class="font-label-md text-label-md bg-primary text-on-primary rounded-xl px-space-md py-space-sm hover:bg-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" data-path="sign-up" href="#">Sign up</a><div class="pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcsVNT5Iby3hW_j29HRnvofoOYn-UayWLdHPhKkFZuHqmGAgZgNaqMxYG7_cF1MZejJ_NAwLH-thLND4KG8Cn9c4N65Svbo6RAWO10t1TiQjCgmXNEFI9xGG5rXhN5NFaxL2PcYcxald9ElqT6_Cb10xQNUZRoAKxBLT1sOKkJaXkTySwD-nsZilzIpMpLlaoFz0z_Csrp8eFh0_BpBcTrMNlStf99EXWR7RWvpxDjV9nRkcdvubCfsw"/></div></div></div></header><main class="w-full pt-[72px] min-h-[calc(100vh-140px)] bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. HERO SECTION -->
+<section class="w-full border-b border-outline-variant py-20 px-margin md:px-margin-lg">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Left Column: 7 Cols -->
+<div class="lg:col-span-7 flex flex-col items-start pr-0 lg:pr-6">
+<span class="font-eyebrow text-eyebrow uppercase tracking-widest text-on-surface-variant font-medium">
+          FOR SIT NAGPUR STUDENTS
+        </span>
+<h1 class="font-headline-lg text-[44px] md:text-[62px] leading-[1.08] tracking-tight text-on-surface mt-4 font-bold">
+          Everything on campus, on <mark class="bg-tertiary-fixed-dim px-2.5 py-0.5 rounded text-on-surface inline-block">one board.</mark>
+</h1>
+<p class="font-lead text-lead text-on-surface-variant leading-relaxed mt-6 max-w-[520px]">
+          Lost your ID card? Need one more player for badminton? Selling your old drafter? Campus Hub puts the six things students need most in one place.
+        </p>
+<div class="mt-8 flex flex-wrap gap-4 items-center">
+<a class="bg-primary text-surface px-6 py-3.5 rounded-lg font-label-md text-label-md font-semibold border border-primary hover:bg-surface-container-highest hover:text-on-surface transition-colors" data-path="sign-up" href="#">
+            Create your account
+          </a>
+<a class="bg-transparent text-on-surface px-6 py-3.5 rounded-lg font-label-md text-label-md font-medium border border-outline-variant hover:border-outline transition-colors" data-path="login" href="#">
+            I already have one
+          </a>
+</div>
+<div class="mt-8 font-caption text-caption text-outline tracking-widest uppercase flex items-center gap-2">
+<span>FREE</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>COLLEGE ACCOUNTS ONLY</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>BUILT BY STUDENTS</span>
+</div>
+</div>
+<!-- Right Column: 5 Cols Collaged Physical Cards -->
+<div class="lg:col-span-5 relative min-h-[480px] flex items-center justify-center pt-8 lg:pt-0">
+<div class="relative w-full max-w-[380px] h-[440px] flex items-center justify-center">
+<!-- Card A: Lost Item (Rotated -4deg) -->
+<div class="absolute top-2 left-0 -rotate-4 z-10 w-[300px] bg-surface-container-lowest border border-outline-variant rounded-xl p-4 transition-transform hover:rotate-0 hover:z-40">
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim mx-auto mb-2 border border-outline-variant"></div>
+<div class="flex items-center justify-between">
+<span class="bg-[#FBF0D9] text-[#A0660E] font-caption text-caption px-2 py-0.5 rounded font-semibold uppercase tracking-wider">
+                LOST
+              </span>
+<span class="font-caption text-caption text-outline">#LF-882</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-2 font-semibold text-base">
+              Blue Casio fx-991EX
+            </h4>
+<div class="font-caption text-caption text-on-surface-variant mt-1.5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">pin_drop</span>
+<span>Library, 2nd floor · 26 OCT</span>
+</div>
+</div>
+<!-- Card B: Sports Hub (Rotated +2deg) -->
+<div class="absolute top-28 right-0 rotate-2 z-20 w-[310px] bg-surface-container-lowest border border-outline-variant rounded-xl p-4 transition-transform hover:rotate-0 hover:z-40">
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim mx-auto mb-2 border border-outline-variant"></div>
+<div class="flex items-center justify-between">
+<span class="bg-[#E2EFE7] text-[#2E6B4E] font-caption text-caption px-2 py-0.5 rounded font-semibold uppercase tracking-wider">
+                SPORTS
+              </span>
+<span class="font-caption text-caption text-outline">Open Match</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-2 font-semibold text-base">
+              Need 1 player · Badminton
+            </h4>
+<div class="font-caption text-caption text-on-surface-variant mt-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Today 17:00–18:00 · Court 2</span>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2.5 border-t border-outline-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#2E6B4E]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#2E6B4E]"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#2E6B4E]"></span>
+<span class="w-2.5 h-2.5 rounded-full border border-dashed border-outline"></span>
+</div>
+<button class="bg-primary text-surface text-caption font-label-md px-3 py-1 rounded font-medium hover:bg-surface-variant hover:text-on-surface transition-colors">
+                Join
+              </button>
+</div>
+</div>
+<!-- Card C: Market (Rotated -1deg) -->
+<div class="absolute bottom-2 left-6 -rotate-1 z-30 w-[290px] bg-surface-container-lowest border border-outline-variant rounded-xl p-4 transition-transform hover:rotate-0 hover:z-40">
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim mx-auto mb-2 border border-outline-variant"></div>
+<div class="flex items-center justify-between">
+<span class="bg-[#F7E6DC] text-[#B4532A] font-caption text-caption px-2 py-0.5 rounded font-semibold uppercase tracking-wider">
+                MARKET
+              </span>
+<span class="font-caption text-caption text-[#B4532A] font-semibold">Available</span>
+</div>
+<div class="flex items-start justify-between mt-2">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-base">
+                  Mini drafter · Like new
+                </h4>
+<div class="font-caption text-caption text-outline mt-0.5">
+                  Boys Hostel 2 · Posted 2h ago
+                </div>
+</div>
+<span class="font-eyebrow text-headline-sm text-on-surface font-bold">
+                ₹350
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. HUB STRIP -->
+<section class="w-full bg-surface-variant/40 border-b border-outline-variant py-4 px-margin">
+<div class="max-w-[1200px] mx-auto flex flex-wrap items-center justify-center md:justify-between gap-y-3 gap-x-6">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-[1px] bg-[#A0660E]"></span>
+<span class="font-eyebrow text-eyebrow tracking-widest text-on-surface font-medium">LOST & FOUND</span>
+</div>
+<div class="hidden md:block w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-[1px] bg-[#2E6B4E]"></span>
+<span class="font-eyebrow text-eyebrow tracking-widest text-on-surface font-medium">SPORTS</span>
+</div>
+<div class="hidden md:block w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-[1px] bg-[#2C5A8C]"></span>
+<span class="font-eyebrow text-eyebrow tracking-widest text-on-surface font-medium">BOOKING BOARD</span>
+</div>
+<div class="hidden md:block w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-[1px] bg-[#B4532A]"></span>
+<span class="font-eyebrow text-eyebrow tracking-widest text-on-surface font-medium">MARKET</span>
+</div>
+<div class="hidden md:block w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-[1px] bg-[#D7261E]"></span>
+<span class="font-eyebrow text-eyebrow tracking-widest text-on-surface font-medium">EMERGENCY</span>
+</div>
+<div class="hidden md:block w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-[1px] bg-[#1E6E6A]"></span>
+<span class="font-eyebrow text-eyebrow tracking-widest text-on-surface font-medium">FEEDBACK</span>
+</div>
+</div>
+</section>
+<!-- 3. "WHAT'S INSIDE" EDITORIAL REGISTRY -->
+<section class="w-full py-24 px-margin md:px-margin-lg">
+<div class="max-w-[1200px] mx-auto">
+<div class="mb-14">
+<span class="font-eyebrow text-eyebrow text-on-surface-variant tracking-widest uppercase font-medium">
+          06 HUBS
+        </span>
+<h2 class="font-headline-lg text-[40px] leading-tight text-on-surface font-bold mt-2">
+          Six hubs. One login.
+        </h2>
+</div>
+<div class="flex flex-col border-t border-outline-variant">
+<!-- ROW 01: Lost & Found -->
+<div class="relative py-10 pl-6 pr-4 border-b border-outline-variant grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface hover:bg-surface-container-low/40 transition-colors">
+<div class="absolute left-0 top-0 bottom-0 w-[5px] bg-[#A0660E]"></div>
+<div class="lg:col-span-2 flex lg:flex-col items-baseline lg:items-start gap-3">
+<span class="font-eyebrow text-[32px] leading-none font-bold text-[#A0660E]">01</span>
+<span class="font-caption text-caption tracking-widest uppercase text-outline">DIRECTORY</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Lost & Found</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed max-w-xl">
+              Report something you lost or found on campus. Search by category and place. Mark it returned once it's back with its owner.
+            </p>
+<div class="mt-4 flex flex-col gap-1.5 font-caption text-caption text-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-[#A0660E] font-bold">—</span> Filter by 7 campus locations
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#A0660E] font-bold">—</span> Upload proof photos & timestamps
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#A0660E] font-bold">—</span> Instant notification to matching claims
+              </div>
+</div>
+</div>
+<!-- Mini UI Snippet -->
+<div class="lg:col-span-5 w-full">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4">
+<div class="flex items-center gap-2 mb-3 pb-2 border-b border-outline-variant">
+<span class="px-2.5 py-1 rounded-md text-caption font-label-md bg-primary text-surface font-semibold">All Campus</span>
+<span class="px-2.5 py-1 rounded-md text-caption font-label-md bg-surface-container border border-outline-variant text-on-surface-variant">Library</span>
+<span class="px-2.5 py-1 rounded-md text-caption font-label-md bg-surface-container border border-outline-variant text-on-surface-variant">Canteen</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-[#FBF0D9] flex items-center justify-center text-[#A0660E] font-semibold text-caption border border-[#A0660E]/20">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Found: Silver EarPods Case</div>
+<div class="font-caption text-caption text-on-surface-variant">Academic Block Room 302 · Verified desk</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ROW 02: Sports Hub -->
+<div class="relative py-10 pl-6 pr-4 border-b border-outline-variant grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface hover:bg-surface-container-low/40 transition-colors">
+<div class="absolute left-0 top-0 bottom-0 w-[5px] bg-[#2E6B4E]"></div>
+<div class="lg:col-span-2 flex lg:flex-col items-baseline lg:items-start gap-3">
+<span class="font-eyebrow text-[32px] leading-none font-bold text-[#2E6B4E]">02</span>
+<span class="font-caption text-caption tracking-widest uppercase text-outline">COURTS & TURF</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Sports Hub</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed max-w-xl">
+              Book table tennis, pool, badminton and the grounds by date and hour. Playing alone? Post a 'need players' poll and others can take the open spots.
+            </p>
+<div class="mt-4 flex flex-col gap-1.5 font-caption text-caption text-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-[#2E6B4E] font-bold">—</span> Real-time slot calendar
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#2E6B4E] font-bold">—</span> Create or join open matches
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#2E6B4E] font-bold">—</span> Racquet & equipment pass tracker
+              </div>
+</div>
+</div>
+<!-- Mini UI Snippet -->
+<div class="lg:col-span-5 w-full">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4">
+<div class="flex items-center justify-between mb-3 text-caption font-label-md font-semibold text-on-surface">
+<span>Badminton Court 1 & 2 Schedule</span>
+<span class="text-[#2E6B4E] font-mono">TODAY</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="bg-surface-container border border-outline-variant p-2 rounded">
+<div class="font-caption text-caption text-outline">16:00</div>
+<div class="font-label-md text-label-md font-semibold text-on-surface-variant">Booked</div>
+</div>
+<div class="bg-[#E2EFE7] border border-[#2E6B4E]/30 p-2 rounded">
+<div class="font-caption text-caption text-[#2E6B4E]">17:00</div>
+<div class="font-label-md text-label-md font-semibold text-[#2E6B4E]">Open</div>
+</div>
+<div class="bg-tertiary-fixed/40 border border-tertiary-fixed-dim/60 p-2 rounded">
+<div class="font-caption text-caption text-on-tertiary-fixed">18:00</div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Need 1</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ROW 03: Booking Board -->
+<div class="relative py-10 pl-6 pr-4 border-b border-outline-variant grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface hover:bg-surface-container-low/40 transition-colors">
+<div class="absolute left-0 top-0 bottom-0 w-[5px] bg-[#2C5A8C]"></div>
+<div class="lg:col-span-2 flex lg:flex-col items-baseline lg:items-start gap-3">
+<span class="font-eyebrow text-[32px] leading-none font-bold text-[#2C5A8C]">03</span>
+<span class="font-caption text-caption tracking-widest uppercase text-outline">TIMETABLE</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Booking Board</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed max-w-xl">
+              A live timetable of every booked slot, so you know what's free before you walk down.
+            </p>
+<div class="mt-4 flex flex-col gap-1.5 font-caption text-caption text-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-[#2C5A8C] font-bold">—</span> Music room, seminar halls & labs
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#2C5A8C] font-bold">—</span> Live availability indicator
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#2C5A8C] font-bold">—</span> 2 slots per day quota enforcement
+              </div>
+</div>
+</div>
+<!-- Mini UI Snippet -->
+<div class="lg:col-span-5 w-full">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 flex flex-col gap-2">
+<div class="flex items-center justify-between border-l-2 border-[#2C5A8C] pl-3 py-1 bg-surface-container-low">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Seminar Hall B</div>
+<div class="font-caption text-caption text-outline">IEEE Student Branch</div>
+</div>
+<span class="font-caption text-caption font-semibold px-2 py-0.5 bg-[#2C5A8C]/10 text-[#2C5A8C] rounded">14:00–16:00</span>
+</div>
+<div class="flex items-center justify-between border-l-2 border-[#2E6B4E] pl-3 py-1 bg-surface-container-low">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Music Studio</div>
+<div class="font-caption text-caption text-[#2E6B4E]">Available to Reserve</div>
+</div>
+<span class="font-caption text-caption font-semibold px-2 py-0.5 bg-[#2E6B4E]/10 text-[#2E6B4E] rounded">16:30–18:00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ROW 04: Market Hub -->
+<div class="relative py-10 pl-6 pr-4 border-b border-outline-variant grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface hover:bg-surface-container-low/40 transition-colors">
+<div class="absolute left-0 top-0 bottom-0 w-[5px] bg-[#B4532A]"></div>
+<div class="lg:col-span-2 flex lg:flex-col items-baseline lg:items-start gap-3">
+<span class="font-eyebrow text-[32px] leading-none font-bold text-[#B4532A]">04</span>
+<span class="font-caption text-caption tracking-widest uppercase text-outline">EXCHANGE</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Market Hub</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed max-w-xl">
+              Buy and sell second-hand books, cycles, calculators and hostel stuff with other students.
+            </p>
+<div class="mt-4 flex flex-col gap-1.5 font-caption text-caption text-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-[#B4532A] font-bold">—</span> Zero platform fees
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#B4532A] font-bold">—</span> Verified student sellers only
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#B4532A] font-bold">—</span> In-campus meetup handoffs
+              </div>
+</div>
+</div>
+<!-- Mini UI Snippet -->
+<div class="lg:col-span-5 w-full">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Engineering Mechanics (Bhavikatti)</div>
+<div class="font-caption text-caption text-on-surface-variant mt-0.5">Rohan Patil · CSE 2nd Year</div>
+<span class="inline-block mt-2 font-caption text-caption bg-[#F7E6DC] text-[#B4532A] px-2 py-0.5 rounded font-semibold">Campus Hand-off</span>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">₹220</div>
+<button class="mt-2 text-caption font-label-md font-medium text-on-surface bg-surface-container border border-outline-variant px-3 py-1 rounded hover:bg-surface-variant transition-colors">
+                  Inquire
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- ROW 05: Emergency Hub -->
+<div class="relative py-10 pl-6 pr-4 border-b border-outline-variant grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface hover:bg-surface-container-low/40 transition-colors">
+<div class="absolute left-0 top-0 bottom-0 w-[5px] bg-[#D7261E]"></div>
+<div class="lg:col-span-2 flex lg:flex-col items-baseline lg:items-start gap-3">
+<span class="font-eyebrow text-[32px] leading-none font-bold text-[#D7261E]">05</span>
+<span class="font-caption text-caption tracking-widest uppercase text-outline">PRIORITY</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Emergency Hub</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed max-w-xl">
+              Every important number, from campus security to ambulance, with one-tap calling.
+            </p>
+<div class="mt-4 flex flex-col gap-1.5 font-caption text-caption text-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-[#D7261E] font-bold">—</span> Direct lines to campus wardens
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#D7261E] font-bold">—</span> 24/7 Symbiosis Health Centre
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#D7261E] font-bold">—</span> Ambulance & security gate dispatch
+              </div>
+</div>
+</div>
+<!-- Mini UI Snippet -->
+<div class="lg:col-span-5 w-full">
+<div class="bg-error-container/40 border border-error/30 rounded-xl p-4 flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D7261E] text-[20px]">local_hospital</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Medical Emergency</span>
+</div>
+<span class="font-caption text-caption font-bold text-[#D7261E] bg-surface-container-lowest px-2 py-0.5 rounded border border-[#D7261E]/30">Ext 108</span>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-error/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#D7261E] text-[20px]">shield</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Campus Security Gate 1</span>
+</div>
+<span class="font-caption text-caption font-bold text-on-surface">+91 712 281xxxx</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ROW 06: Feedback Hub -->
+<div class="relative py-10 pl-6 pr-4 border-b border-outline-variant grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface hover:bg-surface-container-low/40 transition-colors">
+<div class="absolute left-0 top-0 bottom-0 w-[5px] bg-[#1E6E6A]"></div>
+<div class="lg:col-span-2 flex lg:flex-col items-baseline lg:items-start gap-3">
+<span class="font-eyebrow text-[32px] leading-none font-bold text-[#1E6E6A]">06</span>
+<span class="font-caption text-caption tracking-widest uppercase text-outline">COMMUNITY</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Feedback Hub</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed max-w-xl">
+              An open board for feedback on academics, hostel, canteen and more. Upvote what matters, and post anonymously if you want.
+            </p>
+<div class="mt-4 flex flex-col gap-1.5 font-caption text-caption text-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-[#1E6E6A] font-bold">—</span> Upvote community suggestions
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#1E6E6A] font-bold">—</span> Track admin resolution status
+              </div>
+<div class="flex items-center gap-2">
+<span class="text-[#1E6E6A] font-bold">—</span> True cryptographic anonymity option
+              </div>
+</div>
+</div>
+<!-- Mini UI Snippet -->
+<div class="lg:col-span-5 w-full">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 flex items-center gap-4">
+<div class="bg-surface-container border border-outline-variant px-3 py-2 rounded flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-[#1E6E6A]">expand_less</span>
+<span class="font-eyebrow text-label-md font-bold text-on-surface">84</span>
+</div>
+<div class="flex-1">
+<div class="font-label-md text-label-md font-semibold text-on-surface">
+                  Add more shaded benches near Academic Block plaza
+                </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-caption text-caption bg-[#1E6E6A]/10 text-[#1E6E6A] px-2 py-0.5 rounded font-semibold">Under Review</span>
+<span class="font-caption text-caption text-outline">Hostel & Infra</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. HOW IT WORKS -->
+<section class="w-full py-20 bg-surface-variant/35 border-y border-outline-variant px-margin md:px-margin-lg">
+<div class="max-w-[1200px] mx-auto">
+<div class="mb-14">
+<span class="font-eyebrow text-eyebrow text-on-surface-variant tracking-widest uppercase font-medium">
+          GETTING STARTED
+        </span>
+<h2 class="font-headline-lg text-[32px] leading-tight text-on-surface font-bold mt-1">
+          Up and running in two minutes
+        </h2>
+</div>
+<!-- 4 Horizontal Steps with dashed connector line -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Connecting rule behind circles -->
+<div class="hidden lg:block absolute top-5 left-12 right-12 h-0 border-t border-dashed border-outline-variant z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex flex-col items-start">
+<div class="w-10 h-10 rounded-full border border-primary bg-surface-container-lowest flex items-center justify-center font-eyebrow text-headline-sm font-bold text-primary mb-4">
+            1
+          </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sign up</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            Use your @sitnagpur.edu.in email and student PRN.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex flex-col items-start">
+<div class="w-10 h-10 rounded-full border border-primary bg-surface-container-lowest flex items-center justify-center font-eyebrow text-headline-sm font-bold text-primary mb-4">
+            2
+          </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Log in</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            Fast magic link or student password.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex flex-col items-start">
+<div class="w-10 h-10 rounded-full border border-primary bg-surface-container-lowest flex items-center justify-center font-eyebrow text-headline-sm font-bold text-primary mb-4">
+            3
+          </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Pick a hub</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            Jump directly to the service you need from the noticeboard.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="relative z-10 flex flex-col items-start">
+<div class="w-10 h-10 rounded-full border border-primary bg-surface-container-lowest flex items-center justify-center font-eyebrow text-headline-sm font-bold text-primary mb-4">
+            4
+          </div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Post, book or vote</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            Reserve slots, trade gear, find items, and share feedback.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. FAQ SECTION -->
+<section class="w-full py-24 px-margin md:px-margin-lg">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: 4 cols -->
+<div class="lg:col-span-4 flex flex-col items-start">
+<span class="font-eyebrow text-eyebrow text-on-surface-variant tracking-widest uppercase font-medium">
+          COMMON QUERIES
+        </span>
+<h2 class="font-headline-lg text-[40px] leading-tight text-on-surface font-bold mt-2">
+          Questions
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 leading-relaxed">
+          Everything you need to know about the platform guidelines and access.
+        </p>
+</div>
+<!-- Right Column: 8 cols Accordion List -->
+<div class="lg:col-span-8 flex flex-col gap-3">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-5">
+<div class="flex items-center justify-between font-label-md text-label-md font-semibold text-on-surface">
+<span>Who can use it?</span>
+<span class="material-symbols-outlined text-[18px] text-outline">horizontal_rule</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            Only SIT Nagpur students, faculty, and verified campus staff with active institutional credentials.
+          </p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-5">
+<div class="flex items-center justify-between font-label-md text-label-md font-semibold text-on-surface">
+<span>Is it free?</span>
+<span class="material-symbols-outlined text-[18px] text-outline">horizontal_rule</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            Yes, 100% free with no commercial advertisements or paid tiers.
+          </p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-5">
+<div class="flex items-center justify-between font-label-md text-label-md font-semibold text-on-surface">
+<span>How many slots can I book?</span>
+<span class="material-symbols-outlined text-[18px] text-outline">horizontal_rule</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            To ensure fair access across the student body, each student can hold a maximum of 2 slots per day.
+          </p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-5">
+<div class="flex items-center justify-between font-label-md text-label-md font-semibold text-on-surface">
+<span>Is anonymous feedback really anonymous?</span>
+<span class="material-symbols-outlined text-[18px] text-outline">horizontal_rule</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            Yes, your name, PRN, and profile are never stored or shown on anonymous feedback submissions.
+          </p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-5">
+<div class="flex items-center justify-between font-label-md text-label-md font-semibold text-on-surface">
+<span>Who manages emergency contacts?</span>
+<span class="material-symbols-outlined text-[18px] text-outline">horizontal_rule</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            The college administration and security office manage and verify all contact lines weekly.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CLOSING BAND -->
+<section class="w-full bg-primary text-surface py-24 px-margin md:px-margin-lg text-center">
+<div class="max-w-[700px] mx-auto flex flex-col items-center">
+<h2 class="font-headline-lg text-[48px] md:text-[56px] leading-tight font-bold text-surface tracking-tight">
+        Your campus, <span class="relative inline-block">
+          sorted.
+          <span class="absolute left-0 -bottom-1.5 w-full h-[3px] bg-tertiary-fixed-dim"></span>
+</span>
+</h2>
+<p class="font-lead text-lead text-outline-variant mt-4 mb-8">
+        Join your batchmates on Campus Hub today.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="bg-tertiary-fixed-dim text-on-surface px-8 py-3.5 rounded-lg font-label-md text-label-md font-semibold hover:bg-tertiary-fixed transition-colors" data-path="sign-up" href="#">
+          Sign up
+        </a>
+<a class="border border-surface text-surface px-8 py-3.5 rounded-lg font-label-md text-label-md font-medium hover:bg-surface/10 transition-colors" data-path="login" href="#">
+          Log in
+        </a>
+</div>
+</div>
+</section>
+<!-- 7. EDITORIAL FOOTER STRIP -->
+<footer class="w-full py-12 border-t border-outline-variant bg-surface px-margin md:px-margin-lg">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded bg-secondary flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></div>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Campus Hub</span>
+</div>
+<div class="font-eyebrow text-body-sm text-on-surface-variant font-medium">
+        Made by students of SIT Nagpur · 2025
+      </div>
+</div>
+</footer>
+</div></main><footer class="w-full border-t border-outline-variant bg-surface-container-low"><div class="max-w-7xl mx-auto px-margin md:px-margin-lg py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex items-center gap-space-sm"><div class="w-5 h-5 rounded-lg bg-secondary flex items-center justify-center"><div class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></div></div><span class="font-headline-sm text-headline-sm text-on-surface">Campus Hub</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Made by students of SIT Nagpur</p><div class="font-caption text-caption text-on-surface-variant">© 2025 SIT Nagpur. All rights reserved.</div></div></footer></body></html>

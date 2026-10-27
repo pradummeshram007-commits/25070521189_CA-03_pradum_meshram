@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Domine:wght@600;700&amp;family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#40000e", "on-tertiary-fixed": "#281900", "on-tertiary-container": "#ae7a00", "surface-container": "#f1eee5", "on-error-container": "#93000a", "inverse-surface": "#31302b", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#5f4100", "surface-container-highest": "#e6e2d9", "primary-fixed-dim": "#c9c6c1", "on-tertiary": "#ffffff", "surface": "#fdf9f0", "surface-variant": "#e6e2d9", "on-secondary": "#ffffff", "tertiary-container": "#281900", "tertiary-fixed": "#ffdeac", "tertiary-fixed-dim": "#fbbb45", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#822433", "surface-container-low": "#f7f3ea", "inverse-primary": "#c9c6c1", "secondary-fixed": "#ffdadb", "surface-dim": "#dddad1", "surface-tint": "#5f5e5a", "background": "#fdf9f0", "on-primary-fixed-variant": "#474743", "outline-variant": "#c8c7be", "on-error": "#ffffff", "surface-bright": "#fdf9f0", "secondary": "#a13b49", "on-primary-container": "#85847f", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb2b7", "on-background": "#1c1c16", "surface-container-high": "#ece8df", "on-surface-variant": "#474741", "on-surface": "#1c1c16", "primary-container": "#1c1c19", "on-secondary-container": "#761a2a", "primary-fixed": "#e5e2dd", "on-primary-fixed": "#1c1c19", "inverse-on-surface": "#f4f0e7", "outline": "#787770", "tertiary": "#000000", "primary": "#000000", "secondary-container": "#fe838f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-2xl": "3rem", "space-lg": "1.5rem", "gutter-sm": "0.75rem", "margin-sm": "1rem", "gutter": "1.25rem", "gutter-lg": "2rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-lg": "3rem", "space-2xs": "0.125rem" }, "fontFamily": { "label-md": [ "Hanken Grotesk" ], "display": [ "Domine" ], "display-mobile": [ "Domine" ], "headline-lg": [ "Domine" ], "label-sm": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "headline-lg-mobile": [ "Domine" ], "body-md": [ "Hanken Grotesk" ], "headline-md": [ "Domine" ], "caption": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "headline-sm": [ "Domine" ], "lead": [ "Hanken Grotesk" ], "eyebrow": [ "Hanken Grotesk" ] }, "fontSize": { "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "500" } ], "display": [ "48px", { "lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-mobile": [ "34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "25px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "lead": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.05em", "fontWeight": "400" } ], "eyebrow": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[248px] bg-[#F5F1E8] border-r border-[#DDD6C7] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="p-space-lg border-b border-[#DDD6C7]"><div class="flex items-center gap-space-sm mb-space-2xs"><div class="w-6 h-6 rounded bg-[#7B1E2E] flex items-center justify-center shrink-0"><div class="w-1.5 h-1.5 rounded-full bg-[#F2B33D]"></div></div><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Campus Hub</span></div><div class="font-eyebrow text-eyebrow uppercase text-on-surface-variant font-semibold tracking-widest pl-[32px]">SIT NAGPUR</div></div><nav class="flex flex-col py-space-sm" data-active-classes="bg-[#FFFDF9] text-[#7B1E2E] font-semibold border-l-[3px] border-[#7B1E2E]"><div class="px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Navigation</div><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="dashboard" href="#"><span>Dashboard</span></a><div class="mt-space-sm px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Academic Hubs</div><a class="flex items-center gap-space-sm px-space-md py-space-sm bg-[#FFFDF9] text-[#7B1E2E] font-semibold border-l-[3px] border-[#7B1E2E] font-label-md text-label-md" data-path="lost-and-found" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#7B1E2E] shrink-0"></span><span class="font-caption text-caption opacity-80">01</span><span>Lost &amp; Found</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="sports-hub" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#2E6B4E] shrink-0"></span><span class="font-caption text-caption opacity-60">02</span><span>Sports Hub</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="booking-board" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#2C5A8C] shrink-0"></span><span class="font-caption text-caption opacity-60">03</span><span>Booking Board</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="market-hub" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#B4532A] shrink-0"></span><span class="font-caption text-caption opacity-60">04</span><span>Market Hub</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="emergency-hub" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#D7261E] shrink-0"></span><span class="font-caption text-caption opacity-60">05</span><span>Emergency Hub</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="feedback-hub" href="#"><span class="w-2 h-2 rounded-[2px] bg-[#1E6E6A] shrink-0"></span><span class="font-caption text-caption opacity-60">06</span><span>Feedback Hub</span></a></nav></div><div class="p-space-md border-t border-[#DDD6C7] bg-[#EDE7DA]/50"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-[#7B1E2E] text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">AD</div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Aarav Deshmukh</span><span class="font-caption text-caption text-on-surface-variant truncate">CSE · 3rd yr</span></div></div><a class="text-on-surface-variant hover:text-[#7B1E2E] transition-colors p-space-2xs" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-[#FFFDF9] border-b border-[#DDD6C7] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">school</span><span class="text-on-surface font-semibold">Campus Registry</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">SIT Nagpur Directory</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="h-9 pl-9 pr-12 w-64 md:w-80 bg-[#F5F1E8] border border-[#DDD6C7] rounded text-on-surface font-body-sm text-body-sm placeholder:text-[#8C867A] focus:outline-none focus:border-on-surface" placeholder="Search registry, equipment, notices..." type="text"/><span class="absolute right-2 font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-mono border border-[#DDD6C7]">⌘K</span></div><a class="h-9 px-space-md rounded-full bg-[#D7261E] hover:bg-[#ba1a1a] text-on-primary flex items-center gap-space-xs font-label-sm text-label-sm font-semibold transition-colors shrink-0" data-path="emergency-hub" href="#"><span class="material-symbols-outlined text-[16px]">crisis_alert</span><span>Emergency</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-[#F5F1E8] min-h-screen"><div class="flex flex-col w-full relative">
+<!-- SCREEN 5A: UNDERLYING LOST & FOUND HUB (DIMMED CANVAS) -->
+<div aria-hidden="true" class="w-full pointer-events-none select-none filter blur-[1px] opacity-75">
+<!-- Top Registry Banner / Amber Strip -->
+<div class="w-full bg-[#EAD8B7] border-b border-[#DDD6C7] px-gutter-lg py-space-md">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="w-3.5 h-3.5 bg-[#A0660E] rounded-[2px] shrink-0"></span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-eyebrow text-eyebrow uppercase text-[#5F4100] tracking-widest">Archive Registry 01</span>
+<span class="text-[#DDD6C7]">•</span>
+<span class="font-caption text-caption text-[#5F4100] uppercase font-mono">Live Dispatches</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface">Campus Lost &amp; Found Directory</h1>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-caption text-caption px-space-sm py-1 bg-[#FFFDF9] border border-[#DDD6C7] rounded text-on-surface-variant font-mono">
+            48 ACTIVE CLAIMS
+          </span>
+<span class="font-caption text-caption px-space-sm py-1 bg-[#FFFDF9] border border-[#DDD6C7] rounded text-[#A0660E] font-mono font-semibold">
+            SEC WING VERIFIED
+          </span>
+</div>
+</div>
+</div>
+<!-- Toolbar and Filter Bar -->
+<div class="max-w-7xl mx-auto px-gutter-lg py-space-lg w-full">
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md pb-space-lg border-b border-[#DDD6C7]">
+<div class="flex items-center gap-space-sm flex-1 max-w-lg">
+<div class="h-11 w-full bg-[#FFFDF9] border border-[#DDD6C7] rounded flex items-center px-space-sm gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">filter_list</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Filter by tag, floor, PRN, or date...</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="h-11 px-space-md bg-[#EDE7DA] rounded border border-[#DDD6C7] flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+<span>All Categories</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+<div class="h-11 px-space-lg bg-[#1A1A17] text-[#F5F1E8] rounded flex items-center gap-space-xs font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Report Item</span>
+</div>
+</div>
+</div>
+<!-- Sample Directory Grid Cards behind backdrop -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg mt-space-lg">
+<!-- Card 1 -->
+<div class="bg-[#FFFDF9] border border-[#DDD6C7] p-space-lg rounded flex flex-col justify-between h-64">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-caption text-caption px-2 py-0.5 rounded bg-[#FBE7E8] text-[#7B1E2E] font-mono font-bold uppercase">LOST</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">ID: #LF-8921</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Scientific Calculator Casio fx-991CW</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Left in Mech Lab 204 near Workbench 3 during morning thermodynamics practical.</p>
+</div>
+<div class="pt-space-sm border-t border-[#DDD6C7] flex justify-between items-center text-on-surface-variant font-caption text-caption">
+<span>Academic Block</span>
+<span>20 mins ago</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-[#FFFDF9] border border-[#DDD6C7] p-space-lg rounded flex flex-col justify-between h-64">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-caption text-caption px-2 py-0.5 rounded bg-[#E3EFE8] text-[#1E6E45] font-mono font-bold uppercase">FOUND</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">ID: #LF-8920</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Hydro Flask Navy Blue Bottle 750ml</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Found under bench in Central Courtyard next to fountain. Has anime sticker on lid.</p>
+</div>
+<div class="pt-space-sm border-t border-[#DDD6C7] flex justify-between items-center text-on-surface-variant font-caption text-caption">
+<span>Courtyard</span>
+<span>Today, 11:30 AM</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-[#FFFDF9] border border-[#DDD6C7] p-space-lg rounded flex flex-col justify-between h-64">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-caption text-caption px-2 py-0.5 rounded bg-[#FBE7E8] text-[#7B1E2E] font-mono font-bold uppercase">LOST</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">ID: #LF-8919</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Spiral Notebook &amp; Parker Pen</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Contains handwritten Compiler Design lecture transcripts and lab assignment index.</p>
+</div>
+<div class="pt-space-sm border-t border-[#DDD6C7] flex justify-between items-center text-on-surface-variant font-caption text-caption">
+<span>Central Library</span>
+<span>Yesterday</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL BACKDROP (40% INK OVERLAY: rgba(26,26,23,0.40)) -->
+<div class="fixed inset-0 z-50 bg-[#1A1A17]/40 flex items-center justify-center p-4 md:p-6 overflow-y-auto" id="modalBackdrop">
+<!-- MODAL DIALOG CONTAINER: 640px wide, 12px border radius, 1px #DDD6C7 border, #FFFDF9 surface -->
+<div aria-labelledby="modal-headline" aria-modal="true" class="relative w-full max-w-[640px] bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] shadow-[0_20px_40px_rgba(26,26,23,0.14)] my-auto flex flex-col overflow-hidden text-on-surface" role="dialog">
+<!-- Top Scholarly Micro Index Tag -->
+<div class="bg-[#EDE7DA] border-b border-[#DDD6C7] px-6 py-2 flex items-center justify-between font-mono text-[11px] text-on-surface-variant tracking-wider">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-[1px] bg-[#A0660E]"></span>
+<span class="uppercase font-semibold">FORM ENTRY // LF-SUBMISSION</span>
+</div>
+<span>PRN_AUTH_REQUIRED</span>
+</div>
+<!-- Header Section -->
+<div class="px-6 pt-5 pb-4 flex items-start justify-between">
+<div class="pr-6">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight" id="modal-headline">Report an item</h2>
+<p class="font-body-md text-body-md text-[#57534A] mt-1">Notify campus security and fellow students immediately.</p>
+</div>
+<button aria-label="Close dialog" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-[#EDE7DA] transition-colors border border-transparent hover:border-[#DDD6C7] shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="px-6 pb-6 overflow-y-auto max-h-[calc(90vh-140px)] space-y-4">
+<!-- Toggle: I lost something vs I found something -->
+<div aria-label="Incident Type" class="grid grid-cols-2 gap-3" role="radiogroup">
+<!-- Card 1 (SELECTED): 2px amber #A0660E border, amber tint #FBF0D9 background -->
+<label class="relative flex flex-col p-3.5 rounded-lg border-2 border-[#A0660E] bg-[#FBF0D9] cursor-pointer transition-all">
+<input checked="" class="sr-only" name="item_flow" type="radio" value="lost"/>
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded bg-[#A0660E]/10 border border-[#A0660E]/30 flex items-center justify-center text-[#A0660E]">
+<span class="material-symbols-outlined text-[20px]">help_center</span>
+</div>
+<div class="w-4 h-4 rounded-full border-2 border-[#A0660E] flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-[#A0660E]"></span>
+</div>
+</div>
+<div class="mt-2.5">
+<span class="font-label-md text-label-md font-bold text-[#422B06] block">I lost something</span>
+<span class="font-caption text-caption text-[#755014] mt-0.5 block">File a search request &amp; alert desk</span>
+</div>
+</label>
+<!-- Card 2 (UNSELECTED): 1px #DDD6C7 border, #FFFDF9 background -->
+<label class="relative flex flex-col p-3.5 rounded-lg border border-[#DDD6C7] bg-[#FFFDF9] hover:bg-[#EDE7DA]/40 cursor-pointer transition-all">
+<input class="sr-only" name="item_flow" type="radio" value="found"/>
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded bg-[#EDE7DA] border border-[#DDD6C7] flex items-center justify-center text-[#57534A]">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+<div class="w-4 h-4 rounded-full border border-[#DDD6C7]"></div>
+</div>
+<div class="mt-2.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface block">I found something</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5 block">Handover or list safe possession</span>
+</div>
+</label>
+</div>
+<!-- Row 1: Item name | Category -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md font-medium text-on-surface" for="item_name">Item name</label>
+<input class="w-full h-11 px-3 bg-[#FFFDF9] border border-[#DDD6C7] rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:border-[#1A1A17] focus:ring-1 focus:ring-[#1A1A17] transition-all" id="item_name" placeholder="e.g. Blue Casio fx-991EX" type="text" value="Blue Casio fx-991EX"/>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md font-medium text-on-surface" for="item_category">Category</label>
+<div class="relative">
+<select class="w-full h-11 pl-3 pr-9 bg-[#FFFDF9] border border-[#DDD6C7] rounded-lg font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:border-[#1A1A17] focus:ring-1 focus:ring-[#1A1A17] transition-all" id="item_category">
+<option selected="" value="Electronics">Electronics</option>
+<option value="ID Card">ID Card</option>
+<option value="Books">Books</option>
+<option value="Bottle">Bottle</option>
+<option value="Clothing">Clothing</option>
+<option value="Keys">Keys</option>
+<option value="Wallet">Wallet</option>
+<option value="Other">Other</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">
+                arrow_drop_down
+              </span>
+</div>
+</div>
+</div>
+<!-- Row 2: Where | Date -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md font-medium text-on-surface" for="item_location">Where</label>
+<div class="relative">
+<select class="w-full h-11 pl-3 pr-9 bg-[#FFFDF9] border border-[#DDD6C7] rounded-lg font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:border-[#1A1A17] focus:ring-1 focus:ring-[#1A1A17] transition-all" id="item_location">
+<option disabled="" value="">Select campus location</option>
+<option selected="" value="Academic Block">Academic Block</option>
+<option value="Library">Library</option>
+<option value="Canteen">Canteen</option>
+<option value="Sports Complex">Sports Complex</option>
+<option value="Boys Hostel">Boys Hostel</option>
+<option value="Girls Hostel">Girls Hostel</option>
+<option value="Parking">Parking</option>
+<option value="Other">Other</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">
+                location_on
+              </span>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md font-medium text-on-surface" for="item_date">Date</label>
+<div class="relative">
+<input class="w-full h-11 px-3 bg-[#FFFDF9] border border-[#DDD6C7] rounded-lg font-body-md text-body-md text-on-surface font-mono focus:outline-none focus:border-[#1A1A17] focus:ring-1 focus:ring-[#1A1A17] transition-all" id="item_date" type="date" value="2026-10-27"/>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">
+                calendar_today
+              </span>
+</div>
+</div>
+</div>
+<!-- Row 3: Description textarea with mono counter -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="block font-label-md text-label-md font-medium text-on-surface" for="item_desc">Description</label>
+<span class="font-caption text-caption text-[#8C867A]">Distinguishing traits</span>
+</div>
+<div class="relative">
+<textarea class="w-full h-[100px] p-3 pb-7 bg-[#FFFDF9] border border-[#DDD6C7] rounded-lg font-body-md text-body-md text-on-surface placeholder:text-[#8C867A] focus:outline-none focus:border-[#1A1A17] focus:ring-1 focus:ring-[#1A1A17] transition-all resize-none" id="item_desc" placeholder="Describe distinctive marks, stickers, color, or exact room..." rows="3">Black battery lid with yellow barcode sticker on back, left in Room 302.</textarea>
+<span class="absolute bottom-2 right-2.5 font-mono text-[11px] text-[#57534A] bg-[#FFFDF9]/90 px-1 rounded select-none">
+              42/300
+            </span>
+</div>
+</div>
+<!-- Row 4: Photo Dropzone -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md font-medium text-on-surface">Photographic record</label>
+<div class="h-[90px] w-full border-[1.5px] border-dashed border-[#DDD6C7] bg-[#EDE7DA] rounded-lg flex items-center justify-center px-4 hover:border-[#1A1A17] hover:bg-[#E8E2D4] transition-all cursor-pointer group">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded bg-[#FFFDF9] border border-[#DDD6C7] flex items-center justify-center text-[#57534A] group-hover:text-[#1A1A17] transition-colors shrink-0">
+<span class="material-symbols-outlined text-[22px]">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Drop a photo or browse</span>
+<span class="font-mono text-[12px] text-[#57534A]">JPG or PNG up to 2MB</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 5: Contact number & Verification checkbox -->
+<div class="space-y-2 pt-1">
+<label class="block font-label-md text-label-md font-medium text-on-surface" for="contact_num">Contact number</label>
+<div class="relative flex items-center">
+<div class="absolute left-1 top-1 bottom-1 px-3 bg-[#EDE7DA] border-r border-[#DDD6C7] rounded-l-md flex items-center justify-center font-mono font-semibold text-[13px] text-on-surface select-none">
+              +91
+            </div>
+<input class="w-full h-11 pl-16 pr-3 bg-[#FFFDF9] border border-[#DDD6C7] rounded-lg font-mono text-[14px] text-on-surface focus:outline-none focus:border-[#1A1A17] focus:ring-1 focus:ring-[#1A1A17] transition-all" id="contact_num" type="text" value="98234 56710"/>
+</div>
+<!-- Checkbox Option -->
+<label class="flex items-center gap-2.5 pt-1 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded-[3px] accent-[#1A1A17] border-[#57534A] cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-[#57534A]">Hide my number until claim is verified</span>
+</label>
+</div>
+</div>
+<!-- Modal Footer (Padded, 1px #DDD6C7 top divider) -->
+<div class="px-6 py-4 bg-[#EDE7DA]/50 border-t border-[#DDD6C7] flex items-center justify-between gap-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-mono text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-[#A0660E]">verified_user</span>
+<span>Audited via PRN verification</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="h-11 px-4 rounded-lg font-label-md text-label-md font-medium text-[#57534A] hover:text-[#1A1A17] hover:bg-[#EDE7DA] transition-colors" type="button">
+            Cancel
+          </button>
+<button class="h-11 px-5 rounded-lg bg-[#1A1A17] text-[#F5F1E8] hover:bg-[#57534A] font-label-md text-label-md font-semibold flex items-center gap-2 transition-colors" type="button">
+<span>Post report</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

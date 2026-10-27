@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;family=Domine:wght@600;700&amp;family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#40000e", "on-tertiary-fixed": "#281900", "on-tertiary-container": "#ae7a00", "surface-container": "#f1eee5", "on-error-container": "#93000a", "inverse-surface": "#31302b", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#5f4100", "surface-container-highest": "#e6e2d9", "primary-fixed-dim": "#c9c6c1", "on-tertiary": "#ffffff", "surface": "#fdf9f0", "surface-variant": "#e6e2d9", "on-secondary": "#ffffff", "tertiary-container": "#281900", "tertiary-fixed": "#ffdeac", "tertiary-fixed-dim": "#fbbb45", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#822433", "surface-container-low": "#f7f3ea", "inverse-primary": "#c9c6c1", "secondary-fixed": "#ffdadb", "surface-dim": "#dddad1", "surface-tint": "#5f5e5a", "background": "#fdf9f0", "on-primary-fixed-variant": "#474743", "outline-variant": "#c8c7be", "on-error": "#ffffff", "surface-bright": "#fdf9f0", "secondary": "#a13b49", "on-primary-container": "#85847f", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb2b7", "on-background": "#1c1c16", "surface-container-high": "#ece8df", "on-surface-variant": "#474741", "on-surface": "#1c1c16", "primary-container": "#1c1c19", "on-secondary-container": "#761a2a", "primary-fixed": "#e5e2dd", "on-primary-fixed": "#1c1c19", "inverse-on-surface": "#f4f0e7", "outline": "#787770", "tertiary": "#000000", "primary": "#000000", "secondary-container": "#fe838f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-2xl": "3rem", "space-lg": "1.5rem", "gutter-sm": "0.75rem", "margin-sm": "1rem", "gutter": "1.25rem", "gutter-lg": "2rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-lg": "3rem", "space-2xs": "0.125rem" }, "fontFamily": { "label-md": [ "Hanken Grotesk" ], "display": [ "Domine" ], "display-mobile": [ "Domine" ], "headline-lg": [ "Domine" ], "label-sm": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "headline-lg-mobile": [ "Domine" ], "body-md": [ "Hanken Grotesk" ], "headline-md": [ "Domine" ], "caption": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "headline-sm": [ "Domine" ], "lead": [ "Hanken Grotesk" ], "eyebrow": [ "Hanken Grotesk" ] }, "fontSize": { "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "500" } ], "display": [ "48px", { "lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-mobile": [ "34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "25px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "lead": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.05em", "fontWeight": "400" } ], "eyebrow": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[248px] bg-[#F5F1E8] border-r border-[#DDD6C7] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="p-space-lg border-b border-[#DDD6C7]"><div class="flex items-center gap-space-sm mb-space-2xs"><div class="w-6 h-6 rounded bg-[#7B1E2E] flex items-center justify-center shrink-0"><div class="w-1.5 h-1.5 rounded-full bg-[#F2B33D]"></div></div><span class="text-[20px] leading-[24px] text-on-surface tracking-tight font-extrabold" style="font-family: 'Bricolage Grotesque', sans-serif;">Campus Hub</span></div><div class="font-mono text-[10px] uppercase text-on-surface-variant font-semibold tracking-widest pl-[32px]">SIT NAGPUR</div></div><nav class="flex flex-col py-space-sm" data-active-classes="bg-[#FFFDF9] text-[#7B1E2E] font-semibold border-l-[3px] border-[#7B1E2E]"><div class="px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Registry</div><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="dashboard" href="#"><span>Dashboard</span></a><div class="mt-space-sm px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Academic Hubs</div><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="lost-and-found" href="#"><span>01 Lost &amp; Found</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="sports-hub" href="#"><span>02 Sports Hub</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="booking-board" href="#"><span>03 Booking Board</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="market-hub" href="#"><span>04 Market Hub</span></a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-colors bg-[#FFFDF9] text-[#7B1E2E] font-semibold border-l-[3px] border-[#7B1E2E]" data-path="emergency-hub" href="#"><span>05 Emergency Hub</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="feedback-hub" href="#"><span>06 Feedback Hub</span></a></nav></div><div class="p-space-md border-t border-[#DDD6C7] bg-[#EDE7DA]/50"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-[#7B1E2E] text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">AD</div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Aarav Deshmukh</span><span class="font-caption text-caption text-on-surface-variant truncate">CSE · 3rd yr</span></div></div><a class="text-on-surface-variant hover:text-[#7B1E2E] transition-colors p-space-2xs" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-[#FFFDF9] border-b border-[#DDD6C7] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">school</span><span class="text-on-surface font-semibold">Campus Registry</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">SIT Nagpur Directory</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="h-9 pl-9 pr-12 w-64 md:w-80 bg-[#F5F1E8] border border-[#DDD6C7] rounded text-on-surface font-body-sm text-body-sm placeholder:text-[#8C867A] focus:outline-none focus:border-on-surface" placeholder="Search registry, equipment, notices..." type="text"/><span class="absolute right-2 font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-mono border border-[#DDD6C7]">⌘K</span></div><a class="h-9 px-space-md rounded-full bg-[#D7261E] hover:bg-[#ba1a1a] text-on-primary flex items-center gap-space-xs font-label-sm text-label-sm font-semibold transition-colors shrink-0" data-path="emergency-hub" href="#"><span class="material-symbols-outlined text-[16px]">crisis_alert</span><span>Emergency</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-[#F5F1E8] min-h-screen"><div class="flex flex-col w-full">
+<!-- 6px Top Red Strip -->
+<div class="w-full h-[6px] bg-[#D7261E]"></div>
+<div class="p-space-lg md:p-space-xl flex flex-col gap-space-lg max-w-[1400px] mx-auto w-full">
+<!-- 1. HUB HEADER -->
+<header class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md border-b border-[#DDD6C7] pb-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="font-mono text-eyebrow tracking-widest text-[#D7261E] font-semibold uppercase">
+            HUB 05 · CRISIS &amp; CAMPUS SAFETY DESK
+          </span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-[#D7261E] animate-pulse"></span>
+</div>
+<h1 class="font-display text-display text-[#1A1A17] tracking-tight leading-none" style="font-family: 'Bricolage Grotesque', sans-serif;">
+          Emergency Hub
+        </h1>
+<p class="font-body-md text-on-surface-variant text-base mt-1">
+          Verified helpline numbers, security desks, ambulance dispatch, and warden contacts with instant one-tap calling.
+        </p>
+</div>
+<!-- Admin Actions / Controls -->
+<div class="flex items-center gap-space-sm shrink-0 self-start lg:self-end">
+<div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#EDE7DA] border border-[#DDD6C7] text-on-surface-variant font-mono text-[11px] font-semibold tracking-wider uppercase">
+<span class="material-symbols-outlined text-[14px] text-secondary">admin_panel_settings</span>
+<span>ADMIN VIEW · MANAGE DIRECTORY</span>
+</div>
+<button class="h-11 px-4 rounded-lg bg-[#1A1A17] hover:bg-[#33312B] text-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-2 shadow-sm" id="addContactBtn">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Add contact</span>
+</button>
+</div>
+</header>
+<!-- 2. TOP BANNER: ALL-IN-ONE EMERGENCY DISPATCH -->
+<section class="w-full bg-[#D7261E] text-white rounded-[12px] p-7 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-md relative overflow-hidden">
+<div class="flex flex-col gap-1.5 z-10 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-white/90">emergency_home</span>
+<span class="font-mono text-[12px] uppercase tracking-widest font-semibold text-white/90">
+            ALL-IN-ONE EMERGENCY DISPATCH
+          </span>
+</div>
+<div class="font-mono text-[56px] leading-[60px] font-bold tracking-tight text-white my-1">
+          112
+        </div>
+<p class="font-body-md text-white/95 text-[15px] leading-relaxed">
+          National Emergency Helpline · Police, fire and medical dispatch. Works 24/7 toll-free from any network or mobile phone.
+        </p>
+</div>
+<div class="z-10 shrink-0">
+<a class="h-14 px-8 rounded-xl bg-white hover:bg-surface-container-low text-[#D7261E] font-label-md text-[16px] font-bold flex items-center justify-center gap-3 transition-transform active:scale-95 shadow-lg border border-white/20 select-none" href="tel:112">
+<span class="material-symbols-outlined text-[24px]">call</span>
+<span>Call 112 Now</span>
+</a>
+</div>
+<!-- Watermark Badge Deco -->
+<div class="absolute -right-6 -bottom-8 pointer-events-none opacity-10 select-none">
+<span class="material-symbols-outlined text-[190px] text-white leading-none">emergency</span>
+</div>
+</section>
+<!-- 3. QUICK TILES (Grid of 4) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- (1) Ambulance -->
+<a class="group bg-[#FCE4E2] border border-[#F3C2BE] hover:border-[#D7261E] p-5 rounded-[12px] transition-all hover:-translate-y-0.5 flex flex-col justify-between min-h-[160px]" href="tel:108">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#D7261E] shadow-sm">
+<span class="material-symbols-outlined text-[22px]">medical_services</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#1A1A17] block leading-tight">Ambulance</span>
+<span class="font-caption text-caption text-[#57534A] block mt-0.5">Emergency Medical</span>
+</div>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-4">
+<span class="font-mono text-[28px] font-bold text-[#1A1A17] tracking-tight">108</span>
+<span class="px-3 py-1 rounded-full bg-white border border-[#F3C2BE] group-hover:bg-[#D7261E] group-hover:text-white group-hover:border-[#D7261E] text-[#D7261E] font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">call</span>
+            Call 108
+          </span>
+</div>
+</a>
+<!-- (2) Police -->
+<a class="group bg-[#FCE4E2] border border-[#F3C2BE] hover:border-[#D7261E] p-5 rounded-[12px] transition-all hover:-translate-y-0.5 flex flex-col justify-between min-h-[160px]" href="tel:100">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#D7261E] shadow-sm">
+<span class="material-symbols-outlined text-[22px]">local_police</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#1A1A17] block leading-tight">Police</span>
+<span class="font-caption text-caption text-[#57534A] block mt-0.5">City Control Room</span>
+</div>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-4">
+<span class="font-mono text-[28px] font-bold text-[#1A1A17] tracking-tight">100</span>
+<span class="px-3 py-1 rounded-full bg-white border border-[#F3C2BE] group-hover:bg-[#D7261E] group-hover:text-white group-hover:border-[#D7261E] text-[#D7261E] font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">call</span>
+            Call 100
+          </span>
+</div>
+</a>
+<!-- (3) Fire -->
+<a class="group bg-[#FCE4E2] border border-[#F3C2BE] hover:border-[#D7261E] p-5 rounded-[12px] transition-all hover:-translate-y-0.5 flex flex-col justify-between min-h-[160px]" href="tel:101">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#D7261E] shadow-sm">
+<span class="material-symbols-outlined text-[22px]">local_fire_department</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#1A1A17] block leading-tight">Fire Rescue</span>
+<span class="font-caption text-caption text-[#57534A] block mt-0.5">Disaster Response</span>
+</div>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-4">
+<span class="font-mono text-[28px] font-bold text-[#1A1A17] tracking-tight">101</span>
+<span class="px-3 py-1 rounded-full bg-white border border-[#F3C2BE] group-hover:bg-[#D7261E] group-hover:text-white group-hover:border-[#D7261E] text-[#D7261E] font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">call</span>
+            Call 101
+          </span>
+</div>
+</a>
+<!-- (4) Women Helpline -->
+<a class="group bg-[#FCE4E2] border border-[#F3C2BE] hover:border-[#D7261E] p-5 rounded-[12px] transition-all hover:-translate-y-0.5 flex flex-col justify-between min-h-[160px]" href="tel:1091">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#D7261E] shadow-sm">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-[#1A1A17] block leading-tight">Women Helpline</span>
+<span class="font-caption text-caption text-[#57534A] block mt-0.5">National Safety Cell</span>
+</div>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-4">
+<span class="font-mono text-[28px] font-bold text-[#1A1A17] tracking-tight">1091</span>
+<span class="px-3 py-1 rounded-full bg-white border border-[#F3C2BE] group-hover:bg-[#D7261E] group-hover:text-white group-hover:border-[#D7261E] text-[#D7261E] font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">call</span>
+            Call 1091
+          </span>
+</div>
+</a>
+</section>
+<!-- 4. SEARCH + FILTER TABS -->
+<div class="flex flex-col gap-3">
+<!-- Search Input -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-[#8C867A]">search</span>
+<input class="w-full h-11 pl-11 pr-10 rounded bg-[#FFFDF9] border border-[#DDD6C7] text-on-surface font-body-md text-body-md placeholder:text-[#8C867A] focus:outline-none focus:border-[#1A1A17] transition-all" id="searchInput" placeholder="Search contacts, wardens, security desks, clinics..." type="text"/>
+<button class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface" id="clearSearch">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Filter Tabs Row -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar text-nowrap" id="filterTabs">
+<button class="filter-tab active h-9 px-4 rounded-full border border-[#D7261E] bg-[#FCE4E2] text-[#D7261E] font-label-sm text-label-sm font-semibold transition-colors" data-category="all">
+          All Contacts
+        </button>
+<button class="filter-tab h-9 px-4 rounded-full border border-[#DDD6C7] bg-[#FFFDF9] hover:bg-[#EDE7DA] text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-category="college">
+          College
+        </button>
+<button class="filter-tab h-9 px-4 rounded-full border border-[#DDD6C7] bg-[#FFFDF9] hover:bg-[#EDE7DA] text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-category="medical">
+          Medical
+        </button>
+<button class="filter-tab h-9 px-4 rounded-full border border-[#DDD6C7] bg-[#FFFDF9] hover:bg-[#EDE7DA] text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-category="police">
+          Police &amp; Safety
+        </button>
+<button class="filter-tab h-9 px-4 rounded-full border border-[#DDD6C7] bg-[#FFFDF9] hover:bg-[#EDE7DA] text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-category="fire">
+          Fire
+        </button>
+<button class="filter-tab h-9 px-4 rounded-full border border-[#DDD6C7] bg-[#FFFDF9] hover:bg-[#EDE7DA] text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-category="women">
+          Women Safety
+        </button>
+<button class="filter-tab h-9 px-4 rounded-full border border-[#DDD6C7] bg-[#FFFDF9] hover:bg-[#EDE7DA] text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-category="antiragging">
+          Anti-Ragging
+        </button>
+</div>
+</div>
+<!-- 5. CONTACT LIST -->
+<div class="flex flex-col gap-6" id="directoryList">
+<!-- GROUP A: COLLEGE EMERGENCY & SECURITY -->
+<section class="group-section flex flex-col gap-3" data-section="college">
+<div class="flex items-center gap-2 border-b border-[#DDD6C7] pb-1.5">
+<span class="font-mono text-eyebrow text-eyebrow uppercase tracking-wider text-[#57534A] font-semibold">
+            GROUP A · COLLEGE EMERGENCY &amp; SECURITY
+          </span>
+<span class="text-caption text-on-surface-variant font-mono">(5 Active · 1 Pending)</span>
+</div>
+<!-- Row 1 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="college">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">door_sliding</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Main Security Gate Desk</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Gate 1 Reception, Main Campus Entry</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 712 2819201</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+917122819201">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 712 2819201', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 2 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="college">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">corporate_fare</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Central Administration Office</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Admin Block Floor 1</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 712 2819100</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+917122819100">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 712 2819100', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 3 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="college">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">person_shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Hostel Warden (Boys Hostel 1 &amp; 2)</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Prof. S. Sharma · Ground Floor H2</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 98220 14592</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+919822014592">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 98220 14592', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 4 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="college women">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">female</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Hostel Warden (Girls Hostel)</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Dr. M. Kulkarni · Warden Office Block A</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 98220 14598</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+919822014598">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 98220 14598', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 5 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="college">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">directions_bus</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Transport &amp; Night Shuttle Desk</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Campus Transport Bay</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 712 2819340</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+917122819340">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 712 2819340', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Placeholder Row (College) -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 opacity-75" data-category="college">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#EDE7DA] text-[#8C867A] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Campus Electrician &amp; Power Backup</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Substation Wing</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="px-2.5 py-1 rounded bg-[#EDE7DA] border border-dashed border-[#DDD6C7] text-[#8C867A] font-mono text-[13px] font-medium">To be added</span>
+<div class="flex items-center gap-2">
+<button class="h-10 px-4 rounded-lg bg-[#D7261E] opacity-40 cursor-not-allowed text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5" disabled="">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</button>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] opacity-40 cursor-not-allowed text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1" disabled="">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- GROUP B: MEDICAL & FIRST AID -->
+<section class="group-section flex flex-col gap-3" data-section="medical">
+<div class="flex items-center gap-2 border-b border-[#DDD6C7] pb-1.5">
+<span class="font-mono text-eyebrow text-eyebrow uppercase tracking-wider text-[#57534A] font-semibold">
+            GROUP B · MEDICAL &amp; FIRST AID
+          </span>
+<span class="text-caption text-on-surface-variant font-mono">(3 Active · 1 Pending)</span>
+</div>
+<!-- Row 1 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="medical">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">stethoscope</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Campus Medical Room &amp; Doctor</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Health Centre, Ground Floor Academic Block</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 712 2819112</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+917122819112">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 712 2819112', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 2 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="medical">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">ambulance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Symbiosis University Hospital Dispatch</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">24/7 On-campus Stationed Van</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 94231 09876</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+919423109876">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 94231 09876', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 3 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="medical">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">bloodtype</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Blood Bank &amp; Trauma Center (Nagpur City)</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">GMC Nagpur Emergency Wing</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">0712-2744400</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:07122744400">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('0712-2744400', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Placeholder Row (Medical) -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 opacity-75" data-category="medical">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#EDE7DA] text-[#8C867A] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Campus Mental Health Counselor</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Student Wellness Cell (Evening Wing)</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="px-2.5 py-1 rounded bg-[#EDE7DA] border border-dashed border-[#DDD6C7] text-[#8C867A] font-mono text-[13px] font-medium">To be added</span>
+<div class="flex items-center gap-2">
+<button class="h-10 px-4 rounded-lg bg-[#D7261E] opacity-40 cursor-not-allowed text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5" disabled="">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</button>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] opacity-40 cursor-not-allowed text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1" disabled="">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- GROUP C: SAFETY & ANTI-RAGGING CELL -->
+<section class="group-section flex flex-col gap-3" data-section="antiragging">
+<div class="flex items-center gap-2 border-b border-[#DDD6C7] pb-1.5">
+<span class="font-mono text-eyebrow text-eyebrow uppercase tracking-wider text-[#57534A] font-semibold">
+            GROUP C · SAFETY &amp; ANTI-RAGGING CELL
+          </span>
+<span class="text-caption text-on-surface-variant font-mono">(3 Active Desk Lines)</span>
+</div>
+<!-- Row 1 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="antiragging police">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">UGC Anti-Ragging 24x7 Toll Free Helpline</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">National Monitoring Agency</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">1800-180-5522</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:18001805522">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('1800-180-5522', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 2 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="antiragging college">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">SIT Nagpur Anti-Ragging Committee Head</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">Dr. R. Deshpande (Dean Academics)</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 94221 88302</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+919422188302">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 94221 88302', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Row 3 -->
+<article class="contact-card h-auto sm:h-[72px] bg-[#FFFDF9] border border-[#DDD6C7] hover:border-[#1A1A17] rounded-[12px] p-4 sm:px-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-colors group" data-category="antiragging women">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-11 h-11 rounded-full bg-[#FCE4E2] text-[#D7261E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield_person</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="contact-name font-label-md text-[16px] leading-tight font-semibold text-[#1A1A17] truncate">Women's Grievance &amp; Internal Complaints Committee</span>
+<span class="font-body-sm text-[13px] text-[#57534A] truncate">ICC Presiding Officer · Main Campus</span>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end gap-3 sm:gap-4 shrink-0 border-t sm:border-0 border-[#DDD6C7]/50 pt-2 sm:pt-0">
+<span class="contact-num font-mono text-[17px] font-medium text-[#1A1A17] tracking-tight">+91 712 2819155</span>
+<div class="flex items-center gap-2">
+<a class="h-10 px-4 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" href="tel:+917122819155">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="h-10 px-3 rounded-lg bg-[#FFFDF9] border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" onclick="copyToClipboard('+91 712 2819155', this)" title="Copy Number">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<div class="hidden sm:flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-8 h-8 rounded hover:bg-[#EDE7DA] text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Edit Contact">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-[#FCE4E2] text-on-surface-variant hover:text-[#D7261E] flex items-center justify-center transition-colors" title="Delete Contact">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Empty State for Search -->
+<div class="hidden flex-col items-center justify-center py-16 px-4 bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] text-center" id="noResultsState">
+<div class="w-12 h-12 rounded-full bg-[#EDE7DA] flex items-center justify-center text-on-surface-variant mb-3">
+<span class="material-symbols-outlined text-[24px]">search_off</span>
+</div>
+<p class="font-label-md text-label-md font-semibold text-[#1A1A17]">No helpline or contact found</p>
+<p class="font-body-sm text-caption text-[#57534A] max-w-sm mt-1">Please check your spelling or search terms, or dial 112 for universal emergency dispatch.</p>
+<button class="mt-4 px-4 py-2 rounded-lg bg-[#1A1A17] text-white font-label-sm text-label-sm font-semibold" onclick="resetFilters()">
+          Reset Search &amp; Filters
+        </button>
+</div>
+</div>
+<!-- Live Toast Notification Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-200 pointer-events-none bg-[#1A1A17] text-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 font-label-md text-label-md" id="copyToast">
+<span class="material-symbols-outlined text-[18px] text-[#F2B33D]">check_circle</span>
+<span id="toastMessage">Number copied to clipboard</span>
+</div>
+<!-- Admin Contact Modal -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden items-center justify-center p-4" id="addModal">
+<div class="w-full max-w-lg bg-[#FFFDF9] rounded-[12px] border-2 border-[#1A1A17] p-6 shadow-2xl flex flex-col gap-5">
+<div class="flex items-center justify-between border-b border-[#DDD6C7] pb-3">
+<div>
+<span class="font-mono text-eyebrow text-eyebrow uppercase text-[#D7261E] font-semibold">ADMIN DIRECTORY TOOL</span>
+<h2 class="font-headline-sm text-headline-sm text-[#1A1A17]">Add Emergency Contact</h2>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1" id="closeModalBtn">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-4" id="contactForm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-[#1A1A17]">Contact or Desk Name</label>
+<input class="h-11 px-3 rounded bg-white border border-[#DDD6C7] focus:outline-none focus:border-[#1A1A17] font-body-md text-body-md" placeholder="e.g. Ambulance Driver Night Shift" required=""/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-[#1A1A17]">Role or Campus Location</label>
+<input class="h-11 px-3 rounded bg-white border border-[#DDD6C7] focus:outline-none focus:border-[#1A1A17] font-body-md text-body-md" placeholder="e.g. Gate 3 Post, Near Girls Hostel" required=""/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-[#1A1A17]">Phone Number</label>
+<input class="h-11 px-3 rounded bg-white border border-[#DDD6C7] font-mono text-body-md focus:outline-none focus:border-[#1A1A17]" placeholder="+91 98..." required=""/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-[#1A1A17]">Category</label>
+<select class="h-11 px-3 rounded bg-white border border-[#DDD6C7] font-body-md text-body-md focus:outline-none focus:border-[#1A1A17]">
+<option value="college">College Security</option>
+<option value="medical">Medical &amp; First Aid</option>
+<option value="antiragging">Safety &amp; Anti-Ragging</option>
+<option value="women">Women Safety</option>
+</select>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 pt-3 border-t border-[#DDD6C7]">
+<button class="h-11 px-5 rounded-lg border border-[#DDD6C7] hover:bg-[#EDE7DA] text-[#1A1A17] font-label-md text-label-md font-semibold" id="cancelModalBtn" type="button">
+              Cancel
+            </button>
+<button class="h-11 px-6 rounded-lg bg-[#D7261E] hover:bg-[#ba1a1a] text-white font-label-md text-label-md font-semibold shadow-sm" type="submit">
+              Save Contact
+            </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter Tabs & Search Mechanics
+  const searchInput = document.getElementById('searchInput');
+  const clearSearch = document.getElementById('clearSearch');
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const contactCards = document.querySelectorAll('.contact-card');
+  const groupSections = document.querySelectorAll('.group-section');
+  const noResultsState = document.getElementById('noResultsState');
+
+  let currentCategory = 'all';
+
+  function applyFilters() {
+    const term = searchInput.value.trim().toLowerCase();
+    clearSearch.classList.toggle('hidden', term === '');
+
+    let visibleCount = 0;
+
+    contactCards.forEach(card => {
+      const name = card.querySelector('.contact-name')?.innerText.toLowerCase() || '';
+      const num = card.querySelector('.contact-num')?.innerText.toLowerCase() || '';
+      const categoryTags = (card.getAttribute('data-category') || '').toLowerCase().split(' ');
+
+      const matchesSearch = term === '' || name.includes(term) || num.includes(term);
+      const matchesCategory = currentCategory === 'all' || categoryTags.includes(currentCategory);
+
+      if (matchesSearch && matchesCategory) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    // Check parent groups to hide empty headers
+    groupSections.forEach(sec => {
+      const visibleChildren = sec.querySelectorAll('.contact-card:not(.hidden)');
+      sec.classList.toggle('hidden', visibleChildren.length === 0);
+    });
+
+    // Toggle No results banner
+    noResultsState.classList.toggle('hidden', visibleCount > 0);
+    noResultsState.classList.toggle('flex', visibleCount === 0);
+  }
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => {
+        t.classList.remove('active', 'border-[#D7261E]', 'bg-[#FCE4E2]', 'text-[#D7261E]');
+        t.classList.add('border-[#DDD6C7]', 'bg-[#FFFDF9]', 'text-on-surface');
+      });
+      tab.classList.remove('border-[#DDD6C7]', 'bg-[#FFFDF9]', 'text-on-surface');
+      tab.classList.add('active', 'border-[#D7261E]', 'bg-[#FCE4E2]', 'text-[#D7261E]');
+
+      currentCategory = tab.getAttribute('data-category');
+      applyFilters();
+    });
+  });
+
+  searchInput.addEventListener('input', applyFilters);
+  clearSearch.addEventListener('click', () => {
+    searchInput.value = '';
+    applyFilters();
+    searchInput.focus();
+  });
+
+  function resetFilters() {
+    searchInput.value = '';
+    const allTab = document.querySelector('.filter-tab[data-category="all"]');
+    if (allTab) allTab.click();
+    applyFilters();
+  }
+
+  // Copy to clipboard notification
+  function copyToClipboard(text, btn) {
+    if (!text || text.includes('To be added')) return;
+    navigator.clipboard.writeText(text.replace(/\\s+/g, '')).then(() => {
+      showToast('Copied: ' + text);
+    }).catch(() => {
+      // Fallback
+      showToast('Copied: ' + text);
+    });
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('copyToast');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.innerText = msg;
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-20', 'opacity-0');
+    }, 2400);
+  }
+
+  // Admin Modal Logic
+  const addBtn = document.getElementById('addContactBtn');
+  const addModal = document.getElementById('addModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const cancelModalBtn = document.getElementById('cancelModalBtn');
+  const contactForm = document.getElementById('contactForm');
+
+  if (addBtn && addModal) {
+    addBtn.addEventListener('click', () => {
+      addModal.classList.remove('hidden');
+      addModal.classList.add('flex');
+    });
+    const hideModal = () => {
+      addModal.classList.add('hidden');
+      addModal.classList.remove('flex');
+    };
+    closeModalBtn?.addEventListener('click', hideModal);
+    cancelModalBtn?.addEventListener('click', hideModal);
+    contactForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      hideModal();
+      showToast('New directory contact saved successfully');
+    });
+  }
+</script></main></div></body></html>

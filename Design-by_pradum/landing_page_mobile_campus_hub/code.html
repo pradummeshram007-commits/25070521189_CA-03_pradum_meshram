@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Landing Page · Campus Hub · SIT Nagpur</title>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Domine / Bricolage Grotesque, Instrument Sans, IBM Plex Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#F5F1E8',
+            'paper-sunken': '#EDE7DA',
+            ink: '#1A1A17',
+            line: '#DDD6C7',
+            marigold: '#F2B33D',
+            oxblood: '#801A24',
+            hub: {
+              lost: '#B46A14',
+              sports: '#1C7446',
+              booking: '#1E5894',
+              market: '#A6432D',
+              emergency: '#C92A2A',
+              feedback: '#267B80'
+            }
+          },
+          fontFamily: {
+            heading: ['"Bricolage Grotesque"', 'serif'],
+            body: ['"Instrument Sans"', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+<style data-purpose="custom-layout">
+    body {
+      background-color: #F5F1E8;
+      color: #1A1A17;
+      font-family: 'Instrument Sans', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      width: 100%;
+      max-width: 390px;
+      margin: 0 auto;
+      box-shadow: 0 0 30px rgba(0,0,0,0.05);
+    }
+    .custom-scroll-hidden::-webkit-scrollbar {
+      display: none;
+    }
+    .custom-scroll-hidden {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-marigold selection:text-ink">
+<!-- BEGIN: TopBar -->
+<header class="sticky top-0 z-50 h-16 bg-paper border-b border-line px-4 flex items-center justify-between" data-purpose="main-navigation">
+<!-- Brand Wordmark -->
+<div class="flex items-center gap-2.5">
+<div aria-hidden="true" class="w-7 h-7 rounded bg-oxblood flex items-center justify-center relative shadow-sm">
+<div class="w-2 h-2 rounded-full bg-marigold"></div>
+</div>
+<div class="flex flex-col leading-tight">
+<span class="font-mono text-[9px] uppercase tracking-wider text-ink/60 font-semibold">SIT NAGPUR</span>
+<span class="font-heading font-bold text-base tracking-tight text-ink">Campus Hub</span>
+</div>
+</div>
+<!-- Actions (No nav links as per instructions) -->
+<div class="flex items-center gap-2.5">
+<a class="text-xs font-semibold text-ink px-2 py-1.5 hover:text-ink/75 transition-colors" href="#login">Log in</a>
+<a class="text-xs font-semibold bg-ink text-paper px-3 py-1.5 rounded hover:bg-ink/90 transition-colors" href="#signup">Sign up</a>
+</div>
+</header>
+<!-- END: TopBar -->
+<main class="flex-1">
+<!-- BEGIN: HeroSection -->
+<section class="px-4 pt-7 pb-8 border-b border-line" data-purpose="hero-banner">
+<!-- Eyebrow -->
+<p class="font-mono text-[10px] tracking-widest uppercase text-ink/70 font-semibold mb-3">
+        FOR SIT NAGPUR STUDENTS
+      </p>
+<!-- Headline -->
+<h1 class="font-heading font-extrabold text-[32px] leading-[1.12] tracking-tight text-ink mb-4">
+        Everything on campus, on <mark class="bg-marigold px-1.5 py-0.5 rounded-sm text-ink not-italic inline-block">one board.</mark>
+</h1>
+<!-- Subtitle Description -->
+<p class="text-ink/80 text-[14px] leading-relaxed mb-6 font-normal">
+        Lost your ID card? Need one more player for badminton? Selling your old drafter? Campus Hub puts the six things students need most in one place.
+      </p>
+<!-- CTAs -->
+<div class="flex flex-col gap-2.5 mb-5">
+<a class="w-full text-center py-3 bg-ink text-paper text-sm font-semibold rounded shadow-sm active:scale-[0.99] transition-transform" href="#signup">
+          Create your account
+        </a>
+<a class="w-full text-center py-3 bg-paper border border-ink/30 text-ink text-sm font-semibold rounded hover:bg-paper-sunken active:scale-[0.99] transition-transform" href="#login">
+          I already have one
+        </a>
+</div>
+<!-- Trust Micro-text -->
+<p class="font-mono text-[9px] text-ink/60 uppercase tracking-tight text-center mb-8">
+        FREE · COLLEGE ACCOUNTS ONLY · BUILT BY STUDENTS
+      </p>
+<!-- Pinned Notice Preview Collage -->
+<div class="relative w-full pt-3 pb-2" data-purpose="notice-collage">
+<!-- Card A: Lost & Found Notice -->
+<article class="bg-white border border-line rounded p-3 shadow-sm relative mb-3">
+<!-- Marigold Pin Top Accent -->
+<div aria-hidden="true" class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-marigold border border-paper"></div>
+<div class="flex items-center justify-between gap-2 mb-1.5">
+<span class="inline-block bg-[#FDF0DE] text-hub-lost font-mono text-[9px] font-semibold uppercase px-1.5 py-0.5 rounded">
+              LOST
+            </span>
+<span class="font-mono text-[9px] text-ink/40">#LF-802</span>
+</div>
+<h4 class="text-xs font-semibold text-ink leading-tight mb-1">Blue Casio fx-991EX</h4>
+<p class="font-mono text-[10px] text-ink/60 flex items-center gap-1">
+<span>📍 Library, 2nd floor</span>
+<span>·</span>
+<span>26 Oct</span>
+</p>
+</article>
+<!-- Card B: Sports Hub Notice (Overlapping tilt) -->
+<article class="bg-white border border-line rounded p-3 shadow-md relative ml-4 -mt-3.5">
+<!-- Marigold Pin Accent -->
+<div aria-hidden="true" class="absolute -top-1.5 right-6 w-2.5 h-2.5 rounded-full bg-marigold border border-paper"></div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="inline-block bg-[#E8F5ED] text-hub-sports font-mono text-[9px] font-semibold uppercase px-1.5 py-0.5 rounded">
+              SPORTS
+            </span>
+<span class="text-[9px] font-mono text-hub-sports font-medium">Open Match</span>
+</div>
+<h4 class="text-xs font-semibold text-ink leading-snug">Need 1 player · Badminton</h4>
+<p class="font-mono text-[10px] text-ink/60 mt-0.5 mb-2.5">Today 17:00–18:00 · Court 2</p>
+<div class="flex items-center justify-between border-t border-line/50 pt-2">
+<!-- Seat Status Indicators -->
+<div aria-label="3 of 4 players joined" class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-hub-sports"></span>
+<span class="w-2 h-2 rounded-full bg-hub-sports"></span>
+<span class="w-2 h-2 rounded-full bg-hub-sports"></span>
+<span class="w-2 h-2 rounded-full border border-ink/40 bg-transparent"></span>
+</div>
+<button class="bg-ink text-paper text-[10px] font-semibold px-2.5 py-1 rounded" disabled="">
+              Join
+            </button>
+</div>
+</article>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: HubStrip -->
+<section class="bg-paper-sunken border-b border-line py-2.5 px-3 overflow-x-auto custom-scroll-hidden" data-purpose="hub-index-strip">
+<div class="flex items-center gap-3 whitespace-nowrap text-[10px] font-mono font-medium tracking-tight">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-sm bg-hub-lost"></span>
+<span>01 LOST &amp; FOUND</span>
+</div>
+<span class="text-ink/30">·</span>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-sm bg-hub-sports"></span>
+<span>02 SPORTS</span>
+</div>
+<span class="text-ink/30">·</span>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-sm bg-hub-booking"></span>
+<span>03 BOOKING BOARD</span>
+</div>
+<span class="text-ink/30">·</span>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-sm bg-hub-market"></span>
+<span>04 MARKET</span>
+</div>
+<span class="text-ink/30">·</span>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-sm bg-hub-emergency"></span>
+<span>05 EMERGENCY</span>
+</div>
+<span class="text-ink/30">·</span>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-sm bg-hub-feedback"></span>
+<span>06 FEEDBACK</span>
+</div>
+</div>
+</section>
+<!-- END: HubStrip -->
+<!-- BEGIN: WhatsInsideSection -->
+<section class="px-4 py-8 border-b border-line bg-paper" data-purpose="hubs-catalog">
+<header class="mb-6">
+<span class="font-mono text-[10px] uppercase font-semibold text-ink/60 tracking-wider">06 HUBS</span>
+<h2 class="font-heading text-2xl font-bold tracking-tight text-ink mt-0.5">Six hubs. One login.</h2>
+</header>
+<!-- Stacked Hub Cards -->
+<div class="flex flex-col gap-4">
+<!-- 01 Lost & Found -->
+<article class="bg-white border border-line rounded overflow-hidden flex flex-col relative shadow-xs">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-hub-lost"></div>
+<div class="p-3.5 pl-4">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono font-bold text-xl text-hub-lost">01</span>
+<span class="font-mono text-[9px] uppercase tracking-wider text-ink/50 font-medium">DIRECTORY</span>
+</div>
+<h3 class="font-heading font-bold text-base text-ink mb-1">Lost &amp; Found</h3>
+<p class="text-xs text-ink/80 leading-relaxed mb-3">
+              Report something you lost or found on campus. Search by category and place. Mark it returned once back.
+            </p>
+<!-- Micro UI Preview -->
+<div class="bg-paper p-2.5 rounded border border-line/60">
+<div class="flex gap-1.5 mb-2 font-mono text-[9px]">
+<span class="bg-ink text-paper px-1.5 py-0.5 rounded">All Campus</span>
+<span class="border border-line px-1.5 py-0.5 rounded bg-white">Library</span>
+<span class="border border-line px-1.5 py-0.5 rounded bg-white">Canteen</span>
+</div>
+<div class="bg-white p-1.5 rounded border border-line text-[10px] flex items-center justify-between">
+<span class="font-medium text-ink">Found: Silver AirPods Case</span>
+<span class="text-ink/50 font-mono text-[9px]">Academic Block</span>
+</div>
+</div>
+</div>
+</article>
+<!-- 02 Sports Hub -->
+<article class="bg-white border border-line rounded overflow-hidden flex flex-col relative shadow-xs">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-hub-sports"></div>
+<div class="p-3.5 pl-4">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono font-bold text-xl text-hub-sports">02</span>
+<span class="font-mono text-[9px] uppercase tracking-wider text-ink/50 font-medium">COURTS &amp; TURF</span>
+</div>
+<h3 class="font-heading font-bold text-base text-ink mb-1">Sports Hub</h3>
+<p class="text-xs text-ink/80 leading-relaxed mb-3">
+              Book table tennis, pool, badminton, and grounds by date and hour. Host open matches for other peers.
+            </p>
+<!-- Micro UI Preview -->
+<div class="bg-paper p-2.5 rounded border border-line/60">
+<div class="flex items-center justify-between text-[9px] font-mono text-ink/60 mb-1.5">
+<span>Badminton Court 1 &amp; 2</span>
+<span class="font-bold text-ink">TODAY</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5 text-center font-mono text-[10px]">
+<div class="bg-white border border-line p-1 rounded text-ink/40">16:00<br/><span class="text-[8px]">Booked</span></div>
+<div class="bg-[#E8F5ED] border border-hub-sports/40 p-1 rounded text-hub-sports font-semibold">17:00<br/><span class="text-[8px]">Open</span></div>
+<div class="bg-[#FFF4E0] border border-marigold/50 p-1 rounded text-hub-lost font-semibold">18:00<br/><span class="text-[8px]">Need 1</span></div>
+</div>
+</div>
+</div>
+</article>
+<!-- 03 Booking Board -->
+<article class="bg-white border border-line rounded overflow-hidden flex flex-col relative shadow-xs">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-hub-booking"></div>
+<div class="p-3.5 pl-4">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono font-bold text-xl text-hub-booking">03</span>
+<span class="font-mono text-[9px] uppercase tracking-wider text-ink/50 font-medium">TIMETABLE</span>
+</div>
+<h3 class="font-heading font-bold text-base text-ink mb-1">Booking Board</h3>
+<p class="text-xs text-ink/80 leading-relaxed mb-3">
+              Live timetable of every booked slot across seminar halls, music rooms, and labs so you know what's free.
+            </p>
+<!-- Micro UI Preview -->
+<div class="bg-paper p-2 rounded border border-line/60 space-y-1.5">
+<div class="bg-white p-1.5 rounded border border-line flex items-center justify-between text-[10px]">
+<div>
+<div class="font-semibold text-ink">Seminar Hall B</div>
+<div class="text-[8px] font-mono text-ink/50">IEEE Student Branch</div>
+</div>
+<span class="font-mono text-[9px] bg-paper-sunken px-1 rounded">14:00–16:00</span>
+</div>
+<div class="bg-white p-1.5 rounded border border-line flex items-center justify-between text-[10px]">
+<div>
+<div class="font-semibold text-ink">Music Studio</div>
+<div class="text-[8px] font-mono text-hub-sports">Available to Reserve</div>
+</div>
+<span class="font-mono text-[9px] bg-[#E8F5ED] text-hub-sports px-1 rounded">16:30–18:00</span>
+</div>
+</div>
+</div>
+</article>
+<!-- 04 Market Hub -->
+<article class="bg-white border border-line rounded overflow-hidden flex flex-col relative shadow-xs">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-hub-market"></div>
+<div class="p-3.5 pl-4">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono font-bold text-xl text-hub-market">04</span>
+<span class="font-mono text-[9px] uppercase tracking-wider text-ink/50 font-medium">EXCHANGE</span>
+</div>
+<h3 class="font-heading font-bold text-base text-ink mb-1">Market Hub</h3>
+<p class="text-xs text-ink/80 leading-relaxed mb-3">
+              Buy and sell pre-owned engineering drafters, cycles, lab coats, and books directly with fellow students.
+            </p>
+<!-- Micro UI Preview -->
+<div class="bg-paper p-2 rounded border border-line/60">
+<div class="bg-white p-2 rounded border border-line flex items-center justify-between">
+<div>
+<span class="font-semibold text-[11px] text-ink block">Mini drafter · Like new</span>
+<span class="font-mono text-[9px] text-ink/50">Boys Hostel 2 · Verified</span>
+</div>
+<div class="text-right">
+<span class="font-mono font-bold text-xs text-ink block">₹350</span>
+<span class="text-[8px] text-hub-sports font-mono">Available</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- 05 Emergency Hub -->
+<article class="bg-white border border-line rounded overflow-hidden flex flex-col relative shadow-xs">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-hub-emergency"></div>
+<div class="p-3.5 pl-4">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono font-bold text-xl text-hub-emergency">05</span>
+<span class="font-mono text-[9px] uppercase tracking-wider text-ink/50 font-medium">PRIORITY</span>
+</div>
+<h3 class="font-heading font-bold text-base text-ink mb-1">Emergency Hub</h3>
+<p class="text-xs text-ink/80 leading-relaxed mb-3">
+              Direct access numbers from campus security and ambulance to warden desks with instant one-tap calling.
+            </p>
+<!-- Micro UI Preview -->
+<div class="space-y-1 font-mono text-[10px]">
+<div class="bg-[#FFF0F0] border border-hub-emergency/30 p-2 rounded flex items-center justify-between text-hub-emergency">
+<span class="font-semibold">🚑 Medical Emergency</span>
+<span class="text-[9px]">Ext 108</span>
+</div>
+<div class="bg-white border border-line p-2 rounded flex items-center justify-between text-ink/75">
+<span>🛡️ Main Security Gate</span>
+<span class="text-[9px] font-semibold">+91 712 281xxxx</span>
+</div>
+</div>
+</div>
+</article>
+<!-- 06 Feedback Hub -->
+<article class="bg-white border border-line rounded overflow-hidden flex flex-col relative shadow-xs">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-hub-feedback"></div>
+<div class="p-3.5 pl-4">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono font-bold text-xl text-hub-feedback">06</span>
+<span class="font-mono text-[9px] uppercase tracking-wider text-ink/50 font-medium">COMMUNITY</span>
+</div>
+<h3 class="font-heading font-bold text-base text-ink mb-1">Feedback Hub</h3>
+<p class="text-xs text-ink/80 leading-relaxed mb-3">
+              Open suggestions on campus infra, academics, and mess food with community upvotes and admin tracking.
+            </p>
+<!-- Micro UI Preview -->
+<div class="bg-paper p-2 rounded border border-line/60">
+<div class="bg-white p-2 rounded border border-line flex items-center gap-2">
+<div class="bg-paper-sunken border border-line px-1.5 py-1 rounded text-center font-mono">
+<span class="text-[8px] block text-ink/50">▲</span>
+<span class="text-[9px] font-bold text-ink">84</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-[10px] font-medium text-ink truncate">Add shaded benches near Academic Plaza</p>
+<span class="font-mono text-[8px] text-hub-sports uppercase">Under Review</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- END: WhatsInsideSection -->
+<!-- BEGIN: HowItWorks -->
+<section class="px-4 py-8 border-b border-line bg-paper" data-purpose="timeline-workflow">
+<header class="mb-6">
+<span class="font-mono text-[10px] uppercase font-semibold text-ink/60 tracking-wider">GETTING STARTED</span>
+<h2 class="font-heading text-2xl font-bold tracking-tight text-ink mt-0.5">Up and running in two minutes</h2>
+</header>
+<!-- Vertical Timeline -->
+<div class="relative pl-6 space-y-6 before:absolute before:left-3 before:top-2 before:bottom-2 before:w-px before:border-l before:border-dashed before:border-ink/30" data-purpose="timeline-list">
+<!-- Step 1 -->
+<div class="relative">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-white border border-line flex items-center justify-center font-mono text-[11px] font-bold text-ink shadow-xs">
+            1
+          </div>
+<div class="pl-2">
+<h4 class="font-heading font-bold text-sm text-ink mb-0.5">Sign up</h4>
+<p class="text-xs text-ink/70">Use your @sitnagpur.edu.in email and student PRN.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-white border border-line flex items-center justify-center font-mono text-[11px] font-bold text-ink shadow-xs">
+            2
+          </div>
+<div class="pl-2">
+<h4 class="font-heading font-bold text-sm text-ink mb-0.5">Log in</h4>
+<p class="text-xs text-ink/70">Fast magic link or student password verification.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-white border border-line flex items-center justify-center font-mono text-[11px] font-bold text-ink shadow-xs">
+            3
+          </div>
+<div class="pl-2">
+<h4 class="font-heading font-bold text-sm text-ink mb-0.5">Pick a hub</h4>
+<p class="text-xs text-ink/70">Jump directly to the service you need from the noticeboard.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-white border border-line flex items-center justify-center font-mono text-[11px] font-bold text-ink shadow-xs">
+            4
+          </div>
+<div class="pl-2">
+<h4 class="font-heading font-bold text-sm text-ink mb-0.5">Post, book or vote</h4>
+<p class="text-xs text-ink/70">Reserve slots, trade gear, find items, and share feedback.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HowItWorks -->
+<!-- BEGIN: FAQSection -->
+<section class="px-4 py-8 border-b border-line bg-paper" data-purpose="faq-accordion">
+<header class="mb-5">
+<span class="font-mono text-[10px] uppercase font-semibold text-ink/60 tracking-wider">COMMON QUERIES</span>
+<h2 class="font-heading text-2xl font-bold tracking-tight text-ink mt-0.5">Questions</h2>
+<p class="text-xs text-ink/70 mt-1">Everything you need to know about the platform guidelines and access.</p>
+</header>
+<!-- Accordion items -->
+<div class="divide-y divide-line border-y border-line" data-purpose="faq-items">
+<details class="group py-3">
+<summary class="flex justify-between items-center cursor-pointer list-none text-xs font-semibold text-ink focus:outline-none">
+<span>Who can use it?</span>
+<span class="font-mono text-ink/50 text-sm group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="pt-2 text-xs text-ink/80 leading-relaxed font-normal">
+            Only SIT Nagpur students, faculty, and verified campus staff with active institutional credentials.
+          </div>
+</details>
+<details class="group py-3">
+<summary class="flex justify-between items-center cursor-pointer list-none text-xs font-semibold text-ink focus:outline-none">
+<span>Is it free?</span>
+<span class="font-mono text-ink/50 text-sm group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="pt-2 text-xs text-ink/80 leading-relaxed font-normal">
+            Yes, 100% free with no commercial advertisements or paid tiers.
+          </div>
+</details>
+<details class="group py-3">
+<summary class="flex justify-between items-center cursor-pointer list-none text-xs font-semibold text-ink focus:outline-none">
+<span>How many slots can I book?</span>
+<span class="font-mono text-ink/50 text-sm group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="pt-2 text-xs text-ink/80 leading-relaxed font-normal">
+            To ensure fair access across the student body, each student can hold a maximum of 2 slots per day.
+          </div>
+</details>
+<details class="group py-3">
+<summary class="flex justify-between items-center cursor-pointer list-none text-xs font-semibold text-ink focus:outline-none">
+<span>Is anonymous feedback really anonymous?</span>
+<span class="font-mono text-ink/50 text-sm group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="pt-2 text-xs text-ink/80 leading-relaxed font-normal">
+            Yes, your name, PRN, and profile are never stored or shown on anonymous feedback submissions.
+          </div>
+</details>
+<details class="group py-3">
+<summary class="flex justify-between items-center cursor-pointer list-none text-xs font-semibold text-ink focus:outline-none">
+<span>Who manages emergency contacts?</span>
+<span class="font-mono text-ink/50 text-sm group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="pt-2 text-xs text-ink/80 leading-relaxed font-normal">
+            The college administration and security office manage and verify all contact lines weekly.
+          </div>
+</details>
+</div>
+</section>
+<!-- END: FAQSection -->
+<!-- BEGIN: ClosingBand -->
+<section class="bg-ink text-paper px-4 py-10 text-center" data-purpose="cta-banner">
+<h2 class="font-heading font-extrabold text-2xl tracking-tight mb-2">
+        Your campus, <span class="text-marigold underline decoration-2 underline-offset-4">sorted.</span>
+</h2>
+<p class="text-xs text-paper/75 font-normal mb-6">
+        Join your batchmates on Campus Hub today.
+      </p>
+<div class="flex items-center justify-center gap-3">
+<a class="bg-marigold text-ink text-xs font-bold px-5 py-2.5 rounded shadow-sm hover:brightness-105 active:scale-95 transition-all" href="#signup">
+          Sign up
+        </a>
+<a class="bg-transparent border border-paper/40 text-paper text-xs font-semibold px-5 py-2.5 rounded hover:bg-paper/10 active:scale-95 transition-all" href="#login">
+          Log in
+        </a>
+</div>
+</section>
+<!-- END: ClosingBand -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-paper border-t border-line px-4 py-5 flex items-center justify-between text-xs text-ink/70" data-purpose="site-footer">
+<div class="flex items-center gap-2">
+<div aria-hidden="true" class="w-4 h-4 rounded-xs bg-oxblood flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-marigold"></div>
+</div>
+<span class="font-heading font-bold text-ink text-xs">Campus Hub</span>
+</div>
+<span class="font-mono text-[9px] text-ink/50">Made by students of SIT Nagpur · 2025</span>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Feedback Hub · Campus Hub SIT Nagpur</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#F5F1E8',
+            card: '#FFFDF9',
+            sunken: '#EDE7DA',
+            borderline: '#DDD6C7',
+            ink: '#1A1A17',
+            muted: '#57534A',
+            subtle: '#8C877D',
+            oxblood: '#7B1E2E',
+            marigold: '#F2B33D',
+            teal: {
+              DEFAULT: '#1E6E6A',
+              light: '#DDEFED',
+              dark: '#144F4C'
+            },
+            status: {
+              reviewBg: '#FBF0D9',
+              reviewText: '#A0660E',
+              resolvedBg: '#E2EFE7',
+              resolvedText: '#2E6B4E',
+              openBg: '#EDE7DA',
+              openText: '#57534A'
+            }
+          },
+          fontFamily: {
+            bricolage: ['"Bricolage Grotesque"', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'monospace'],
+            sans: ['"Instrument Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #F5F1E8;
+      color: #1A1A17;
+      font-family: 'Instrument Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #DDD6C7;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-paper text-ink selection:bg-oxblood selection:text-white">
+<!-- ========================================================= -->
+<!-- 1. PERSISTENT APP SHELL: LEFT SIDEBAR (248px desktop)     -->
+<!-- ========================================================= -->
+<aside class="fixed left-0 top-0 bottom-0 w-[248px] bg-paper border-r border-borderline z-50 flex flex-col justify-between select-none">
+<div class="flex flex-col">
+<!-- Wordmark & Pin Header -->
+<div class="px-5 py-4 border-b border-borderline">
+<div class="flex items-center gap-3">
+<!-- Small Oxblood rounded square (#7B1E2E) with Marigold dot (#F2B33D) pin -->
+<div class="w-8 h-8 rounded-lg bg-oxblood flex items-center justify-center shrink-0 shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-marigold"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-mono text-[10px] uppercase font-bold tracking-widest text-subtle leading-tight">SIT NAGPUR</span>
+<span class="font-bricolage text-[19px] font-extrabold text-ink leading-tight tracking-tight">Campus Hub</span>
+</div>
+</div>
+</div>
+<!-- Navigation Content -->
+<nav class="flex flex-col px-3 py-3 gap-1">
+<!-- Section: Registry -->
+<div class="px-2 pt-1 pb-1 font-mono text-[10px] uppercase font-bold tracking-wider text-subtle">
+          Registry
+        </div>
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-muted hover:text-ink hover:bg-sunken text-sm font-medium transition-colors" href="#">
+<span class="w-2 h-2 rounded-full bg-subtle/60 shrink-0"></span>
+<span class="truncate">Dashboard</span>
+</a>
+<!-- Section: Academic Hubs -->
+<div class="px-2 pt-4 pb-1 font-mono text-[10px] uppercase font-bold tracking-wider text-subtle">
+          Academic Hubs
+        </div>
+<!-- Hub 01 -->
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-muted hover:text-ink hover:bg-sunken text-sm font-medium transition-colors" href="#">
+<span class="w-2 h-2 rounded-full bg-[#A0660E] shrink-0"></span>
+<span class="font-mono text-xs text-subtle font-semibold">01</span>
+<span class="truncate">Lost &amp; Found</span>
+</a>
+<!-- Hub 02 -->
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-muted hover:text-ink hover:bg-sunken text-sm font-medium transition-colors" href="#">
+<span class="w-2 h-2 rounded-full bg-[#2E6B4E] shrink-0"></span>
+<span class="font-mono text-xs text-subtle font-semibold">02</span>
+<span class="truncate">Sports Hub</span>
+</a>
+<!-- Hub 03 -->
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-muted hover:text-ink hover:bg-sunken text-sm font-medium transition-colors" href="#">
+<span class="w-2 h-2 rounded-full bg-[#2C5A8C] shrink-0"></span>
+<span class="font-mono text-xs text-subtle font-semibold">03</span>
+<span class="truncate">Booking Board</span>
+</a>
+<!-- Hub 04 -->
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-muted hover:text-ink hover:bg-sunken text-sm font-medium transition-colors" href="#">
+<span class="w-2 h-2 rounded-full bg-[#B4532A] shrink-0"></span>
+<span class="font-mono text-xs text-subtle font-semibold">04</span>
+<span class="truncate">Market Hub</span>
+</a>
+<!-- Hub 05 -->
+<a class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-muted hover:text-ink hover:bg-sunken text-sm font-medium transition-colors" href="#">
+<span class="w-2 h-2 rounded-full bg-[#D7261E] shrink-0"></span>
+<span class="font-mono text-xs text-subtle font-semibold">05</span>
+<span class="truncate">Emergency Hub</span>
+</a>
+<!-- Hub 06: ACTIVE ITEM (Card bg #FFFDF9, Oxblood text #7B1E2E, 3px oxblood bar on left) -->
+<a aria-current="page" class="flex items-center gap-2.5 px-3 py-2 rounded-r-lg bg-card text-oxblood font-semibold text-sm shadow-xs border-l-[3px] border-oxblood -ml-[3px] pl-[11px] transition-all" href="#">
+<span class="w-2 h-2 rounded-full bg-teal shrink-0"></span>
+<span class="font-mono text-xs text-oxblood/80 font-bold">06</span>
+<span class="truncate">Feedback Hub</span>
+</a>
+</nav>
+</div>
+<!-- Bottom User Card -->
+<div class="p-3 border-t border-borderline bg-paper">
+<div class="flex items-center justify-between p-2 rounded-xl bg-card border border-borderline">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-oxblood text-white font-mono text-xs font-bold flex items-center justify-center shrink-0 shadow-xs">
+            AD
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-semibold text-ink truncate leading-tight">Aarav Deshmukh</span>
+<span class="font-mono text-[11px] text-muted truncate leading-tight">CSE · 3rd yr</span>
+</div>
+</div>
+<button class="p-1 rounded text-subtle hover:text-oxblood hover:bg-sunken transition-colors shrink-0" title="Log out" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- ========================================================= -->
+<!-- 2. MAIN CONTAINER & TOP BAR                               -->
+<!-- ========================================================= -->
+<div class="pl-[248px] min-h-screen flex flex-col bg-paper">
+<!-- DESKTOP TOP BAR -->
+<header class="sticky top-0 left-0 right-0 h-16 bg-paper/95 backdrop-blur-sm border-b border-borderline z-40 px-8 flex items-center justify-between">
+<!-- Breadcrumb and Quick Search -->
+<div class="flex items-center gap-6 min-w-0">
+<div class="flex items-center gap-2 font-mono text-xs text-muted truncate">
+<span class="material-symbols-outlined text-[18px] text-subtle">domain</span>
+<span>Campus Registry</span>
+<span class="text-subtle">/</span>
+<span class="text-ink font-semibold truncate">SIT Nagpur Directory</span>
+</div>
+<div class="relative w-72">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-subtle pointer-events-none">search</span>
+<input class="w-full h-9 pl-9 pr-14 bg-card border border-borderline rounded-lg text-xs font-sans text-ink placeholder:text-subtle focus:outline-none focus:border-teal transition-colors" placeholder="Search registry, hubs, notices..." type="text"/>
+<kbd class="absolute right-2 top-1/2 -translate-y-1/2 font-mono text-[10px] text-muted bg-sunken border border-borderline rounded px-1.5 py-0.5">⌘K</kbd>
+</div>
+</div>
+<!-- Emergency Pill & Right Avatar -->
+<div class="flex items-center gap-3 shrink-0">
+<a class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#D7261E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#B71C15] transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Emergency</span>
+</a>
+<div class="w-8 h-8 rounded-full bg-ink text-paper flex items-center justify-center text-xs font-bold">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+</div>
+</header>
+<!-- CONTENT REGION (max width 1200px) -->
+<main class="w-full max-w-[1200px] mx-auto px-6 py-6 flex flex-col gap-6">
+<!-- ========================================================= -->
+<!-- 3. HUB HEADER (with 6px Teal top bar)                     -->
+<!-- ========================================================= -->
+<section class="rounded-xl overflow-hidden bg-card border border-borderline shadow-xs">
+<!-- 6px Teal (#1E6E6A) strip across top -->
+<div class="h-1.5 w-full bg-teal"></div>
+<div class="p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2 text-teal font-mono text-xs font-semibold tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-teal"></span>
+<span>HUB 06 · CAMPUS OPEN FORUM &amp; FEEDBACK</span>
+</div>
+<h1 class="font-bricolage text-3xl md:text-4xl font-extrabold text-ink tracking-tight leading-tight mt-0.5">
+              Feedback Hub
+            </h1>
+<p class="font-sans text-base text-muted">
+              Say what's working and what isn't. Upvote what matters.
+            </p>
+</div>
+<div class="shrink-0">
+<!-- Action button: primary Ink (#1A1A17), Paper text (#F5F1E8), radius 8px, 44px tall -->
+<button class="h-11 px-5 rounded-lg bg-ink text-paper font-sans text-sm font-semibold hover:bg-muted transition-colors flex items-center gap-2 shadow-sm" id="openComposerModal" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>+ New feedback</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- 4. COMPOSER BAR                                           -->
+<!-- ========================================================= -->
+<section class="rounded-xl bg-card border border-borderline p-4 shadow-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-oxblood text-white font-mono text-xs font-bold flex items-center justify-center shrink-0 ring-1 ring-borderline select-none">
+            AD
+          </div>
+<div class="flex-1 cursor-pointer" onclick="document.getElementById('composeModal').classList.remove('hidden')">
+<input class="w-full h-11 px-4 bg-paper/60 border border-borderline rounded-lg text-sm text-ink placeholder:text-subtle cursor-pointer focus:outline-none hover:border-teal transition-colors" placeholder="Share feedback with the campus… (Academics, Hostel, Facilities)" readonly="" type="text"/>
+</div>
+<button class="h-11 px-6 rounded-lg bg-ink text-paper font-sans text-sm font-semibold hover:bg-muted transition-colors shrink-0" onclick="document.getElementById('composeModal').classList.remove('hidden')" type="button">
+            Post
+          </button>
+</div>
+<!-- Reassurance Badges Row -->
+<div class="mt-3 pt-2.5 border-t border-borderline/60 flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-xs text-muted">
+<div class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-teal">masks</span>
+<span>Anonymous allowed</span>
+</div>
+<span class="text-subtle select-none">•</span>
+<div class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#2E6B4E]">verified_user</span>
+<span>PRN verified voting</span>
+</div>
+<span class="text-subtle select-none">•</span>
+<div class="inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#A0660E]">account_balance</span>
+<span>Dean's office weekly review</span>
+</div>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- 5. TOOLBAR (Chips, Status Filter & Segmented Sort)        -->
+<!-- ========================================================= -->
+<section class="flex flex-col gap-3">
+<!-- Category chips row -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none select-none">
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider transition-colors shrink-0 bg-teal-light text-teal border border-teal" type="button">
+            All
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Academics
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Faculty
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Hostel
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Canteen
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Transport
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Sports
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Infrastructure
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Events
+          </button>
+<button class="category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken" type="button">
+            Other
+          </button>
+</div>
+<!-- Secondary Filter Controls -->
+<div class="flex items-center justify-between gap-3 flex-wrap">
+<!-- Status Dropdown -->
+<div class="relative">
+<select class="appearance-none h-9 pl-3.5 pr-8 bg-card border border-borderline rounded-lg font-mono text-xs font-semibold uppercase tracking-wider text-ink focus:outline-none focus:border-teal cursor-pointer" id="statusFilter">
+<option value="all">All (Open, Review, Resolved)</option>
+<option value="open">Open Only</option>
+<option value="review">Under Review</option>
+<option value="resolved">Resolved</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-subtle absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+<!-- Sort Segmented Control: Top | New (Top active) -->
+<div class="flex items-center bg-sunken p-1 rounded-lg border border-borderline">
+<button class="px-3.5 py-1 rounded-md font-mono text-xs font-bold uppercase tracking-wider transition-all bg-ink text-card shadow-xs" id="sortTopBtn" type="button">
+              ▲ Top
+            </button>
+<button class="px-3.5 py-1 rounded-md font-mono text-xs font-medium uppercase tracking-wider transition-all text-muted hover:text-ink" id="sortNewBtn" type="button">
+              New
+            </button>
+</div>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- 6. TWO-COLUMN LAYOUT (Max 760px Feed + 320px Sidebar)     -->
+<!-- ========================================================= -->
+<div class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 items-start">
+<!-- LEFT FEED COLUMN (max 760px) -->
+<div class="flex flex-col gap-4 w-full max-w-[760px]">
+<!-- POST 1 (Voted state, Under Review) -->
+<article class="feedback-card group rounded-xl bg-card border border-borderline hover:border-muted hover:shadow-sm transition-all p-4 flex gap-4" data-status="review">
+<!-- Vertical vote column: solid teal, white text -->
+<button class="vote-pill shrink-0 w-12 h-20 rounded-xl bg-teal text-white flex flex-col items-center justify-center gap-1 transition-all active:scale-95 select-none" data-count="142" data-voted="true" onclick="toggleVote(this)" type="button">
+<span class="material-symbols-outlined text-[20px] leading-none">arrow_upward</span>
+<span class="font-mono text-[16px] font-bold leading-none vote-counter">142</span>
+</button>
+<!-- Body Area -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<!-- Chips row -->
+<div class="flex items-center gap-2 flex-wrap mb-1.5">
+<span class="px-2 py-0.5 rounded border border-borderline bg-paper font-mono text-[11px] font-semibold uppercase text-muted tracking-wider">
+                    Hostel
+                  </span>
+<span class="px-2 py-0.5 rounded bg-status-reviewBg text-status-reviewText font-mono text-[11px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-reviewText"></span>
+<span>Under Review</span>
+</span>
+<span class="font-mono text-[11px] text-subtle ml-auto">#SIT-FB-1082</span>
+</div>
+<!-- H3 Title -->
+<h3 class="font-bricolage text-[19px] font-bold text-ink leading-snug tracking-tight group-hover:text-teal transition-colors">
+                  Hot water timings in Boys Hostel 2 need to be extended until 9:30 AM
+                </h3>
+<!-- 2-line Excerpt -->
+<p class="font-sans text-sm text-muted mt-1.5 leading-relaxed line-clamp-2">
+                  Morning 8:30 AM classes mean half the floor has to queue up before 7:00 AM. Geysers shut off sharp at 8:00 AM leaving no buffer for late lab batches.
+                </p>
+</div>
+<!-- Meta row -->
+<div class="mt-3 pt-2.5 border-t border-borderline/60 flex items-center justify-between font-mono text-xs text-muted">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px] text-subtle">masks</span>
+<span class="font-medium text-ink">Anonymous</span>
+<span class="text-subtle">•</span>
+<span class="uppercase">3H AGO</span>
+</div>
+<div class="flex items-center gap-1.5 text-muted hover:text-teal transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>28 comments</span>
+</div>
+</div>
+</div>
+</article>
+<!-- POST 2 (Unvoted state, Resolved) -->
+<article class="feedback-card group rounded-xl bg-card border border-borderline hover:border-muted hover:shadow-sm transition-all p-4 flex gap-4" data-status="resolved">
+<!-- Vertical vote column: unvoted state -->
+<button class="vote-pill shrink-0 w-12 h-20 rounded-xl bg-card border border-borderline text-ink flex flex-col items-center justify-center gap-1 transition-all hover:bg-paper active:scale-95 select-none" data-count="89" data-voted="false" onclick="toggleVote(this)" type="button">
+<span class="material-symbols-outlined text-[20px] leading-none text-muted">arrow_upward</span>
+<span class="font-mono text-[16px] font-bold leading-none vote-counter">89</span>
+</button>
+<!-- Body Area -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<!-- Chips row -->
+<div class="flex items-center gap-2 flex-wrap mb-1.5">
+<span class="px-2 py-0.5 rounded border border-borderline bg-paper font-mono text-[11px] font-semibold uppercase text-muted tracking-wider">
+                    Infrastructure
+                  </span>
+<span class="px-2 py-0.5 rounded bg-status-resolvedBg text-status-resolvedText font-mono text-[11px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] font-bold">check_circle</span>
+<span>Resolved</span>
+</span>
+<span class="font-mono text-[11px] text-subtle ml-auto">#SIT-FB-1065</span>
+</div>
+<!-- H3 Title -->
+<h3 class="font-bricolage text-[19px] font-bold text-ink leading-snug tracking-tight group-hover:text-teal transition-colors">
+                  Install additional charging sockets in Central Library 2nd floor reading hall
+                </h3>
+<!-- 2-line Excerpt -->
+<p class="font-sans text-sm text-muted mt-1.5 leading-relaxed line-clamp-2">
+                  Electrical sockets near carrels 14 to 28 have been replaced with 16A shuttered points and surge protection. Completed by Estates Dept.
+                </p>
+</div>
+<!-- Meta row -->
+<div class="mt-3 pt-2.5 border-t border-borderline/60 flex items-center justify-between font-mono text-xs text-muted">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-teal text-white font-mono text-[10px] font-bold flex items-center justify-center">IR</span>
+<span class="font-medium text-ink">Ishita Rao · E&amp;TC 2nd yr</span>
+<span class="text-subtle">•</span>
+<span class="uppercase">2D AGO</span>
+</div>
+<div class="flex items-center gap-1.5 text-muted hover:text-teal transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>14 comments</span>
+</div>
+</div>
+</div>
+</article>
+<!-- POST 3 (Voted state, Open) -->
+<article class="feedback-card group rounded-xl bg-card border border-borderline hover:border-muted hover:shadow-sm transition-all p-4 flex gap-4" data-status="open">
+<!-- Vertical vote column: solid teal, white text -->
+<button class="vote-pill shrink-0 w-12 h-20 rounded-xl bg-teal text-white flex flex-col items-center justify-center gap-1 transition-all active:scale-95 select-none" data-count="64" data-voted="true" onclick="toggleVote(this)" type="button">
+<span class="material-symbols-outlined text-[20px] leading-none">arrow_upward</span>
+<span class="font-mono text-[16px] font-bold leading-none vote-counter">64</span>
+</button>
+<!-- Body Area -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<!-- Chips row -->
+<div class="flex items-center gap-2 flex-wrap mb-1.5">
+<span class="px-2 py-0.5 rounded border border-borderline bg-paper font-mono text-[11px] font-semibold uppercase text-muted tracking-wider">
+                    Canteen
+                  </span>
+<span class="px-2 py-0.5 rounded bg-status-openBg text-status-openText font-mono text-[11px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-subtle"></span>
+<span>Open</span>
+</span>
+<span class="font-mono text-[11px] text-subtle ml-auto">#SIT-FB-1077</span>
+</div>
+<!-- H3 Title -->
+<h3 class="font-bricolage text-[19px] font-bold text-ink leading-snug tracking-tight group-hover:text-teal transition-colors">
+                  Canteen dinner menu needs protein options and transparent hygiene audits
+                </h3>
+<!-- 2-line Excerpt -->
+<p class="font-sans text-sm text-muted mt-1.5 leading-relaxed line-clamp-2">
+                  Current mess cycle lacks fresh fruit or egg/paneer substitutes. We request a student-led mess committee monthly inspection.
+                </p>
+</div>
+<!-- Meta row -->
+<div class="mt-3 pt-2.5 border-t border-borderline/60 flex items-center justify-between font-mono text-xs text-muted">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px] text-subtle">masks</span>
+<span class="font-medium text-ink">Anonymous</span>
+<span class="text-subtle">•</span>
+<span class="uppercase">5H AGO</span>
+</div>
+<div class="flex items-center gap-1.5 text-muted hover:text-teal transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>37 comments</span>
+</div>
+</div>
+</div>
+</article>
+<!-- POST 4 (Unvoted state, Open) -->
+<article class="feedback-card group rounded-xl bg-card border border-borderline hover:border-muted hover:shadow-sm transition-all p-4 flex gap-4" data-status="open">
+<!-- Vertical vote column: unvoted state -->
+<button class="vote-pill shrink-0 w-12 h-20 rounded-xl bg-card border border-borderline text-ink flex flex-col items-center justify-center gap-1 transition-all hover:bg-paper active:scale-95 select-none" data-count="31" data-voted="false" onclick="toggleVote(this)" type="button">
+<span class="material-symbols-outlined text-[20px] leading-none text-muted">arrow_upward</span>
+<span class="font-mono text-[16px] font-bold leading-none vote-counter">31</span>
+</button>
+<!-- Body Area -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<!-- Chips row -->
+<div class="flex items-center gap-2 flex-wrap mb-1.5">
+<span class="px-2 py-0.5 rounded border border-borderline bg-paper font-mono text-[11px] font-semibold uppercase text-muted tracking-wider">
+                    Transport
+                  </span>
+<span class="px-2 py-0.5 rounded bg-status-openBg text-status-openText font-mono text-[11px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-subtle"></span>
+<span>Open</span>
+</span>
+<span class="font-mono text-[11px] text-subtle ml-auto">#SIT-FB-1070</span>
+</div>
+<!-- H3 Title -->
+<h3 class="font-bricolage text-[19px] font-bold text-ink leading-snug tracking-tight group-hover:text-teal transition-colors">
+                  Evening shuttle bus frequency from campus to Metro station after 8:00 PM
+                </h3>
+<!-- 2-line Excerpt -->
+<p class="font-sans text-sm text-muted mt-1.5 leading-relaxed line-clamp-2">
+                  Last shuttle leaves at 8:15 PM which clashes with project lab closures at 8:30 PM. Students are forced to take costly private autos.
+                </p>
+</div>
+<!-- Meta row -->
+<div class="mt-3 pt-2.5 border-t border-borderline/60 flex items-center justify-between font-mono text-xs text-muted">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-oxblood text-white font-mono text-[10px] font-bold flex items-center justify-center">RP</span>
+<span class="font-medium text-ink">Rohan Patil · CSE 3rd yr</span>
+<span class="text-subtle">•</span>
+<span class="uppercase">1D AGO</span>
+</div>
+<div class="flex items-center gap-1.5 text-muted hover:text-teal transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>9 comments</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- RIGHT SIDEBAR (320px Sticky) -->
+<aside class="w-full lg:w-[320px] flex flex-col gap-4 sticky top-20">
+<!-- SIDEBAR CARD 1: "THIS WEEK" -->
+<div class="rounded-xl bg-card border border-borderline p-4 shadow-xs">
+<div class="flex items-center justify-between pb-2 border-b border-borderline/60">
+<span class="font-mono text-xs font-bold text-teal uppercase tracking-wider">
+                THIS WEEK
+              </span>
+<span class="material-symbols-outlined text-[18px] text-subtle">monitoring</span>
+</div>
+<div class="mt-3">
+<div class="font-mono text-[17px] font-bold text-ink">
+                46 posts · 18 resolved
+              </div>
+<div class="flex items-center justify-between font-mono text-xs text-muted mt-1">
+<span>Resolution rate</span>
+<span class="font-bold text-[#2E6B4E]">39.1% resolved</span>
+</div>
+<!-- Progress bar (39.1% resolved, review, open) -->
+<div class="w-full h-2.5 bg-paper rounded-full mt-2.5 overflow-hidden flex border border-borderline/40">
+<div class="bg-[#2E6B4E] h-full" style="width: 39.1%" title="Resolved: 39.1%"></div>
+<div class="bg-[#A0660E] h-full" style="width: 26%" title="Review: 26%"></div>
+<div class="bg-borderline h-full" style="width: 34.9%" title="Open: 34.9%"></div>
+</div>
+<!-- Metrics Breakdown -->
+<div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-borderline/60 text-center font-mono">
+<div class="p-1.5 rounded-lg bg-paper">
+<div class="text-[10px] text-subtle uppercase font-semibold">Open</div>
+<div class="text-sm font-bold text-ink">16</div>
+</div>
+<div class="p-1.5 rounded-lg bg-status-reviewBg/70">
+<div class="text-[10px] text-status-reviewText uppercase font-semibold">Review</div>
+<div class="text-sm font-bold text-status-reviewText">12</div>
+</div>
+<div class="p-1.5 rounded-lg bg-status-resolvedBg/70">
+<div class="text-[10px] text-status-resolvedText uppercase font-semibold">Closed</div>
+<div class="text-sm font-bold text-status-resolvedText">18</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SIDEBAR CARD 2: "MOST UPVOTED ISSUES" TOP 3 -->
+<div class="rounded-xl bg-card border border-borderline p-4 shadow-xs">
+<div class="flex items-center justify-between pb-2 border-b border-borderline/60">
+<span class="font-mono text-xs font-bold text-ink uppercase tracking-wider">
+                MOST UPVOTED ISSUES
+              </span>
+<span class="font-mono text-xs text-teal font-semibold">TOP 3</span>
+</div>
+<ul class="flex flex-col divide-y divide-borderline/60 mt-1">
+<!-- Item 01 -->
+<li class="py-2.5 flex items-start justify-between gap-2">
+<div class="flex items-start gap-2 min-w-0">
+<span class="font-mono text-xs font-bold text-teal">01.</span>
+<div class="flex flex-col min-w-0">
+<span class="font-sans text-sm font-semibold text-ink truncate leading-tight">Hot water in BH-2</span>
+<span class="font-mono text-[11px] text-muted mt-0.5">Boys Hostel 2 · Geysers</span>
+</div>
+</div>
+<span class="font-mono text-xs font-bold text-teal shrink-0 bg-teal-light px-2 py-0.5 rounded">
+                  ▲ 142
+                </span>
+</li>
+<!-- Item 02 -->
+<li class="py-2.5 flex items-start justify-between gap-2">
+<div class="flex items-start gap-2 min-w-0">
+<span class="font-mono text-xs font-bold text-subtle">02.</span>
+<div class="flex flex-col min-w-0">
+<span class="font-sans text-sm font-semibold text-ink truncate leading-tight">Library sockets</span>
+<span class="font-mono text-[11px] text-[#2E6B4E] mt-0.5">2nd Flr Carrels · Resolved</span>
+</div>
+</div>
+<span class="font-mono text-xs font-bold text-muted shrink-0 bg-paper px-2 py-0.5 rounded border border-borderline/60">
+                  ▲ 89
+                </span>
+</li>
+<!-- Item 03 -->
+<li class="py-2.5 flex items-start justify-between gap-2">
+<div class="flex items-start gap-2 min-w-0">
+<span class="font-mono text-xs font-bold text-subtle">03.</span>
+<div class="flex flex-col min-w-0">
+<span class="font-sans text-sm font-semibold text-ink truncate leading-tight">Evening shuttle ...</span>
+<span class="font-mono text-[11px] text-muted mt-0.5">Campus ⇄ Metro Station</span>
+</div>
+</div>
+<span class="font-mono text-xs font-bold text-muted shrink-0 bg-paper px-2 py-0.5 rounded border border-borderline/60">
+                  ▲ 78
+                </span>
+</li>
+</ul>
+</div>
+<!-- SIDEBAR CARD 3: "POSTING GUIDELINES" (Sunken background #EDE7DA) -->
+<div class="rounded-xl bg-sunken border border-borderline p-4">
+<div class="flex items-center gap-2 pb-2 border-b border-borderline">
+<span class="material-symbols-outlined text-[18px] text-teal">verified</span>
+<span class="font-bricolage text-sm font-bold uppercase tracking-tight text-ink">Posting Guidelines</span>
+</div>
+<ul class="mt-3 flex flex-col gap-2.5 font-sans text-xs text-muted leading-relaxed">
+<li class="flex items-start gap-2">
+<span class="font-mono text-teal font-bold text-[12px] leading-5 shrink-0">•</span>
+<span><strong class="text-ink font-semibold">Be specific:</strong> describe exact location, floor/room, actionable fix.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-mono text-teal font-bold text-[12px] leading-5 shrink-0">•</span>
+<span><strong class="text-ink font-semibold">Be respectful:</strong> focus strictly on institutional systems and student services.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-mono text-[#D7261E] font-bold text-[12px] leading-5 shrink-0">•</span>
+<span><strong class="text-[#D7261E] font-semibold">Do NOT name individuals:</strong> avoid professor names or peer identities.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-mono text-teal font-bold text-[12px] leading-5 shrink-0">•</span>
+<span><strong class="text-ink font-semibold">Integrity safeguard:</strong> anonymous posts still bind to PRN verified sessions.</span>
+</li>
+</ul>
+<div class="mt-4 pt-2.5 border-t border-borderline flex items-center justify-between font-mono text-[11px] text-subtle">
+<span>SIT Nagpur Student Welfare</span>
+<span class="font-semibold text-muted">REV 2025</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div>
+<!-- ========================================================= -->
+<!-- 7. MODAL: COMPOSE FEEDBACK                                -->
+<!-- ========================================================= -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink/40 backdrop-blur-xs" id="composeModal">
+<div class="bg-card border-2 border-ink rounded-xl max-w-xl w-full p-6 shadow-2xl flex flex-col gap-4 animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-2 border-b border-borderline">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-teal"></span>
+<h2 class="font-bricolage text-xl font-bold text-ink">Submit Campus Feedback</h2>
+</div>
+<button class="p-1 rounded text-subtle hover:text-ink hover:bg-paper transition-colors" onclick="document.getElementById('composeModal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-4" onsubmit="handleNewFeedback(event)">
+<div>
+<label class="block font-mono text-xs font-semibold uppercase text-muted mb-1">Feedback Category</label>
+<select class="w-full h-10 px-3 bg-paper/60 border border-borderline rounded-lg font-sans text-sm focus:outline-none focus:border-teal" id="modalCategory" required="">
+<option value="Hostel">Hostel</option>
+<option value="Academics">Academics</option>
+<option value="Infrastructure">Infrastructure</option>
+<option value="Canteen">Canteen</option>
+<option value="Transport">Transport</option>
+<option value="Sports">Sports</option>
+<option value="Faculty">Faculty</option>
+<option value="Events">Events</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div>
+<label class="block font-mono text-xs font-semibold uppercase text-muted mb-1">Issue Headline</label>
+<input class="w-full h-10 px-3 bg-paper/60 border border-borderline rounded-lg font-sans text-sm focus:outline-none focus:border-teal" id="modalTitle" placeholder="Clear summary of the problem..." required="" type="text"/>
+</div>
+<div>
+<label class="block font-mono text-xs font-semibold uppercase text-muted mb-1">Details &amp; Actionable Fix</label>
+<textarea class="w-full p-3 bg-paper/60 border border-borderline rounded-lg font-sans text-sm focus:outline-none focus:border-teal" id="modalBody" placeholder="Describe specific location/room, issues noticed, and practical recommendations..." required="" rows="3"></textarea>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-borderline">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input class="w-4 h-4 rounded border-borderline text-teal focus:ring-0" id="modalAnonymous" type="checkbox"/>
+<span class="font-sans text-xs text-muted">Post anonymously (Display as Masked)</span>
+</label>
+<div class="flex items-center gap-2">
+<button class="h-9 px-4 rounded-lg border border-borderline text-muted font-sans text-xs hover:bg-paper transition-colors" onclick="document.getElementById('composeModal').classList.add('hidden')" type="button">
+              Cancel
+            </button>
+<button class="h-9 px-5 rounded-lg bg-ink text-paper font-sans text-xs font-semibold hover:bg-muted transition-colors shadow-xs" type="submit">
+              Publish Notice
+            </button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- INTERACTIVITY SCRIPT -->
+<script>
+    // Open Compose Modal
+    const openComposerModal = document.getElementById('openComposerModal');
+    if (openComposerModal) {
+      openComposerModal.addEventListener('click', () => {
+        document.getElementById('composeModal').classList.remove('hidden');
+      });
+    }
+
+    // Toggle Upvotes
+    function toggleVote(button) {
+      const isVoted = button.getAttribute('data-voted') === 'true';
+      const counterEl = button.querySelector('.vote-counter');
+      const iconEl = button.querySelector('.material-symbols-outlined');
+      let count = parseInt(button.getAttribute('data-count'), 10);
+
+      if (isVoted) {
+        count -= 1;
+        button.setAttribute('data-voted', 'false');
+        button.setAttribute('data-count', count);
+        counterEl.textContent = count;
+        // Unvoted outline card style
+        button.className = 'vote-pill shrink-0 w-12 h-20 rounded-xl bg-card border border-borderline text-ink flex flex-col items-center justify-center gap-1 transition-all hover:bg-paper active:scale-95 select-none';
+        iconEl.className = 'material-symbols-outlined text-[20px] leading-none text-muted';
+      } else {
+        count += 1;
+        button.setAttribute('data-voted', 'true');
+        button.setAttribute('data-count', count);
+        counterEl.textContent = count;
+        // Voted teal pill style
+        button.className = 'vote-pill shrink-0 w-12 h-20 rounded-xl bg-teal text-white flex flex-col items-center justify-center gap-1 transition-all active:scale-95 select-none';
+        iconEl.className = 'material-symbols-outlined text-[20px] leading-none text-white';
+      }
+    }
+
+    // Category Chips selection
+    const categoryChips = document.querySelectorAll('.category-chip');
+    categoryChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        categoryChips.forEach(c => {
+          c.className = 'category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-medium uppercase tracking-wider transition-colors shrink-0 bg-card text-muted border border-borderline hover:bg-sunken';
+        });
+        chip.className = 'category-chip px-3.5 py-1.5 rounded-full font-mono text-xs font-bold uppercase tracking-wider transition-colors shrink-0 bg-teal-light text-teal border border-teal';
+      });
+    });
+
+    // Status Filter selection
+    const statusFilter = document.getElementById('statusFilter');
+    if (statusFilter) {
+      statusFilter.addEventListener('change', (e) => {
+        const val = e.target.value;
+        const cards = document.querySelectorAll('.feedback-card');
+        cards.forEach(card => {
+          const status = card.getAttribute('data-status');
+          if (val === 'all' || status === val) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Segmented Sort Control
+    const sortTopBtn = document.getElementById('sortTopBtn');
+    const sortNewBtn = document.getElementById('sortNewBtn');
+    if (sortTopBtn && sortNewBtn) {
+      sortTopBtn.addEventListener('click', () => {
+        sortTopBtn.className = 'px-3.5 py-1 rounded-md font-mono text-xs font-bold uppercase tracking-wider transition-all bg-ink text-card shadow-xs';
+        sortNewBtn.className = 'px-3.5 py-1 rounded-md font-mono text-xs font-medium uppercase tracking-wider transition-all text-muted hover:text-ink';
+      });
+      sortNewBtn.addEventListener('click', () => {
+        sortNewBtn.className = 'px-3.5 py-1 rounded-md font-mono text-xs font-bold uppercase tracking-wider transition-all bg-ink text-card shadow-xs';
+        sortTopBtn.className = 'px-3.5 py-1 rounded-md font-mono text-xs font-medium uppercase tracking-wider transition-all text-muted hover:text-ink';
+      });
+    }
+
+    // Handle Form Submit
+    function handleNewFeedback(e) {
+      e.preventDefault();
+      const cat = document.getElementById('modalCategory').value;
+      const title = document.getElementById('modalTitle').value;
+      alert(`Feedback recorded for [${cat}]: "${title}". Status: OPEN.`);
+      document.getElementById('composeModal').classList.add('hidden');
+      e.target.reset();
+    }
+  </script>
+</body></html>

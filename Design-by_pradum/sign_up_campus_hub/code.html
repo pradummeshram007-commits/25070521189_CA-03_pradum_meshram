@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up · Campus Hub · SIT Nagpur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#F5F1E8',
+            surface: '#FFFDF9',
+            sunken: '#EDE7DA',
+            line: '#DDD6C7',
+            ink: '#1A1A17',
+            inkSecondary: '#57534A',
+            inkMuted: '#8C867A',
+            oxblood: '#7B1E2E',
+            oxbloodTint: '#F3E3E3',
+            marigold: '#F2B33D',
+            hubLost: '#A0660E',
+            hubSports: '#2E6B4E',
+            hubBooking: '#2C5A8C',
+            hubMarket: '#B4532A',
+            hubEmergency: '#D7261E',
+            hubFeedback: '#1E6E6A',
+            errorRed: '#D7261E',
+            errorTint: '#FCE4E2',
+          },
+          fontFamily: {
+            heading: ['"Bricolage Grotesque"', 'sans-serif'],
+            sans: ['"Instrument Sans"', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F5F1E8;
+      color: #1A1A17;
+      font-family: 'Instrument Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased flex flex-col justify-between selection:bg-marigold selection:text-ink">
+
+  <div class="min-h-screen flex flex-col lg:flex-row w-full">
+    <!-- LEFT PANEL: 5/12 width, full height, Ink background, Paper text -->
+    <aside class="w-full lg:w-5/12 bg-ink text-paper p-8 lg:p-14 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-[#2C2C28] relative">
+      <div>
+        <!-- Wordmark (Light version for dark ink panel) -->
+        <a href="#" class="inline-flex items-center gap-3 group mb-14">
+          <div class="w-7 h-7 rounded-[7px] bg-oxblood flex items-center justify-center border border-[#9A3043]">
+            <span class="w-2.5 h-2.5 rounded-full bg-marigold shadow-sm"></span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-mono text-[10px] uppercase tracking-[0.14em] text-[#A59F92] leading-none mb-1">SIT NAGPUR</span>
+            <span class="font-heading font-extrabold text-xl tracking-[-0.02em] text-paper">Campus Hub</span>
+          </div>
+        </a>
+
+        <!-- Eyebrow & Headline -->
+        <div class="space-y-3 mb-12">
+          <span class="font-mono text-xs uppercase tracking-[0.08em] text-[#A59F92]">NEW HERE?</span>
+          <h1 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-[44px] leading-[1.08] tracking-[-0.02em] text-[#FFFDF9]">
+            One account.<br>Six hubs.
+          </h1>
+          <p class="text-[#B9B3A6] text-sm sm:text-base leading-relaxed max-w-sm pt-2">
+            Your single institutional access for campus activities, classifieds, venue slots, and student support.
+          </p>
+        </div>
+
+        <!-- 6 Hubs Vertical List (Information only) -->
+        <div class="space-y-4 max-w-md pt-2">
+          <div class="flex items-center gap-3 py-2 px-3 rounded-lg bg-[#242420] border border-[#33332D]">
+            <span class="w-2.5 h-2.5 rounded-[2px] bg-[#A0660E] shrink-0"></span>
+            <span class="font-mono text-xs text-[#E8E2D5] tracking-wide font-medium">01 LOST &amp; FOUND</span>
+            <span class="text-xs text-[#8C867A] ml-auto hidden sm:inline">Track verified claims</span>
+          </div>
+
+          <div class="flex items-center gap-3 py-2 px-3 rounded-lg bg-[#242420] border border-[#33332D]">
+            <span class="w-2.5 h-2.5 rounded-[2px] bg-[#2E6B4E] shrink-0"></span>
+            <span class="font-mono text-xs text-[#E8E2D5] tracking-wide font-medium">02 SPORTS HUB</span>
+            <span class="text-xs text-[#8C867A] ml-auto hidden sm:inline">Courts &amp; player polls</span>
+          </div>
+
+          <div class="flex items-center gap-3 py-2 px-3 rounded-lg bg-[#242420] border border-[#33332D]">
+            <span class="w-2.5 h-2.5 rounded-[2px] bg-[#2C5A8C] shrink-0"></span>
+            <span class="font-mono text-xs text-[#E8E2D5] tracking-wide font-medium">03 BOOKING BOARD</span>
+            <span class="text-xs text-[#8C867A] ml-auto hidden sm:inline">Live hall timetables</span>
+          </div>
+
+          <div class="flex items-center gap-3 py-2 px-3 rounded-lg bg-[#242420] border border-[#33332D]">
+            <span class="w-2.5 h-2.5 rounded-[2px] bg-[#B4532A] shrink-0"></span>
+            <span class="font-mono text-xs text-[#E8E2D5] tracking-wide font-medium">04 MARKET HUB</span>
+            <span class="text-xs text-[#8C867A] ml-auto hidden sm:inline">Peer second-hand trade</span>
+          </div>
+
+          <div class="flex items-center gap-3 py-2 px-3 rounded-lg bg-[#242420] border border-[#33332D]">
+            <span class="w-2.5 h-2.5 rounded-[2px] bg-[#D7261E] shrink-0"></span>
+            <span class="font-mono text-xs text-[#E8E2D5] tracking-wide font-medium">05 EMERGENCY HUB</span>
+            <span class="text-xs text-[#8C867A] ml-auto hidden sm:inline">1-tap priority dispatch</span>
+          </div>
+
+          <div class="flex items-center gap-3 py-2 px-3 rounded-lg bg-[#242420] border border-[#33332D]">
+            <span class="w-2.5 h-2.5 rounded-[2px] bg-[#1E6E6A] shrink-0"></span>
+            <span class="font-mono text-xs text-[#E8E2D5] tracking-wide font-medium">06 FEEDBACK HUB</span>
+            <span class="text-xs text-[#8C867A] ml-auto hidden sm:inline">Anonymous upvote boards</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Bottom Micro Notice -->
+      <div class="pt-10 mt-10 border-t border-[#2C2C28] flex items-center justify-between">
+        <span class="font-mono text-[11px] uppercase tracking-[0.08em] text-[#8C867A]">ONLY FOR SIT NAGPUR STUDENTS</span>
+        <span class="font-mono text-[11px] text-[#57534A]">v1.4</span>
+      </div>
+    </aside>
+
+    <!-- RIGHT PANEL: Paper background, max 520px wide form -->
+    <main class="w-full lg:w-7/12 bg-paper px-6 py-10 sm:px-12 sm:py-14 lg:px-20 lg:py-16 flex items-center justify-start">
+      <div class="w-full max-w-[520px]">
+
+        <!-- Header -->
+        <div class="mb-8">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-mono text-xs uppercase tracking-[0.08em] text-inkSecondary">REGISTRATION FORM</span>
+            <span class="font-mono text-xs text-inkMuted bg-sunken px-2.5 py-0.5 rounded-full border border-line">PRN Verification</span>
+          </div>
+          <h2 class="font-heading font-extrabold text-2xl sm:text-3xl tracking-[-0.02em] text-ink">Create your account</h2>
+          <p class="text-inkSecondary text-sm mt-1">Takes under a minute.</p>
+        </div>
+
+        <!-- Form -->
+        <form class="space-y-5" onsubmit="event.preventDefault();">
+          
+          <!-- Row 1: Full name | College email -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="fullname" class="block text-sm font-medium text-ink mb-1.5">Full name</label>
+              <input type="text" id="fullname" value="Aarav Deshmukh" 
+                class="w-full h-11 px-3.5 rounded-lg bg-surface border border-line text-ink text-sm placeholder:text-inkMuted focus:outline-none focus:border-ink transition-colors" 
+                placeholder="e.g. Aarav Deshmukh">
+            </div>
+
+            <!-- College email: Error State -->
+            <div>
+              <label for="email" class="block text-sm font-medium text-ink mb-1.5">College email</label>
+              <input type="email" id="email" value="aarav.personal@gmail.com" 
+                class="w-full h-11 px-3.5 rounded-lg bg-surface border-2 border-errorRed text-ink text-sm placeholder:text-inkMuted focus:outline-none transition-colors" 
+                placeholder="prn@sitnagpur.edu.in">
+              <div class="flex items-center gap-1.5 mt-1.5 text-errorRed text-xs font-medium">
+                <i data-lucide="alert-circle" class="w-3.5 h-3.5 shrink-0 stroke-[2]"></i>
+                <span>Use your college email</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2: PRN number | Phone -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- PRN: Focus State with Marigold Ring -->
+            <div>
+              <label for="prn" class="block text-sm font-medium text-ink mb-1.5 flex items-center justify-between">
+                <span>PRN number</span>
+                <span class="font-mono text-[11px] text-inkMuted">11 DIGITS</span>
+              </label>
+              <input type="text" id="prn" value="21070123045" 
+                class="w-full h-11 px-3.5 rounded-lg bg-surface border border-ink text-ink font-mono text-sm placeholder:text-inkMuted outline-none ring-2 ring-marigold transition-all" 
+                placeholder="21070123xxx">
+            </div>
+
+            <!-- Phone with +91 prefix inside -->
+            <div>
+              <label for="phone" class="block text-sm font-medium text-ink mb-1.5">Phone</label>
+              <div class="relative flex items-center">
+                <span class="absolute left-3.5 font-mono text-sm text-inkSecondary select-none pointer-events-none">+91</span>
+                <input type="tel" id="phone" value="98234 56710"
+                  class="w-full h-11 pl-12 pr-3.5 rounded-lg bg-surface border border-line text-ink font-mono text-sm placeholder:text-inkMuted focus:outline-none focus:border-ink transition-colors" 
+                  placeholder="98765 43210">
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3: Branch | Year -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="branch" class="block text-sm font-medium text-ink mb-1.5">Branch</label>
+              <div class="relative">
+                <select id="branch" class="w-full h-11 px-3.5 pr-9 rounded-lg bg-surface border border-line text-ink text-sm appearance-none focus:outline-none focus:border-ink transition-colors cursor-pointer">
+                  <option value="CSE" selected>CSE</option>
+                  <option value="AIML">AIML</option>
+                  <option value="ETC">E&amp;TC</option>
+                  <option value="MECH">Mechanical</option>
+                  <option value="CIVIL">Civil</option>
+                </select>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-inkSecondary absolute right-3 top-3.5 pointer-events-none stroke-[1.5]"></i>
+              </div>
+            </div>
+
+            <!-- Year: Segmented control (1st / 2nd / 3rd / 4th) -->
+            <div>
+              <label class="block text-sm font-medium text-ink mb-1.5">Year</label>
+              <div class="grid grid-cols-4 h-11 p-1 bg-sunken rounded-lg border border-line gap-1">
+                <button type="button" class="text-xs font-mono font-medium rounded text-inkSecondary hover:text-ink transition-colors flex items-center justify-center">1st</button>
+                <button type="button" class="text-xs font-mono font-medium rounded text-inkSecondary hover:text-ink transition-colors flex items-center justify-center">2nd</button>
+                <button type="button" class="text-xs font-mono font-semibold rounded bg-surface text-oxblood border border-line shadow-sm flex items-center justify-center">3rd</button>
+                <button type="button" class="text-xs font-mono font-medium rounded text-inkSecondary hover:text-ink transition-colors flex items-center justify-center">4th</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Password with show/hide and 4-segment strength bar -->
+          <div>
+            <label for="password" class="block text-sm font-medium text-ink mb-1.5">Password</label>
+            <div class="relative flex items-center">
+              <input type="password" id="password" value="Campu$Pass2025" 
+                class="w-full h-11 px-3.5 pr-11 rounded-lg bg-surface border border-line text-ink text-sm placeholder:text-inkMuted focus:outline-none focus:border-ink transition-colors" 
+                placeholder="Enter password">
+              <button type="button" class="absolute right-3.5 text-inkSecondary hover:text-ink p-1 transition-colors" aria-label="Toggle password visibility">
+                <i data-lucide="eye" class="w-4 h-4 stroke-[1.5]"></i>
+              </button>
+            </div>
+            
+            <!-- 4-segment strength bar ("Weak / Okay / Strong") -->
+            <div class="mt-2 space-y-1.5">
+              <div class="grid grid-cols-4 gap-1.5 h-1.5 w-full">
+                <div class="h-full rounded-full bg-hubSports"></div>
+                <div class="h-full rounded-full bg-hubSports"></div>
+                <div class="h-full rounded-full bg-hubSports"></div>
+                <div class="h-full rounded-full bg-line"></div>
+              </div>
+              <div class="flex items-center justify-between text-[11px] font-mono">
+                <span class="text-inkSecondary">Strength: <strong class="text-hubSports font-semibold">Strong</strong></span>
+                <span class="text-inkMuted">Min. 8 characters</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Confirm password -->
+          <div>
+            <label for="confirm-password" class="block text-sm font-medium text-ink mb-1.5">Confirm password</label>
+            <input type="password" id="confirm-password" value="Campu$Pass2025" 
+              class="w-full h-11 px-3.5 rounded-lg bg-surface border border-line text-ink text-sm placeholder:text-inkMuted focus:outline-none focus:border-ink transition-colors" 
+              placeholder="Confirm password">
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2">
+            <button type="submit" 
+              class="w-full h-11 rounded-lg bg-ink text-paper text-sm font-medium tracking-wide hover:bg-[#2A2A26] active:translate-y-[1px] transition-all flex items-center justify-center gap-2 border border-ink">
+              <span>Create account</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 stroke-[1.5]"></i>
+            </button>
+          </div>
+
+          <!-- Switch to login link -->
+          <div class="text-center pt-2">
+            <p class="text-sm text-inkSecondary">
+              Already have an account? 
+              <a href="#" class="text-oxblood font-semibold underline underline-offset-4 hover:text-[#5E1622] transition-colors ml-1">Log in</a>
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

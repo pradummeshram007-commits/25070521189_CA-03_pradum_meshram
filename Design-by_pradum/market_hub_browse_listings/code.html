@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;family=Domine:wght@600;700&amp;family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#40000e", "on-tertiary-fixed": "#281900", "on-tertiary-container": "#ae7a00", "surface-container": "#f1eee5", "on-error-container": "#93000a", "inverse-surface": "#31302b", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#5f4100", "surface-container-highest": "#e6e2d9", "primary-fixed-dim": "#c9c6c1", "on-tertiary": "#ffffff", "surface": "#fdf9f0", "surface-variant": "#e6e2d9", "on-secondary": "#ffffff", "tertiary-container": "#281900", "tertiary-fixed": "#ffdeac", "tertiary-fixed-dim": "#fbbb45", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#822433", "surface-container-low": "#f7f3ea", "inverse-primary": "#c9c6c1", "secondary-fixed": "#ffdadb", "surface-dim": "#dddad1", "surface-tint": "#5f5e5a", "background": "#fdf9f0", "on-primary-fixed-variant": "#474743", "outline-variant": "#c8c7be", "on-error": "#ffffff", "surface-bright": "#fdf9f0", "secondary": "#a13b49", "on-primary-container": "#85847f", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb2b7", "on-background": "#1c1c16", "surface-container-high": "#ece8df", "on-surface-variant": "#474741", "on-surface": "#1c1c16", "primary-container": "#1c1c19", "on-secondary-container": "#761a2a", "primary-fixed": "#e5e2dd", "on-primary-fixed": "#1c1c19", "inverse-on-surface": "#f4f0e7", "outline": "#787770", "tertiary": "#000000", "primary": "#000000", "secondary-container": "#fe838f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-2xl": "3rem", "space-lg": "1.5rem", "gutter-sm": "0.75rem", "margin-sm": "1rem", "gutter": "1.25rem", "gutter-lg": "2rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-lg": "3rem", "space-2xs": "0.125rem" }, "fontFamily": { "label-md": [ "Hanken Grotesk" ], "display": [ "Domine" ], "display-mobile": [ "Domine" ], "headline-lg": [ "Domine" ], "label-sm": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "headline-lg-mobile": [ "Domine" ], "body-md": [ "Hanken Grotesk" ], "headline-md": [ "Domine" ], "caption": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "headline-sm": [ "Domine" ], "lead": [ "Hanken Grotesk" ], "eyebrow": [ "Hanken Grotesk" ] }, "fontSize": { "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "500" } ], "display": [ "48px", { "lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-mobile": [ "34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "caption": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "25px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" } ], "lead": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.05em", "fontWeight": "400" } ], "eyebrow": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[248px] bg-[#F5F1E8] border-r border-[#DDD6C7] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="p-space-lg border-b border-[#DDD6C7]"><div class="flex items-center gap-space-sm mb-space-2xs"><div class="w-6 h-6 rounded bg-[#7B1E2E] flex items-center justify-center shrink-0"><div class="w-1.5 h-1.5 rounded-full bg-[#F2B33D]"></div></div><span class="text-[20px] leading-[24px] text-on-surface tracking-tight font-extrabold" style="font-family: 'Bricolage Grotesque', sans-serif;">Campus Hub</span></div><div class="font-mono text-[10px] uppercase text-on-surface-variant font-semibold tracking-widest pl-[32px]">SIT NAGPUR</div></div><nav class="flex flex-col py-space-sm" data-active-classes="bg-[#FFFDF9] text-[#7B1E2E] font-semibold border-l-[3px] border-[#7B1E2E]"><div class="px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Registry</div><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="dashboard" href="#"><span>Dashboard</span></a><div class="mt-space-sm px-space-md py-space-xs font-eyebrow text-eyebrow uppercase text-on-surface-variant tracking-wider">Academic Hubs</div><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="lost-and-found" href="#"><span>01 Lost &amp; Found</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="sports-hub" href="#"><span>02 Sports Hub</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="booking-board" href="#"><span>03 Booking Board</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="market-hub" href="#"><span>04 Market Hub</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="emergency-hub" href="#"><span>05 Emergency Hub</span></a><a class="flex items-center px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent font-label-md text-label-md" data-path="feedback-hub" href="#"><span>06 Feedback Hub</span></a></nav></div><div class="p-space-md border-t border-[#DDD6C7] bg-[#EDE7DA]/50"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-[#7B1E2E] text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">AD</div><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">Aarav Deshmukh</span><span class="font-caption text-caption text-on-surface-variant truncate">CSE · 3rd yr</span></div></div><a class="text-on-surface-variant hover:text-[#7B1E2E] transition-colors p-space-2xs" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-[#FFFDF9] border-b border-[#DDD6C7] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">school</span><span class="text-on-surface font-semibold">Campus Registry</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant">SIT Nagpur Directory</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="h-9 pl-9 pr-12 w-64 md:w-80 bg-[#F5F1E8] border border-[#DDD6C7] rounded text-on-surface font-body-sm text-body-sm placeholder:text-[#8C867A] focus:outline-none focus:border-on-surface" placeholder="Search registry, equipment, notices..." type="text"/><span class="absolute right-2 font-caption text-caption px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-mono border border-[#DDD6C7]">⌘K</span></div><a class="h-9 px-space-md rounded-full bg-[#D7261E] hover:bg-[#ba1a1a] text-on-primary flex items-center gap-space-xs font-label-sm text-label-sm font-semibold transition-colors shrink-0" data-path="emergency-hub" href="#"><span class="material-symbols-outlined text-[16px]">crisis_alert</span><span>Emergency</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-[#F5F1E8] min-h-screen"><div class="flex flex-col w-full font-['Hanken_Grotesk'] text-[#1A1A17] antialiased">
+<!-- Clay Brand Identity Top Accent Bar -->
+<div class="w-full h-[6px] bg-[#B4532A] shrink-0"></div>
+<!-- Hub Header Section -->
+<header class="w-full px-space-lg lg:px-margin-lg pt-space-lg pb-space-lg bg-[#FFFDF9] border-b border-[#DDD6C7]">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="font-['JetBrains_Mono'] text-[11px] leading-[16px] tracking-[0.08em] uppercase text-[#B4532A] font-semibold flex items-center gap-2 mb-1">
+<span class="inline-block w-2 h-2 rounded-full bg-[#B4532A]"></span>
+<span>HUB 04 · PEER-TO-PEER CAMPUS EXCHANGE</span>
+</div>
+<h1 class="text-[38px] leading-[44px] md:text-[46px] md:leading-[50px] font-extrabold text-[#1A1A17] tracking-tight" style="font-family: 'Bricolage Grotesque', sans-serif;">
+          Market Hub
+        </h1>
+<p class="font-['Hanken_Grotesk'] text-[15px] leading-[22px] text-[#57534A] mt-1">
+          Second-hand, first-rate. Buy and sell verified items securely within SIT campus.
+        </p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-11 px-space-md rounded-[8px] bg-[#FFFDF9] border border-[#DDD6C7] text-[#1A1A17] font-semibold text-[13px] tracking-wide hover:bg-[#EDE7DA] transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+<span>My Listings (2)</span>
+</button>
+<button class="h-11 px-space-md rounded-[8px] bg-[#1A1A17] hover:bg-[#31302B] text-[#FFFDF9] font-semibold text-[13px] tracking-wide transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Sell an item</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Body Content Frame -->
+<div class="w-full px-space-lg lg:px-margin-lg py-space-lg max-w-[1440px] mx-auto">
+<div class="flex flex-col lg:flex-row gap-space-lg items-start">
+<!-- LEFT FILTER SIDEBAR (240px Desktop Anchor) -->
+<aside class="w-full lg:w-[240px] shrink-0 bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-[20px] select-none">
+<div class="flex items-center justify-between pb-space-sm border-b border-[#DDD6C7] mb-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-[#1A1A17]">tune</span>
+<span class="font-bold text-[15px] text-[#1A1A17]" style="font-family: 'Bricolage Grotesque', sans-serif;">Filters</span>
+</div>
+<button class="font-['JetBrains_Mono'] text-[11px] text-[#8C867A] hover:text-[#B4532A] transition-colors underline underline-offset-2" type="button">
+            Clear all
+          </button>
+</div>
+<!-- Filter: Categories -->
+<div class="mb-space-lg">
+<label class="block font-['JetBrains_Mono'] text-[11px] uppercase tracking-wider text-[#8C867A] font-semibold mb-space-sm">
+            Categories
+          </label>
+<div class="space-y-2">
+<label class="flex items-center justify-between cursor-pointer group text-[13px]">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded-[3px] accent-[#1A1A17] cursor-pointer" type="checkbox"/>
+<span class="font-medium text-[#1A1A17] group-hover:text-[#B4532A] transition-colors">All Categories</span>
+</div>
+<span class="font-['JetBrains_Mono'] text-[11px] text-[#8C867A]">38</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group text-[13px]">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded-[3px] accent-[#1A1A17] cursor-pointer" type="checkbox"/>
+<span class="text-[#57534A] group-hover:text-[#1A1A17] transition-colors">Books &amp; Notes</span>
+</div>
+<span class="font-['JetBrains_Mono'] text-[11px] text-[#8C867A]">14</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group text-[13px]">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded-[3px] accent-[#1A1A17] cursor-pointer" type="checkbox"/>
+<span class="text-[#57534A] group-hover:text-[#1A1A17] transition-colors">Electronics &amp; Calc</span>
+</div>
+<span class="font-['JetBrains_Mono'] text-[11px] text-[#8C867A]">9</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group text-[13px]">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded-[3px] accent-[#1A1A17] cursor-pointer" type="checkbox"/>
+<span class="text-[#57534A] group-hover:text-[#1A1A17] transition-colors">Cycles &amp; Mobility</span>
+</div>
+<span class="font-['JetBrains_Mono'] text-[11px] text-[#8C867A]">3</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group text-[13px]">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded-[3px] accent-[#1A1A17] cursor-pointer" type="checkbox"/>
+<span class="text-[#57534A] group-hover:text-[#1A1A17] transition-colors">ED Drafters &amp; Tools</span>
+</div>
+<span class="font-['JetBrains_Mono'] text-[11px] text-[#8C867A]">5</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group text-[13px]">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded-[3px] accent-[#1A1A17] cursor-pointer" type="checkbox"/>
+<span class="text-[#57534A] group-hover:text-[#1A1A17] transition-colors">Hostel &amp; Room Gear</span>
+</div>
+<span class="font-['JetBrains_Mono'] text-[11px] text-[#8C867A]">7</span>
+</label>
+</div>
+</div>
+<div class="h-px bg-[#DDD6C7] w-full my-space-md"></div>
+<!-- Filter: Condition -->
+<div class="mb-space-lg">
+<label class="block font-['JetBrains_Mono'] text-[11px] uppercase tracking-wider text-[#8C867A] font-semibold mb-space-sm">
+            Condition
+          </label>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-2.5 py-1 text-[11px] font-['JetBrains_Mono'] rounded-[4px] border border-[#DDD6C7] bg-[#EDE7DA] text-[#57534A] hover:bg-[#FFFDF9] transition-colors" type="button">
+              All
+            </button>
+<button class="px-2.5 py-1 text-[11px] font-['JetBrains_Mono'] rounded-[4px] border border-[#DDD6C7] bg-[#EDE7DA] text-[#57534A] hover:bg-[#FFFDF9] transition-colors" type="button">
+              New
+            </button>
+<button class="px-2.5 py-1 text-[11px] font-['JetBrains_Mono'] rounded-[4px] border border-[#B4532A] bg-[#F7E6DC] text-[#B4532A] font-semibold" type="button">
+              Like new
+            </button>
+<button class="px-2.5 py-1 text-[11px] font-['JetBrains_Mono'] rounded-[4px] border border-[#DDD6C7] bg-[#EDE7DA] text-[#57534A] hover:bg-[#FFFDF9] transition-colors" type="button">
+              Used
+            </button>
+</div>
+</div>
+<div class="h-px bg-[#DDD6C7] w-full my-space-md"></div>
+<!-- Filter: Price Range -->
+<div class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<label class="font-['JetBrains_Mono'] text-[11px] uppercase tracking-wider text-[#8C867A] font-semibold">
+              Price Range
+            </label>
+<span class="font-['JetBrains_Mono'] text-[11px] text-[#B4532A] font-medium">₹0 - ₹3,000</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mb-3">
+<div class="relative">
+<span class="absolute left-2.5 top-2 font-['JetBrains_Mono'] text-[12px] text-[#8C867A]">₹</span>
+<input class="w-full pl-6 pr-2 py-1.5 bg-[#FFFDF9] border border-[#DDD6C7] rounded-[4px] font-['JetBrains_Mono'] text-[12px] text-[#1A1A17] focus:outline-none focus:border-[#B4532A]" type="text" value="0"/>
+</div>
+<div class="relative">
+<span class="absolute left-2.5 top-2 font-['JetBrains_Mono'] text-[12px] text-[#8C867A]">₹</span>
+<input class="w-full pl-6 pr-2 py-1.5 bg-[#FFFDF9] border border-[#DDD6C7] rounded-[4px] font-['JetBrains_Mono'] text-[12px] text-[#1A1A17] focus:outline-none focus:border-[#B4532A]" type="text" value="3,000"/>
+</div>
+</div>
+<!-- Dual slider track representation -->
+<div class="relative w-full py-2">
+<div class="w-full h-1.5 bg-[#EDE7DA] rounded-full relative">
+<div class="absolute left-[0%] right-[20%] h-1.5 bg-[#B4532A] rounded-full"></div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-[#FFFDF9] border-2 border-[#B4532A] rounded-full shadow-sm cursor-pointer"></div>
+<div class="absolute right-[20%] top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-[#FFFDF9] border-2 border-[#B4532A] rounded-full shadow-sm cursor-pointer"></div>
+</div>
+</div>
+</div>
+<div class="h-px bg-[#DDD6C7] w-full my-space-md"></div>
+<!-- Filter: Toggle Hide Sold -->
+<div class="flex items-center justify-between pt-1">
+<span class="text-[13px] font-medium text-[#1A1A17]">Hide sold items</span>
+<button aria-pressed="true" class="w-9 h-5 bg-[#B4532A] rounded-full relative transition-colors focus:outline-none" type="button">
+<span class="block w-3.5 h-3.5 bg-[#FFFDF9] rounded-full absolute top-[3px] right-[3px] transition-transform"></span>
+</button>
+</div>
+<!-- Sidebar Callout: Safety Badge -->
+<div class="mt-6 p-3 bg-[#EDE7DA] border border-[#DDD6C7] rounded-[8px]">
+<div class="flex items-center gap-1.5 text-[#B4532A] mb-1 font-semibold text-[11px] font-['JetBrains_Mono']">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>VERIFIED S.I.T TRADERS</span>
+</div>
+<p class="text-[11px] leading-[15px] text-[#57534A]">All sellers are enrolled students with verified college roll credentials.</p>
+</div>
+</aside>
+<!-- RIGHT PRODUCT LISTINGS AREA -->
+<main class="flex-1 w-full min-w-0">
+<!-- Top Search and Control Toolbar -->
+<div class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-3 md:p-4 mb-space-lg flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
+<!-- Search Bar -->
+<div class="relative flex-1 min-w-0">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[#8C867A] text-[18px]">search</span>
+<input class="w-full h-10 pl-10 pr-4 bg-[#EDE7DA] border border-[#DDD6C7] rounded-[6px] text-[13px] text-[#1A1A17] placeholder:text-[#8C867A] focus:outline-none focus:bg-[#FFFDF9] focus:border-[#B4532A] transition-all" placeholder="Search textbooks, drafters, calculators, cycles..." type="text"/>
+</div>
+<!-- Controls: Item Count and Sort Dropdown -->
+<div class="flex items-center justify-between md:justify-end gap-3 shrink-0">
+<div class="font-['JetBrains_Mono'] text-[11px] text-[#57534A] tracking-wider px-2 py-1 bg-[#EDE7DA] rounded border border-[#DDD6C7]">
+<span class="font-bold text-[#1A1A17]">38</span> ITEMS LISTED
+            </div>
+<div class="relative flex items-center">
+<select class="h-10 pl-3 pr-8 bg-[#FFFDF9] border border-[#DDD6C7] rounded-[6px] text-[12px] font-medium text-[#1A1A17] appearance-none focus:outline-none focus:border-[#B4532A] cursor-pointer">
+<option>Sort: Newest first</option>
+<option>Sort: Price: low to high</option>
+<option>Sort: Price: high to low</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 pointer-events-none text-[16px] text-[#8C867A]">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<!-- 3-COLUMN PRODUCT GRID -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<!-- Card 1: Omega Mini Drafter -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between hover:border-[#1A1A17] transition-all group">
+<div>
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" data-alt="An Omega brand technical mini drafter drawing tool mounted on an architectural wooden board, collegiate drafting classroom setting, warm cinematic daylight, crisp line details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFX1fpnBJzO1kDl2_m3yLxIcVmy21knI_AzjODQXlFR_ARXVl86Ey8N76ONRnO_CnU8hwCoNDkhbFSKC74uYr0Oe-ELFrNmaO8_BGDHc9jntZMmMn1uC3o8csfCB3PNugLs8-F4qDZXNGzDaIbQAGJTBw6IYhQB3Ym1kRvHcySW7m5XuzR5SUY1ewZPCrXLh6UOUAoCbjelmkNvHBWEiacuaMglfUntpj18KAxkTKtrFOPb0fQWct9BQ"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#F7E6DC] border border-[#B4532A] text-[#B4532A] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  LIKE NEW
+                </span>
+<span class="absolute top-2.5 right-2.5 p-1 bg-[#FFFDF9]/90 rounded-[4px] border border-[#DDD6C7] text-[#57534A] hover:text-[#B4532A] cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#1A1A17]">₹350</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">Omega Mfg.</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#1A1A17] line-clamp-2 mb-2 group-hover:text-[#B4532A] transition-colors" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Omega Engineering Mini Drafter with clamp
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[11px] text-[#57534A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">location_on</span>
+<span class="truncate">Boys Hostel 2 · 2d ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <strong class="text-[#1A1A17]">Ishita R.</strong> (E&amp;TC 2Y)</span>
+<span class="material-symbols-outlined text-[16px] text-[#8C867A] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 2: Hero Sprint Cycle -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between hover:border-[#1A1A17] transition-all group">
+<div>
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" data-alt="A matte black and red Hero Sprint 26T campus commuter bicycle with front basket parked outside modern university brick buildings, clear sunny morning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4z03637H9YswmQ7vBc_y8n_L-Oc7qlEG6FbYxK6fS0jTJ35mqkh_fUblP84qkMsI51Ww81TdS8kuuFyNNFdadkR6-YsdJsR0DOimrPv3IDIqWYirkLfnmq6ZWg5V1nVLz6K_hOU1oLR5vUpVS-GUPlAtkXFXYUFgSMM8tn7mMOEwPoyhI1KdvUTYCgK_RahZiLjF56bHta6tc8stVxill8VkT3c88SkQZJ6v7LTifrz5_crxHjbE39A"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#EDE7DA] border border-[#8C867A] text-[#57534A] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  USED
+                </span>
+<span class="absolute top-2.5 right-2.5 p-1 bg-[#FFFDF9]/90 rounded-[4px] border border-[#DDD6C7] text-[#57534A] hover:text-[#B4532A] cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#1A1A17]">₹2,800</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">Hero Mobility</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#1A1A17] line-clamp-2 mb-2 group-hover:text-[#B4532A] transition-colors" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Hero Sprint 26T Bicycle with front basket
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[11px] text-[#57534A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">location_on</span>
+<span class="truncate">Cycle Stand Gate 1 · 1d ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <strong class="text-[#1A1A17]">Tanmay N.</strong> (IT 4Y)</span>
+<span class="material-symbols-outlined text-[16px] text-[#8C867A] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 3: Casio ClassWiz fx-991EX -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between hover:border-[#1A1A17] transition-all group">
+<div>
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" data-alt="Casio scientific calculator fx-991EX ClassWiz lying on a wooden library desk next to open graph paper notebook, clean lighting, sharp product showcase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxpASXn_oxibMte9L-0rUg2DXWpL-bU6tZJYeYyQUZN3qR_g6gSYIJjW70cKFdugqGrdpaz2gbpzlKIyl13s_8b4vrky6G4p7cnexkE_5K4uVBrJTv8E87jKYip9espa6lidXo6Fk8iiBxNYN6ecYssh1VqdsYpZtXbVLs6b70otICeTzDY1LR2Gq0_HjULJaWZfIhOZ8HBje9s_1H9SIY4bsAOzzCHk9k9YAb8w8fujECT9Jhe2wBZQ"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#F7E6DC] border border-[#B4532A] text-[#B4532A] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  LIKE NEW
+                </span>
+<span class="absolute top-2.5 right-2.5 p-1 bg-[#FFFDF9]/90 rounded-[4px] border border-[#DDD6C7] text-[#57534A] hover:text-[#B4532A] cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#1A1A17]">₹700</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">Casio Solar</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#1A1A17] line-clamp-2 mb-2 group-hover:text-[#B4532A] transition-colors" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Casio fx-991EX Scientific Calculator (Solar)
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[11px] text-[#57534A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">location_on</span>
+<span class="truncate">Library Plaza · 3h ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <strong class="text-[#1A1A17]">Aarav D.</strong> (CSE 3Y)</span>
+<span class="material-symbols-outlined text-[16px] text-[#8C867A] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 4: B.S. Grewal Book -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between hover:border-[#1A1A17] transition-all group">
+<div>
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" data-alt="Thick hardcover Higher Engineering Mathematics textbook by B.S. Grewal 44th Edition, neatly preserved on academic wood bookshelf, warm study ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwOK69GKPsCSVz1E4Cqg5dVGegTtvgGSOGLCRsvUXU6QQn2E3qS6ZoQHqS3zhrY0ldWM0lBJMN6Zj1dZDW4mjC8CBzQ6VQ0sqgX8zOeATi3QPTxVz6C1bJiOfIQ-s5O6tEyYdt7sN1B-1qwx14Z_pjyLcJ-66qOEGy1aRGpXxUMBuZsQoK_vUpz_UCxXa0deTMi-gGr2vf0nDdPG0_DzibvVQmRKwGBtQCTSjobgJbeWwF94bfGeb1VA"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#EDE7DA] border border-[#8C867A] text-[#57534A] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  USED
+                </span>
+<span class="absolute top-2.5 right-2.5 p-1 bg-[#FFFDF9]/90 rounded-[4px] border border-[#DDD6C7] text-[#57534A] hover:text-[#B4532A] cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#1A1A17]">₹250</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">Khanna Pub</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#1A1A17] line-clamp-2 mb-2 group-hover:text-[#B4532A] transition-colors" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Higher Engineering Mathematics by B.S. Grewal (44th Ed)
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[11px] text-[#57534A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">location_on</span>
+<span class="truncate">Girls Hostel · 4d ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <strong class="text-[#1A1A17]">Sneha K.</strong> (AIML 2Y)</span>
+<span class="material-symbols-outlined text-[16px] text-[#8C867A] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 5: Foldable Study Table -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between hover:border-[#1A1A17] transition-all group">
+<div>
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" data-alt="A compact wooden foldable laptop bed table with slot for tablet and cup holder, arranged neatly in student dormitory room, bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzq7n5ac8-erOxUCNX4hqe3sw3GW7meyRLCCHy5GKRKVeGu68jo5uOSeN8lksSJYQiFtkuTtpGVfBetxY55zWKUcTD36hkqbNctx6chSjJbEmqAoa8fMf2c8FnDxDwARPkfCsa_0ruYTO3xS2SdRAnPyAXj7h9SmBpuZJsV37NLsHik16zIuJZ9GE0mWFA1dIlLBON4-imzBmTcZ94pCeay-FmRNWL3S3RpE8yWktQZ2GViEolfcxO1g"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#1A1A17] text-[#FFFDF9] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  NEW
+                </span>
+<span class="absolute top-2.5 right-2.5 p-1 bg-[#FFFDF9]/90 rounded-[4px] border border-[#DDD6C7] text-[#57534A] hover:text-[#B4532A] cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#1A1A17]">₹1,200</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">Hostel Gear</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#1A1A17] line-clamp-2 mb-2 group-hover:text-[#B4532A] transition-colors" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Wooden Foldable Study Table with cup holder
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[11px] text-[#57534A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">location_on</span>
+<span class="truncate">Boys Hostel 1 · 5d ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <strong class="text-[#1A1A17]">Varun J.</strong> (MECH 4Y)</span>
+<span class="material-symbols-outlined text-[16px] text-[#8C867A] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 6: Lab Coat -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between hover:border-[#1A1A17] transition-all group">
+<div>
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" data-alt="A clean white unisex cotton chemistry lab coat hanging on wooden hanger against beige wall in academic laboratory corridor, pristine condition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBix5XfgWXtdBXalvXmu9mFoaruih5oRrGWbHkZETJ9zF9wDPdJlrt3ic2RViIukHBXS2hyfa3bdK-IbwrKK62us6VcDuoqyi3CB_nc0aRMRnVwbz8UsDWQLqmWVqeN11zgrgpwn1aeBHNqtp44CZbVBxxT3SwQ-vxkisYlodOj7UANlcbTcZL4nVUu1a4v32ZKbFiuUv4N474Ca2ODcJr8-d5ZPsqL5PPAR1e8E_BIazxbG7rHNL9-KQ"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#F7E6DC] border border-[#B4532A] text-[#B4532A] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  LIKE NEW
+                </span>
+<span class="absolute top-2.5 right-2.5 p-1 bg-[#FFFDF9]/90 rounded-[4px] border border-[#DDD6C7] text-[#57534A] hover:text-[#B4532A] cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#1A1A17]">₹150</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">SIT Labwear</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#1A1A17] line-clamp-2 mb-2 group-hover:text-[#B4532A] transition-colors" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                White Chemistry Lab Coat (Size M, 100% Cotton)
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[11px] text-[#57534A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">location_on</span>
+<span class="truncate">Academic Block · 6h ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <strong class="text-[#1A1A17]">Pooja S.</strong> (AIML 3Y)</span>
+<span class="material-symbols-outlined text-[16px] text-[#8C867A] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 7: Electric Kettle -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between hover:border-[#1A1A17] transition-all group">
+<div>
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" data-alt="A stainless steel 1.5 liter Pigeon electric kettle with black handle placed cleanly on a countertop, shiny metallic finish, editorial college dorm kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbvApjPme9se2oN1bKonIw_ssBRdBuHdkDxKzhpBSXZZdQByAffCXakJ4l7QbhfpNrlFOX_XZeO0TECrFLmd96wthrnZptq1MV_so5pX-JkXDlaVpKDKHNrUO8dZj3Aob54CdLP-auM6q8HxVQc7jNmKn7NV-nh1NckM1io7zA21-uUqFvWwblsASceZIG1fscwk0_yybdg5JZxcR_KhMxxohslWE3R46vk9lPj9zumf3LW5tqUzbmcw"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#EDE7DA] border border-[#8C867A] text-[#57534A] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  USED
+                </span>
+<span class="absolute top-2.5 right-2.5 p-1 bg-[#FFFDF9]/90 rounded-[4px] border border-[#DDD6C7] text-[#57534A] hover:text-[#B4532A] cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#1A1A17]">₹400</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">Pigeon Home</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#1A1A17] line-clamp-2 mb-2 group-hover:text-[#B4532A] transition-colors" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Pigeon 1.5L Stainless Steel Electric Kettle
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[11px] text-[#57534A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">location_on</span>
+<span class="truncate">Boys Hostel 3 · 3d ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <strong class="text-[#1A1A17]">Karan J.</strong> (MECH 2Y)</span>
+<span class="material-symbols-outlined text-[16px] text-[#8C867A] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 8: Casio fx-82MS (MUST SHOW AS SOLD CARD) -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between relative overflow-hidden select-none">
+<!-- Diagonal Ribbon Badge across top corner -->
+<div class="absolute top-0 right-0 w-28 h-28 overflow-hidden pointer-events-none z-10">
+<div class="absolute transform rotate-45 bg-[#1A1A17] text-[#FFFDF9] font-['JetBrains_Mono'] font-bold text-[10px] tracking-widest py-1 right-[-32px] top-[24px] w-[130px] text-center shadow-sm">
+                SOLD
+              </div>
+</div>
+<div class="opacity-60 grayscale transition-opacity">
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover" data-alt="Monochrome greyscale archival capture of a classic Casio fx-82MS engineering calculator lying on a student desk, high contrast study equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Ol6S7czfcAE2qEltpew3nCBHzh2h15aJTaNROxavGj8uWE-Yh1hopECEJ4xfilZY6yzWF_e-g1Htq6hP7h8_ERQqVAnKbo51NZlnLrwFp_WbOyiYZheo8to2yWMdcg_utIT762ZtpTI0ot60fT21RNB3nWfWySFaaLzjjiFpHNc5Zfep6HTEiNa6wuKnmNedxlXlQpzYc8jfr8-L-1wvnVmyNVc-xCNPoHpK6cOjT4p7CbKt9OCwbw"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#EDE7DA] border border-[#8C867A] text-[#8C867A] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  SOLD ARCHIVE
+                </span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#8C867A] line-through">₹300</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">Completed Deal</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#57534A] line-clamp-2 mb-2" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Casio fx-82MS Scientific Calculator
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5 opacity-75">
+<div class="flex items-center gap-1.5 text-[11px] text-[#8C867A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">task_alt</span>
+<span class="truncate">Sold to Rohan P. · 1d ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <span class="text-[#57534A]">Nikhil G.</span> (ECE 1Y)</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A]">VERIFIED</span>
+</div>
+</div>
+</article>
+<!-- Card 9: Engineering Drawing Kit -->
+<article class="bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] p-4 flex flex-col justify-between hover:border-[#1A1A17] transition-all group">
+<div>
+<div class="relative aspect-square w-full bg-[#EDE7DA] rounded-[8px] overflow-hidden mb-3.5 border border-[#DDD6C7]">
+<img class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" data-alt="First year engineering graphics kit with black cylindrical sheet container, acrylic set squares, compass set and T-square arranged in studio, precise technical styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMZN-T8gpd_T6-Rtqk5-GN835aOqp9W_y3NfUNfeHoUw21LrG1KhmqQ3A4gxHMn0NjwP4m4kagmU9DmWX2tif24YkRb877jmw79PiBnHNB48js8Efw2Rc93Gbu_IGJgxGjanwfhiMZTYOi7Zw_N6dt6JAt5aDj_vwBblDJr068tHu-9opzoeHIyHcNKlKmwa9O_SDeJDpiR9nGJ-AJcWbLjr4F5nxHtvAHEQysjKCUJ6Utmxbs4mI99Q"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-[4px] bg-[#F7E6DC] border border-[#B4532A] text-[#B4532A] font-['JetBrains_Mono'] text-[11px] font-semibold tracking-wider">
+                  LIKE NEW
+                </span>
+<span class="absolute top-2.5 right-2.5 p-1 bg-[#FFFDF9]/90 rounded-[4px] border border-[#DDD6C7] text-[#57534A] hover:text-[#B4532A] cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-['JetBrains_Mono'] text-[22px] leading-[26px] font-semibold text-[#1A1A17]">₹550</span>
+<span class="font-['JetBrains_Mono'] text-[10px] text-[#8C867A] uppercase">Full Set</span>
+</div>
+<h2 class="text-[15px] leading-[20px] font-bold text-[#1A1A17] line-clamp-2 mb-2 group-hover:text-[#B4532A] transition-colors" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Complete First Year ED Kit (Sheet container, T-square)
+              </h2>
+</div>
+<div class="pt-3 border-t border-[#DDD6C7]/80 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-[11px] text-[#57534A]">
+<span class="material-symbols-outlined text-[14px] text-[#8C867A]">location_on</span>
+<span class="truncate">Mechanical Workshop · 2d ago</span>
+</div>
+<div class="flex items-center justify-between text-[11px]">
+<span class="text-[#8C867A] truncate font-medium">Seller: <strong class="text-[#1A1A17]">Siddharth V.</strong> (MECH 3Y)</span>
+<span class="material-symbols-outlined text-[16px] text-[#8C867A] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+<!-- PAGINATION SECTION -->
+<nav aria-label="Market Hub listings pagination" class="mt-space-lg pt-space-md border-t border-[#DDD6C7] flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="font-['JetBrains_Mono'] text-[12px] text-[#57534A]">
+            Showing <span class="font-semibold text-[#1A1A17]">1 - 9</span> of <span class="font-semibold text-[#1A1A17]">38</span> listings
+          </div>
+<div class="flex items-center gap-1 font-['JetBrains_Mono'] text-[12px]">
+<button class="h-9 px-3 rounded-[6px] border border-[#DDD6C7] bg-[#FFFDF9] text-[#57534A] hover:bg-[#EDE7DA] transition-colors flex items-center gap-1 disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+<span>Prev</span>
+</button>
+<button class="w-9 h-9 rounded-[6px] bg-[#1A1A17] text-[#FFFDF9] font-bold border border-[#1A1A17]" type="button">
+              1
+            </button>
+<button class="w-9 h-9 rounded-[6px] bg-[#FFFDF9] border border-[#DDD6C7] text-[#1A1A17] hover:bg-[#EDE7DA] transition-colors" type="button">
+              2
+            </button>
+<button class="w-9 h-9 rounded-[6px] bg-[#FFFDF9] border border-[#DDD6C7] text-[#1A1A17] hover:bg-[#EDE7DA] transition-colors" type="button">
+              3
+            </button>
+<button class="w-9 h-9 rounded-[6px] bg-[#FFFDF9] border border-[#DDD6C7] text-[#1A1A17] hover:bg-[#EDE7DA] transition-colors" type="button">
+              4
+            </button>
+<button class="h-9 px-3 rounded-[6px] border border-[#DDD6C7] bg-[#FFFDF9] text-[#1A1A17] hover:bg-[#EDE7DA] transition-colors flex items-center gap-1" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</nav>
+<!-- Peer Notice & Guidelines Box -->
+<section class="mt-space-lg p-space-md bg-[#FFFDF9] border border-[#DDD6C7] rounded-[12px] flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded bg-[#F7E6DC] text-[#B4532A] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">handshake</span>
+</div>
+<div>
+<h3 class="font-bold text-[14px] text-[#1A1A17]" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Safe Campus Exchange Code
+              </h3>
+<p class="text-[12px] text-[#57534A] leading-[18px]">
+                Always inspect mechanical and electronic goods in broad daylight at SIT public spaces (Library Plaza, Nescafe, or Gate 1 reception). Cash on delivery or UPI upon handover only.
+              </p>
+</div>
+</div>
+<a class="font-['JetBrains_Mono'] text-[11px] text-[#B4532A] hover:underline font-semibold shrink-0 uppercase tracking-wide" href="#">
+            Read Registry Rules →
+          </a>
+</section>
+</main>
+</div>
+</div>
+</div></main></div></body></html>

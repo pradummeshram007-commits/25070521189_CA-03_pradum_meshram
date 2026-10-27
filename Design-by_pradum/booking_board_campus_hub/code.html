@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary":"#000000","inverse-surface":"#31302b","error":"#ba1a1a","on-tertiary-fixed-variant":"#5f4100","on-surface":"#1c1c16","on-tertiary-container":"#ae7a00","on-error":"#ffffff","surface-tint":"#5f5e5a","primary-fixed":"#e5e2dd","surface-container-low":"#f7f3ea","primary-fixed-dim":"#c9c6c1","on-surface-variant":"#474741","on-primary-fixed":"#1c1c19","tertiary-container":"#281900","surface-dim":"#dddad1","error-container":"#ffdad6","on-primary-container":"#85847f","background":"#fdf9f0","secondary-container":"#fe838f","surface-container-high":"#ece8df","surface":"#fdf9f0","outline":"#787770","tertiary-fixed":"#ffdeac","on-primary":"#ffffff","inverse-primary":"#c9c6c1","tertiary":"#000000","on-secondary":"#ffffff","on-secondary-fixed-variant":"#822433","on-tertiary":"#ffffff","surface-bright":"#fdf9f0","outline-variant":"#c8c7be","on-primary-fixed-variant":"#474743","tertiary-fixed-dim":"#fbbb45","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#ffb2b7","inverse-on-surface":"#f4f0e7","on-secondary-container":"#761a2a","surface-container-highest":"#e6e2d9","secondary":"#a13b49","on-background":"#1c1c16","surface-variant":"#e6e2d9","on-secondary-fixed":"#40000e","primary-container":"#1c1c19","on-error-container":"#93000a","secondary-fixed":"#ffdadb","on-tertiary-fixed":"#281900","surface-container":"#f1eee5"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-lg":"2rem","margin-lg":"3rem","space-lg":"1.5rem","space-2xl":"3rem","space-2xs":"0.125rem","gutter-sm":"0.75rem","space-3xl":"4.5rem","space-xl":"2rem","space-xs":"0.25rem","gutter":"1.25rem","space-md":"1rem","margin-sm":"1rem","space-sm":"0.5rem","margin":"1.5rem"},fontFamily:{"label-sm":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-lg-mobile":["Domine"],"display-mobile":["Domine"],"body-sm":["Hanken Grotesk"],"caption":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"display":["Domine"],"headline-md":["Domine"],"headline-lg":["Domine"],"eyebrow":["Hanken Grotesk"],"headline-sm":["Domine"],"body-md":["Hanken Grotesk"],"lead":["Hanken Grotesk"]},fontSize:{"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"25px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-mobile":["34px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"caption":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"display":["48px",{"lineHeight":"54px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"eyebrow":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"lead":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[248px] bg-surface-container-low border-r border-outline-variant z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="p-space-md border-b border-outline-variant flex items-center gap-space-sm"><div class="relative w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm"><span class="material-symbols-outlined text-[18px]">apartment</span><div class="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface-container-low"></div></div><div class="flex flex-col overflow-hidden"><span class="font-eyebrow text-eyebrow text-secondary uppercase font-bold tracking-widest leading-none">SIT NAGPUR</span><span class="font-headline-sm text-[16px] leading-tight text-on-surface font-semibold truncate">Campus Hub</span></div></div><div class="pt-space-md pb-space-xs px-space-md"><span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-wider block">Registry Directory</span></div><nav class="flex flex-col px-space-xs gap-space-2xs" data-active-classes="bg-surface-container-lowest text-secondary font-semibold border-l-[3px] border-secondary"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px] mr-space-sm text-on-surface-variant">grid_view</span><span class="font-label-md text-label-md truncate">Dashboard</span></a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent" data-path="lost-and-found" href="#"><span class="w-2.5 h-2.5 rounded-full bg-[#A0660E] mr-space-sm shrink-0"></span><span class="font-label-md text-label-md truncate">01 Lost &amp; Found</span></a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent" data-path="sports-hub" href="#"><span class="w-2.5 h-2.5 rounded-full bg-[#2E6B4E] mr-space-sm shrink-0"></span><span class="font-label-md text-label-md truncate">02 Sports Hub</span></a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent" data-path="booking-board" href="#"><span class="w-2.5 h-2.5 rounded-full bg-[#2C5A8C] mr-space-sm shrink-0"></span><span class="font-label-md text-label-md truncate">03 Booking Board</span></a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent" data-path="market-hub" href="#"><span class="w-2.5 h-2.5 rounded-full bg-[#B4532A] mr-space-sm shrink-0"></span><span class="font-label-md text-label-md truncate">04 Market Hub</span></a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent" data-path="emergency-hub" href="#"><span class="w-2.5 h-2.5 rounded-full bg-[#D7261E] mr-space-sm shrink-0"></span><span class="font-label-md text-label-md truncate">05 Emergency Hub</span></a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors border-l-[3px] border-transparent" data-path="feedback-hub" href="#"><span class="w-2.5 h-2.5 rounded-full bg-[#1E6E6A] mr-space-sm shrink-0"></span><span class="font-label-md text-label-md truncate">06 Feedback Hub</span></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-low"><div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-high transition-colors"><div class="flex items-center gap-space-sm overflow-hidden"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold truncate leading-tight">Aarav Deshmukh</span><span class="font-caption text-caption text-on-surface-variant truncate leading-none mt-0.5">CSE · 3rd yr</span></div></div><a class="text-on-surface-variant hover:text-secondary p-space-2xs transition-colors shrink-0 flex items-center" data-path="login" href="#" title="Sign out"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-wider">Campus Registry</span><span class="text-outline-variant">/</span><span class="font-label-md text-label-md text-on-surface font-semibold">Overview</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-on-surface-variant">search</span><input class="w-64 h-10 pl-9 pr-14 bg-surface-container-low border border-outline-variant rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:border-on-surface focus:ring-1 focus:ring-on-surface" placeholder="Search registry, notices, hubs..." type="text"/><kbd class="absolute right-space-sm text-[10px] font-mono px-1.5 py-0.5 border border-outline-variant bg-surface rounded text-on-surface-variant">⌘K</kbd></div><a class="flex items-center gap-space-xs h-9 px-space-md rounded-full bg-[#D7261E] text-on-error font-label-sm text-label-sm font-semibold tracking-wide hover:opacity-90 transition-opacity" data-path="emergency-hub" href="#"><span class="material-symbols-outlined text-[16px]">e911_emergency</span><span>EMERGENCY</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 min-h-screen bg-background p-space-lg"><div class="flex flex-col w-full">
+<!-- 6px Top Accent Strip in Hub 03 Blue (#2C5A8C) -->
+<div class="h-1.5 w-full bg-[#2C5A8C]"></div>
+<!-- Page Header -->
+<header class="w-full bg-surface-container-lowest p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex items-center gap-space-xs font-eyebrow text-eyebrow uppercase tracking-widest text-[#2C5A8C]">
+<span class="w-2 h-2 rounded-full bg-[#2C5A8C]"></span>
+<span>HUB 03 · FACILITY TIMETABLE &amp; AVAILABILITY</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Booking Board
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Every booked slot, live. Check before you head down.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-[#E2EFE7] text-[#2E6B4E] font-caption text-caption font-semibold tracking-wider">
+<span class="w-2 h-2 rounded-full bg-[#2E6B4E] animate-pulse"></span>
+<span>LIVE SYNC · 30S</span>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-md h-10 rounded bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" href="#">
+<span>Book in Sports Hub</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</header>
+<!-- Control Toolbar: Date Strip, Facility Chips, View Toggle -->
+<section class="w-full bg-surface-container-low px-space-lg py-space-md flex flex-col gap-space-md">
+<!-- Top Row: Date strip & View Toggle -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- 7-day Date Strip -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0" id="date-strip">
+<button class="px-space-sm py-1.5 rounded text-left transition-colors bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high">
+<span class="block font-caption text-[10px] uppercase text-on-surface-variant tracking-wider">Mon</span>
+<span class="font-label-md text-label-md font-semibold">26 Oct</span>
+</button>
+<button class="px-space-sm py-1.5 rounded text-left transition-colors bg-primary text-on-primary">
+<div class="flex items-center gap-1">
+<span class="font-caption text-[10px] uppercase text-primary-fixed tracking-wider">Today</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#fbbb45]"></span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-primary">27 Oct</span>
+</button>
+<button class="px-space-sm py-1.5 rounded text-left transition-colors bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high">
+<span class="block font-caption text-[10px] uppercase text-on-surface-variant tracking-wider">Wed</span>
+<span class="font-label-md text-label-md font-semibold">28 Oct</span>
+</button>
+<button class="px-space-sm py-1.5 rounded text-left transition-colors bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high">
+<span class="block font-caption text-[10px] uppercase text-on-surface-variant tracking-wider">Thu</span>
+<span class="font-label-md text-label-md font-semibold">29 Oct</span>
+</button>
+<button class="px-space-sm py-1.5 rounded text-left transition-colors bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high">
+<span class="block font-caption text-[10px] uppercase text-on-surface-variant tracking-wider">Fri</span>
+<span class="font-label-md text-label-md font-semibold">30 Oct</span>
+</button>
+<button class="px-space-sm py-1.5 rounded text-left transition-colors bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high">
+<span class="block font-caption text-[10px] uppercase text-on-surface-variant tracking-wider">Sat</span>
+<span class="font-label-md text-label-md font-semibold">31 Oct</span>
+</button>
+<button class="px-space-sm py-1.5 rounded text-left transition-colors bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high">
+<span class="block font-caption text-[10px] uppercase text-on-surface-variant tracking-wider">Sun</span>
+<span class="font-label-md text-label-md font-semibold">01 Nov</span>
+</button>
+</div>
+<!-- Segmented View Toggle -->
+<div class="flex items-center self-start lg:self-auto bg-surface-container-high p-0.5 rounded">
+<button class="px-space-md py-1.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold">
+          Grid Board
+        </button>
+<button class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">
+          Timeline List
+        </button>
+</div>
+</div>
+<!-- Facility Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-0.5 text-on-surface">
+<button class="px-space-sm py-1 rounded font-caption text-caption uppercase tracking-wider bg-[#E1EAF4] text-[#2C5A8C] font-semibold">
+        All Facilities (8)
+      </button>
+<button class="px-space-sm py-1 rounded font-caption text-caption uppercase tracking-wider bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+        Badminton (2 courts)
+      </button>
+<button class="px-space-sm py-1 rounded font-caption text-caption uppercase tracking-wider bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+        Table Tennis (2 tables)
+      </button>
+<button class="px-space-sm py-1 rounded font-caption text-caption uppercase tracking-wider bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+        Pool Arena
+      </button>
+<button class="px-space-sm py-1 rounded font-caption text-caption uppercase tracking-wider bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+        Carrom Lounge
+      </button>
+<button class="px-space-sm py-1 rounded font-caption text-caption uppercase tracking-wider bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+        Basketball Court
+      </button>
+<button class="px-space-sm py-1 rounded font-caption text-caption uppercase tracking-wider bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+        Main Turf 7v7
+      </button>
+</div>
+</section>
+<!-- Main Timetable & Sidebar Structure (9 Cols Main, 3 Cols Sticky Rail) -->
+<div class="w-full grid grid-cols-1 xl:grid-cols-12 gap-space-lg p-space-lg items-start">
+<!-- LEFT/CENTER: THE LIVE TIMETABLE (9 Cols) -->
+<div class="xl:col-span-9 bg-surface-container-lowest rounded overflow-hidden flex flex-col relative">
+<!-- Collegiate Departure Style Header -->
+<div class="p-space-md bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-[#2C5A8C]">sports_tennis</span>
+<div>
+<span class="font-eyebrow text-eyebrow uppercase tracking-widest text-[#2C5A8C]">CAMPUS RECREATION TIMETABLE</span>
+<div class="font-headline-sm text-[16px] text-on-surface font-semibold">Central Sports Complex · Wing B</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-xs bg-[#E1EAF4] border-l-2 border-[#2C5A8C]"></span>
+<span>Booked Slot</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-xs bg-[#E2EFE7] text-[#2E6B4E] font-bold text-[9px] flex items-center justify-center">+1</span>
+<span>Poll Open</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-xs bg-surface-container-lowest border border-outline-variant"></span>
+<span>Available</span>
+</div>
+</div>
+</div>
+<!-- Matrix Container with horizontal scrolling -->
+<div class="overflow-x-auto relative" id="timetable-scroll-area">
+<div class="min-w-[960px] relative">
+<!-- Live Cursor Marker: "NOW 17:42" (Placed dynamically between 17:00 and 18:00) -->
+<!-- 11 rows past + partial into 17:00 (Row height is 56px, header is 48px) -> Top is ~686px -->
+<div class="absolute left-0 right-0 z-30 pointer-events-none flex items-center" style="top: 704px;">
+<div class="bg-[#D7261E] text-on-error px-2 py-0.5 rounded-r font-caption text-[10px] font-bold tracking-wider shrink-0 shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+<span>NOW 17:42</span>
+</div>
+<div class="h-[2px] w-full bg-[#D7261E]"></div>
+</div>
+<!-- Table Header: Columns -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] bg-surface-container sticky top-0 z-20">
+<div class="h-12 px-space-sm flex items-center justify-center font-caption text-caption uppercase tracking-wider text-on-surface-variant font-bold bg-surface-container">
+              TIME
+            </div>
+<div class="h-12 px-space-sm flex items-center gap-1.5 font-label-sm text-label-sm font-semibold text-on-surface bg-surface-container-low truncate">
+<span class="material-symbols-outlined text-[16px] text-[#2C5A8C]">sports_tennis</span>
+<span class="truncate">Badminton C1</span>
+</div>
+<div class="h-12 px-space-sm flex items-center gap-1.5 font-label-sm text-label-sm font-semibold text-on-surface bg-surface-container-low truncate">
+<span class="material-symbols-outlined text-[16px] text-[#2C5A8C]">sports_tennis</span>
+<span class="truncate">Badminton C2</span>
+</div>
+<div class="h-12 px-space-sm flex items-center gap-1.5 font-label-sm text-label-sm font-semibold text-on-surface bg-surface-container-low truncate">
+<span class="material-symbols-outlined text-[16px] text-[#2C5A8C]">sports_handball</span>
+<span class="truncate">Table Tennis T1</span>
+</div>
+<div class="h-12 px-space-sm flex items-center gap-1.5 font-label-sm text-label-sm font-semibold text-on-surface bg-surface-container-low truncate">
+<span class="material-symbols-outlined text-[16px] text-[#2C5A8C]">sports_handball</span>
+<span class="truncate">Table Tennis T2</span>
+</div>
+<div class="h-12 px-space-sm flex items-center gap-1.5 font-label-sm text-label-sm font-semibold text-on-surface bg-surface-container-low truncate">
+<span class="material-symbols-outlined text-[16px] text-[#2C5A8C]">circle</span>
+<span class="truncate">Pool (Arena)</span>
+</div>
+<div class="h-12 px-space-sm flex items-center gap-1.5 font-label-sm text-label-sm font-semibold text-on-surface bg-surface-container-low truncate">
+<span class="material-symbols-outlined text-[16px] text-[#2C5A8C]">sports_basketball</span>
+<span class="truncate">Basketball Court</span>
+</div>
+</div>
+<!-- Timetable Body Rows -->
+<div class="flex flex-col">
+<!-- 06:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-low">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">06:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Rohan P.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 3Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Varsity Practice</span>
+<span class="font-caption text-[10px] text-on-surface-variant">COACH DEV</span>
+</div>
+</div>
+<!-- 07:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-lowest">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">07:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Tanvi M.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">AIML · 2Y</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Varun J.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">MECH · 4Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Varsity Practice</span>
+<span class="font-caption text-[10px] text-on-surface-variant">COACH DEV</span>
+</div>
+</div>
+<!-- 08:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-low">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">08:00</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Nikhil G.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">ECE · 1Y</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Sneha K.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 3Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 09:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-lowest">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">09:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Staff Council</span>
+<span class="font-caption text-[10px] text-on-surface-variant">RESERVED</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 10:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-low">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">10:00</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Devansh R.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">IT · 2Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 11:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-lowest">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">11:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Karan T.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 4Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Pooja S.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">AIML · 3Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 12:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-low">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">12:00</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Aakash V.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">ECE · 2Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Meera C.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CIVIL · 3Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 13:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-lowest">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">13:00</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 14:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-low">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">14:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Shreya B.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 2Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Rohit M.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">AIML · 4Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 15:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-lowest">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">15:00</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Ankit D.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">IT · 1Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Dhruv P.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 3Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 16:00 (Past) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 opacity-40 bg-surface-container-low">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">16:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Siddharth V.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">MECH · 3Y</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Ritika S.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">AIML · 2Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Girls Intramural</span>
+<span class="font-caption text-[10px] text-on-surface-variant">HOSTEL 3</span>
+</div>
+</div>
+<!-- 17:00 (CURRENT LIVE ACTIVE HOUR) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 bg-surface-container-lowest relative font-normal">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface font-bold">17:00</div>
+<!-- Badminton C1: Aarav D. with Open Poll Needs 1 -->
+<div class="p-1.5 flex items-center justify-between bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<div class="flex flex-col min-w-0 pr-1">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Aarav D.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 3Y</span>
+</div>
+<span class="shrink-0 px-1.5 py-0.5 rounded bg-[#E2EFE7] text-[#2E6B4E] font-caption text-[9px] font-bold">NEEDS 1</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Tanmay N.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">IT · 4Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Pranav R.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">AIML · 3Y</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Suhani M.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">ECE · 1Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 18:00 (Upcoming) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 bg-surface-container-low">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">18:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Ishita R.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 3Y</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Karan J.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">MECH · 2Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex items-center justify-between bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<div class="flex flex-col min-w-0 pr-1">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Varun K.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 2Y</span>
+</div>
+<span class="shrink-0 px-1.5 py-0.5 rounded bg-[#E2EFE7] text-[#2E6B4E] font-caption text-[9px] font-bold">NEEDS 1</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Arjun S.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CIVIL · 4Y</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Club Scrimmage</span>
+<span class="font-caption text-[10px] text-on-surface-variant">HOOPS CLUB</span>
+</div>
+</div>
+<!-- 19:00 (Upcoming) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 bg-surface-container-lowest">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">19:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Naveen B.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">AIML · 1Y</span>
+</div>
+<div class="p-1.5 flex items-center justify-between bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<div class="flex flex-col min-w-0 pr-1">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Harshita T.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 3Y</span>
+</div>
+<span class="shrink-0 px-1.5 py-0.5 rounded bg-[#E2EFE7] text-[#2E6B4E] font-caption text-[9px] font-bold">NEEDS 2</span>
+</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Sahil G.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">IT · 3Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Club Scrimmage</span>
+<span class="font-caption text-[10px] text-on-surface-variant">HOOPS CLUB</span>
+</div>
+</div>
+<!-- 20:00 (Upcoming) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 bg-surface-container-low">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">20:00</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Gaurav D.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">ECE · 4Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="p-1.5 flex flex-col justify-center bg-[#E1EAF4] border-l-[3px] border-[#2C5A8C]">
+<span class="font-label-sm text-xs font-semibold text-on-surface truncate">Riddhima W.</span>
+<span class="font-caption text-[10px] text-on-surface-variant">CSE · 2Y</span>
+</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+<!-- 21:00 (Upcoming - Last slot) -->
+<div class="grid grid-cols-[80px_repeat(6,1fr)] h-14 bg-surface-container-lowest">
+<div class="flex items-center justify-center font-caption text-caption text-on-surface-variant font-semibold">21:00</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+<div class="flex items-center justify-center text-outline-variant font-caption">—</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Broadcast Footer Bar -->
+<div class="p-space-sm bg-surface-container-high flex flex-wrap items-center justify-between text-on-surface-variant font-caption text-caption gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface">info</span>
+<span>Courts reset automatically at 22:00 for facility sanitation. Check equipment at Wing B desk.</span>
+</div>
+<div class="font-caption text-caption">
+          PRN Auth ID: <span class="font-mono text-on-surface font-semibold">22070123089</span>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: 320px Sticky Sidebar (3 Cols) -->
+<div class="xl:col-span-3 flex flex-col gap-space-md sticky top-20">
+<!-- Card: Today At a Glance -->
+<div class="bg-surface-container-lowest rounded p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-eyebrow text-eyebrow uppercase tracking-wider text-on-surface-variant">TODAY AT A GLANCE</span>
+<span class="font-caption text-[10px] uppercase font-bold text-[#2C5A8C]">27 OCT</span>
+</div>
+<!-- 3 Metrics counters -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface leading-none">23</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase mt-1">Booked Slots</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface leading-none">81</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase mt-1">Free Slots</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase text-on-surface-variant font-medium">Busiest Venue</span>
+<span class="font-label-sm text-label-sm font-semibold text-[#2C5A8C]">92% Booked</span>
+</div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Badminton Courts (1 &amp; 2)</div>
+</div>
+<!-- Overall Capacity Gauge -->
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="text-on-surface-variant">Campus Recreation Occupancy</span>
+<span class="font-semibold text-on-surface">22% Total</span>
+</div>
+<!-- Gauge Bar -->
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-[#2C5A8C] rounded" style="width: 22.1%"></div>
+</div>
+</div>
+</div>
+<!-- Card: Open Polls Today (Mini noticeboard list) -->
+<div class="bg-surface-container-lowest rounded p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#2E6B4E]"></span>
+<span class="font-eyebrow text-eyebrow uppercase tracking-wider text-on-surface">OPEN PLAYER POLLS (3)</span>
+</div>
+<span class="font-caption text-[11px] text-on-surface-variant">Jump In</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Card 1 -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Badminton Court 1</span>
+<span class="px-1.5 py-0.5 rounded bg-[#E2EFE7] text-[#2E6B4E] font-caption text-[10px] font-bold">1 SPOT LEFT</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>17:00 – 18:00 (Happening Now)</span>
+<span>Host: Aarav D.</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-on-surface-variant">Roster: 1/2 players</span>
+<button class="px-space-sm py-1 rounded bg-[#2C5A8C] text-on-primary font-caption text-[11px] font-semibold hover:opacity-90 transition-opacity">
+                Join Match
+              </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Main Turf · 7v7 Football</span>
+<span class="px-1.5 py-0.5 rounded bg-[#E2EFE7] text-[#2E6B4E] font-caption text-[10px] font-bold">3 SPOTS</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>18:30 – 19:30</span>
+<span>Host: Ishita R.</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-on-surface-variant">Roster: 11/14 players</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-caption text-[11px] font-semibold hover:bg-surface-container-highest transition-colors">
+                Join Match
+              </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Table Tennis Table 2</span>
+<span class="px-1.5 py-0.5 rounded bg-[#E2EFE7] text-[#2E6B4E] font-caption text-[10px] font-bold">1 SPOT</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>18:00 – 19:00</span>
+<span>Host: Varun K.</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-caption text-[11px] text-on-surface-variant">Roster: 1/2 players</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-caption text-[11px] font-semibold hover:bg-surface-container-highest transition-colors">
+                Join Match
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Rules Box -->
+<div class="bg-surface-container-high rounded p-space-md flex flex-col gap-space-xs text-on-surface">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[18px] text-[#2C5A8C]">gavel</span>
+<span>Registry Ground Rules</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Daily booking quota releases sharp at <span class="font-bold text-on-surface">07:00 AM IST</span>. Each student PRN holds a maximum cap of <span class="font-bold text-on-surface">2 active reservations</span> per calendar day.
+        </p>
+<div class="pt-1 flex items-center justify-between text-on-surface-variant font-caption text-[11px]">
+<span>Late forfeit threshold: 10 mins</span>
+<a class="underline text-[#2C5A8C]" href="#">View Bylaws</a>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
