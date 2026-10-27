@@ -2,8 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { ToastProvider } from './components/common/Toast';
-import Navbar from './components/common/Navbar';
-import Footer from './components/common/Footer';
 import ProtectedRoute from './components/common/ProtectedRoute';
 
 // Pages
@@ -23,79 +21,73 @@ export const App = () => {
   return (
     <AuthProvider>
       <ToastProvider>
-        <div className="app-container">
-          <Navbar />
-          <main className="main-content">
-            <Routes>
-              {/* Public Routes */}
-              <Route path="/" element={<LandingPage />} />
-              <Route path="/signup" element={<SignupPage />} />
-              <Route path="/login" element={<LoginPage />} />
+        <Routes>
+          {/* Public Routes */}
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<LoginPage />} />
 
-              {/* Protected Hub Routes */}
-              <Route
-                path="/dashboard"
-                element={
-                  <ProtectedRoute>
-                    <DashboardPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/lost-found"
-                element={
-                  <ProtectedRoute>
-                    <LostFoundPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/sports"
-                element={
-                  <ProtectedRoute>
-                    <SportsPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/sports-bookings"
-                element={
-                  <ProtectedRoute>
-                    <SportsBookingBoardPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/market"
-                element={
-                  <ProtectedRoute>
-                    <MarketPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/emergency"
-                element={
-                  <ProtectedRoute>
-                    <EmergencyPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/feedback"
-                element={
-                  <ProtectedRoute>
-                    <FeedbackPage />
-                  </ProtectedRoute>
-                }
-              />
+          {/* Protected Hub Routes (all render AppShell internally) */}
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <DashboardPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/lost-found"
+            element={
+              <ProtectedRoute>
+                <LostFoundPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/sports"
+            element={
+              <ProtectedRoute>
+                <SportsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/sports-bookings"
+            element={
+              <ProtectedRoute>
+                <SportsBookingBoardPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/market"
+            element={
+              <ProtectedRoute>
+                <MarketPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/emergency"
+            element={
+              <ProtectedRoute>
+                <EmergencyPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/feedback"
+            element={
+              <ProtectedRoute>
+                <FeedbackPage />
+              </ProtectedRoute>
+            }
+          />
 
-              {/* 404 Route */}
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+          {/* 404 Route */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </ToastProvider>
     </AuthProvider>
   );

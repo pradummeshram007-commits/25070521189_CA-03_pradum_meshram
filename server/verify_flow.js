@@ -85,8 +85,10 @@ async function runTests() {
 
   const facId = facilities[0]._id;
   const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 1); // Tomorrow
+  targetDate.setDate(targetDate.getDate() + 4); // 4 days in future (within 7 day window)
   const dateStr = targetDate.toISOString().split('T')[0];
+
+
 
   // Book 1st slot
   const book1Res = await fetch(`${BASE}/sports/book`, {

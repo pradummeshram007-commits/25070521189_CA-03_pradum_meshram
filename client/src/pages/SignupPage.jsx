@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../components/common/Toast';
-import { IconEye, IconEyeOff } from '../components/common/Icons';
+import { Input } from '../components/common/Input';
+import { Select } from '../components/common/Select';
+import { Button } from '../components/common/Button';
+import { IconEye, IconEyeOff, IconAlertTriangle } from '../components/common/Icons';
 
 export const SignupPage = () => {
   const navigate = useNavigate();
@@ -101,7 +104,6 @@ export const SignupPage = () => {
     e.preventDefault();
     setServerError('');
 
-    // Validate all fields
     const newErrors = {};
     Object.keys(formData).forEach((key) => {
       const err = validateField(key, formData[key]);
@@ -128,239 +130,286 @@ export const SignupPage = () => {
   };
 
   return (
-    <div style={{
-      minHeight: '85vh',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '2.5rem 1.25rem',
-      background: 'linear-gradient(180deg, var(--bg-subtle) 0%, var(--bg-page) 100%)',
-    }}>
-      <div style={{
-        background: '#ffffff',
-        borderRadius: 'var(--radius-xl)',
-        border: '1px solid var(--border-subtle)',
-        boxShadow: 'var(--shadow-lg)',
-        maxWidth: '580px',
-        width: '100%',
-        padding: '2.25rem 2rem',
-      }}>
-        {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', flex: 1, minHeight: '100vh', flexWrap: 'wrap' }}>
+        {/* LEFT PANEL: 5/12 width on desktop, Ink background, Paper text */}
+        <aside style={{
+          flex: '1 1 380px',
+          backgroundColor: 'var(--color-ink)',
+          color: 'var(--color-paper)',
+          padding: '3rem 2.5rem',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          borderRight: '1px solid #2C2C28',
+        }}>
+          <div>
+            {/* Wordmark (Light) */}
+            <Link to="/" className="wordmark wordmark-light" style={{ marginBottom: '3rem' }}>
+              <div className="wordmark-box">
+                <span className="wordmark-dot" />
+              </div>
+              <div className="wordmark-text-wrap">
+                <span className="wordmark-eyebrow">SIT NAGPUR</span>
+                <span className="wordmark-title">Campus Hub</span>
+              </div>
+            </Link>
+
+            <div style={{ marginBottom: '2.5rem' }}>
+              <span className="eyebrow" style={{ color: '#A59F92', display: 'block', marginBottom: '0.5rem' }}>
+                NEW HERE?
+              </span>
+              <h1 className="text-h1" style={{ color: '#FFFDF9', marginBottom: '0.75rem' }}>
+                One account.<br />Six hubs.
+              </h1>
+              <p style={{ color: '#B9B3A6', fontSize: '15px', lineHeight: 1.6, maxWidth: '360px' }}>
+                Your institutional login for campus activities, classifieds, sports slots, and student support.
+              </p>
+            </div>
+
+            {/* 6 Hubs Vertical List */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', maxWidth: '380px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.65rem 0.85rem', borderRadius: '8px', background: '#242420', border: '1px solid #33332D' }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '2px', backgroundColor: 'var(--hub-lost)', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#E8E2D5', fontWeight: 600 }}>01 LOST &amp; FOUND</span>
+                <span style={{ fontSize: '12px', color: '#8C867A', marginLeft: 'auto' }}>Track verified claims</span>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.65rem 0.85rem', borderRadius: '8px', background: '#242420', border: '1px solid #33332D' }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '2px', backgroundColor: 'var(--hub-sports)', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#E8E2D5', fontWeight: 600 }}>02 SPORTS HUB</span>
+                <span style={{ fontSize: '12px', color: '#8C867A', marginLeft: 'auto' }}>Courts &amp; player polls</span>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.65rem 0.85rem', borderRadius: '8px', background: '#242420', border: '1px solid #33332D' }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '2px', backgroundColor: 'var(--hub-booking)', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#E8E2D5', fontWeight: 600 }}>03 BOOKING BOARD</span>
+                <span style={{ fontSize: '12px', color: '#8C867A', marginLeft: 'auto' }}>Live court matrix</span>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.65rem 0.85rem', borderRadius: '8px', background: '#242420', border: '1px solid #33332D' }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '2px', backgroundColor: 'var(--hub-market)', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#E8E2D5', fontWeight: 600 }}>04 MARKET HUB</span>
+                <span style={{ fontSize: '12px', color: '#8C867A', marginLeft: 'auto' }}>Peer student trade</span>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.65rem 0.85rem', borderRadius: '8px', background: '#242420', border: '1px solid #33332D' }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '2px', backgroundColor: 'var(--hub-emergency)', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#E8E2D5', fontWeight: 600 }}>05 EMERGENCY HUB</span>
+                <span style={{ fontSize: '12px', color: '#8C867A', marginLeft: 'auto' }}>1-tap priority dispatch</span>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.65rem 0.85rem', borderRadius: '8px', background: '#242420', border: '1px solid #33332D' }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '2px', backgroundColor: 'var(--hub-feedback)', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#E8E2D5', fontWeight: 600 }}>06 FEEDBACK HUB</span>
+                <span style={{ fontSize: '12px', color: '#8C867A', marginLeft: 'auto' }}>Anonymous voice board</span>
+              </div>
+            </div>
+          </div>
+
           <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '48px',
-            height: '48px',
-            borderRadius: 'var(--radius-md)',
-            background: 'linear-gradient(135deg, var(--primary-navy), var(--accent-crimson))',
-            color: '#fff',
-            fontWeight: 800,
-            fontSize: '1.25rem',
-            marginBottom: '0.75rem',
+            paddingTop: '2rem',
+            borderTop: '1px solid #2C2C28',
+            fontFamily: 'var(--font-mono)',
+            fontSize: '11px',
+            color: '#8C867A',
           }}>
-            SIT
+            SYMBIOSIS INSTITUTE OF TECHNOLOGY, NAGPUR
           </div>
-          <h2 style={{ fontSize: '1.65rem', color: 'var(--primary-navy)' }}>
-            Create Your Student Account
-          </h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>
-            Register with your SIT Nagpur details to access all 6 campus hubs.
-          </p>
-        </div>
+        </aside>
 
-        {serverError && (
+        {/* RIGHT PANEL: Form on Paper background */}
+        <section style={{
+          flex: '2 1 500px',
+          backgroundColor: 'var(--color-paper)',
+          padding: '3rem 2rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
           <div style={{
-            background: 'var(--danger-light)',
-            color: 'var(--danger)',
-            padding: '0.75rem 1rem',
-            borderRadius: 'var(--radius-md)',
-            marginBottom: '1.25rem',
-            fontSize: '0.88rem',
-            fontWeight: 500,
+            maxWidth: '560px',
+            width: '100%',
+            backgroundColor: 'var(--color-surface)',
+            border: '1px solid var(--color-line)',
+            borderRadius: '12px',
+            padding: '2.5rem 2rem',
           }}>
-            {serverError}
-          </div>
-        )}
+            <div style={{ marginBottom: '1.75rem' }}>
+              <span className="eyebrow" style={{ color: 'var(--color-oxblood)' }}>
+                REGISTRATION
+              </span>
+              <h2 className="text-h2" style={{ marginTop: '0.25rem', color: 'var(--color-ink)' }}>
+                Create student account
+              </h2>
+              <p style={{ color: 'var(--color-ink-secondary)', fontSize: '14px', marginTop: '0.25rem' }}>
+                Enter your Symbiosis student credentials to activate portal access.
+              </p>
+            </div>
 
-        <form onSubmit={handleSubmit} noValidate>
-          {/* Full Name */}
-          <div className="form-group">
-            <label className="form-label" htmlFor="name">Full Name *</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              className={`form-input ${errors.name ? 'error' : ''}`}
-              placeholder="e.g. Pradum Meshram"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            {errors.name && <span className="form-error">{errors.name}</span>}
-          </div>
+            {serverError && (
+              <div style={{
+                backgroundColor: 'var(--hub-emergency-tint)',
+                border: '1px solid var(--status-error)',
+                color: 'var(--status-error)',
+                padding: '0.75rem 1rem',
+                borderRadius: '8px',
+                fontSize: '13.5px',
+                marginBottom: '1.25rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}>
+                <IconAlertTriangle size={16} />
+                <span>{serverError}</span>
+              </div>
+            )}
 
-          {/* Email & PRN Row */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-            <div className="form-group">
-              <label className="form-label" htmlFor="email">College Email *</label>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                className={`form-input ${errors.email ? 'error' : ''}`}
-                placeholder="name@sitnagpur.siu.edu.in"
-                value={formData.email}
+            <form onSubmit={handleSubmit} noValidate>
+              <Input
+                label="Full Name"
+                id="name"
+                name="name"
+                placeholder="Aarav Deshmukh"
+                value={formData.name}
                 onChange={handleChange}
+                error={errors.name}
                 required
               />
-              {errors.email && <span className="form-error">{errors.email}</span>}
-            </div>
 
-            <div className="form-group">
-              <label className="form-label" htmlFor="prn">PRN Number *</label>
-              <input
-                id="prn"
-                type="text"
-                name="prn"
-                className={`form-input ${errors.prn ? 'error' : ''}`}
-                placeholder="e.g. 23070521001"
-                value={formData.prn}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
+                <Input
+                  label="College Email"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="aarav@sitnagpur.siu.edu.in"
+                  value={formData.email}
+                  onChange={handleChange}
+                  error={errors.email}
+                  required
+                />
+
+                <Input
+                  label="PRN Number"
+                  id="prn"
+                  name="prn"
+                  placeholder="23070521001"
+                  value={formData.prn}
+                  onChange={handleChange}
+                  error={errors.prn}
+                  required
+                />
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
+                <Select
+                  label="Branch"
+                  id="branch"
+                  name="branch"
+                  value={formData.branch}
+                  onChange={handleChange}
+                  options={branches}
+                  error={errors.branch}
+                  required
+                />
+
+                <Select
+                  label="Year of Study"
+                  id="year"
+                  name="year"
+                  value={formData.year}
+                  onChange={handleChange}
+                  options={years}
+                  error={errors.year}
+                  required
+                />
+              </div>
+
+              <Input
+                label="Phone Number (10 digits)"
+                id="phone"
+                type="tel"
+                name="phone"
+                maxLength="10"
+                placeholder="9823456789"
+                value={formData.phone}
                 onChange={handleChange}
+                error={errors.phone}
                 required
               />
-              {errors.prn && <span className="form-error">{errors.prn}</span>}
-            </div>
-          </div>
 
-          {/* Branch & Year Row */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1.3fr 1fr', gap: '1rem' }}>
-            <div className="form-group">
-              <label className="form-label" htmlFor="branch">Branch *</label>
-              <select
-                id="branch"
-                name="branch"
-                className={`form-select ${errors.branch ? 'error' : ''}`}
-                value={formData.branch}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Select Branch</option>
-                {branches.map((b) => (
-                  <option key={b} value={b}>{b}</option>
-                ))}
-              </select>
-              {errors.branch && <span className="form-error">{errors.branch}</span>}
-            </div>
-
-            <div className="form-group">
-              <label className="form-label" htmlFor="year">Year of Study *</label>
-              <select
-                id="year"
-                name="year"
-                className={`form-select ${errors.year ? 'error' : ''}`}
-                value={formData.year}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Select Year</option>
-                {years.map((y) => (
-                  <option key={y} value={y}>{y}</option>
-                ))}
-              </select>
-              {errors.year && <span className="form-error">{errors.year}</span>}
-            </div>
-          </div>
-
-          {/* Phone */}
-          <div className="form-group">
-            <label className="form-label" htmlFor="phone">Phone Number (10 digits) *</label>
-            <input
-              id="phone"
-              type="tel"
-              name="phone"
-              maxLength="10"
-              className={`form-input ${errors.phone ? 'error' : ''}`}
-              placeholder="e.g. 9823456789"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
-            {errors.phone && <span className="form-error">{errors.phone}</span>}
-          </div>
-
-          {/* Password & Confirm Password Row */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-            <div className="form-group">
-              <label className="form-label" htmlFor="password">Password *</label>
-              <div className="input-with-toggle">
-                <input
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
+                <Input
+                  label="Password"
                   id="password"
-                  type={showPassword ? 'text' : 'password'}
                   name="password"
-                  className={`form-input ${errors.password ? 'error' : ''}`}
+                  type={showPassword ? 'text' : 'password'}
                   placeholder="Min 8 chars, 1 number"
                   value={formData.password}
                   onChange={handleChange}
+                  error={errors.password}
                   required
+                  rightElement={
+                    <button
+                      type="button"
+                      onClick={() => setShowPassword(!showPassword)}
+                      style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-ink-muted)' }}
+                      aria-label="Toggle password visibility"
+                    >
+                      {showPassword ? <IconEyeOff size={18} /> : <IconEye size={18} />}
+                    </button>
+                  }
                 />
-                <button
-                  type="button"
-                  className="input-toggle-btn"
-                  onClick={() => setShowPassword(!showPassword)}
-                  aria-label={showPassword ? 'Hide password' : 'Show password'}
-                >
-                  {showPassword ? <IconEyeOff size={18} /> : <IconEye size={18} />}
-                </button>
-              </div>
-              {errors.password && <span className="form-error">{errors.password}</span>}
-            </div>
 
-            <div className="form-group">
-              <label className="form-label" htmlFor="confirmPassword">Confirm Password *</label>
-              <div className="input-with-toggle">
-                <input
+                <Input
+                  label="Confirm Password"
                   id="confirmPassword"
-                  type={showConfirmPassword ? 'text' : 'password'}
                   name="confirmPassword"
-                  className={`form-input ${errors.confirmPassword ? 'error' : ''}`}
+                  type={showConfirmPassword ? 'text' : 'password'}
                   placeholder="Re-enter password"
                   value={formData.confirmPassword}
                   onChange={handleChange}
+                  error={errors.confirmPassword}
                   required
+                  rightElement={
+                    <button
+                      type="button"
+                      onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                      style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-ink-muted)' }}
+                      aria-label="Toggle confirm password visibility"
+                    >
+                      {showConfirmPassword ? <IconEyeOff size={18} /> : <IconEye size={18} />}
+                    </button>
+                  }
                 />
-                <button
-                  type="button"
-                  className="input-toggle-btn"
-                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                  aria-label={showConfirmPassword ? 'Hide password' : 'Show password'}
-                >
-                  {showConfirmPassword ? <IconEyeOff size={18} /> : <IconEye size={18} />}
-                </button>
               </div>
-              {errors.confirmPassword && <span className="form-error">{errors.confirmPassword}</span>}
+
+              <Button
+                type="submit"
+                variant="primary"
+                disabled={isSubmitting}
+                style={{ width: '100%', height: '44px', marginTop: '0.5rem' }}
+              >
+                {isSubmitting ? 'Creating Account…' : 'Complete Registration'}
+              </Button>
+            </form>
+
+            <div style={{
+              textAlign: 'center',
+              marginTop: '1.5rem',
+              paddingTop: '1.25rem',
+              borderTop: '1px solid var(--color-line)',
+              fontSize: '14px',
+              color: 'var(--color-ink-secondary)',
+            }}>
+              Already have an account?{' '}
+              <Link to="/login" style={{ color: 'var(--color-oxblood)', fontWeight: 600, textDecoration: 'none' }}>
+                Log in here
+              </Link>
             </div>
           </div>
-
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="btn btn-primary"
-            style={{ width: '100%', marginTop: '0.75rem', padding: '0.85rem' }}
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? 'Creating Account...' : 'Complete Registration'}
-          </button>
-        </form>
-
-        {/* Footer Link */}
-        <div style={{ textAlign: 'center', marginTop: '1.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-          Already have an account?{' '}
-          <Link to="/login" style={{ color: 'var(--primary-blue)', fontWeight: 600 }}>
-            Login here
-          </Link>
-        </div>
+        </section>
       </div>
     </div>
   );
